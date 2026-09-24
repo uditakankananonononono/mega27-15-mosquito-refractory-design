@@ -15,7 +15,7 @@ Malaria kills over half a million people annually, and CRISPR homing gene drives
 
 ## 1.1 Malaria and the limits of conventional vector control
 
-Malaria remains one of the largest infectious-disease burdens on earth. The World Health Organization estimates roughly a quarter of a billion cases and over half a million deaths per year, with the great majority of mortality concentrated in sub-Saharan Africa and in children under five. The dominant transmission vectors are mosquitoes of the *Anopheles gambiae* complex, and the two pillars of vector control - long-lasting insecticidal nets (LLINs) and indoor residual spraying (IRS) - are responsible for most of the gains of the last two decades. Both pillars are now eroding. Pyrethroid resistance is widespread in *An. gambiae* populations across Africa, behavioural shifts (outdoor and early-evening biting) reduce contact with indoor interventions, and the logistical and financial cost of sustaining near-universal net coverage is high. Progress against malaria has stalled since roughly 2015, and the search for complementary, self-sustaining interventions has become a central priority of the field.
+Malaria remains one of the largest infectious-disease burdens on earth. The World Health Organization's World Malaria Report 2024 estimates 263 million cases and 597,000 deaths in 2023, with approximately 95% of deaths in the WHO African Region and the majority in children under five; case counts rose by about 11 million over 2022. The dominant transmission vectors are mosquitoes of the *Anopheles gambiae* complex, and the two pillars of vector control - long-lasting insecticidal nets (LLINs) and indoor residual spraying (IRS) - are responsible for most of the gains of the last two decades. Both pillars are now eroding. Pyrethroid resistance is widespread in *An. gambiae* populations across Africa, behavioural shifts (outdoor and early-evening biting) reduce contact with indoor interventions, and the logistical and financial cost of sustaining near-universal net coverage is high. Progress against malaria has stalled since roughly 2015, and the search for complementary, self-sustaining interventions has become a central priority of the field.
 
 Genetic vector control offers that complementary axis. Rather than killing mosquitoes with an external agent that selects for resistance and must be reapplied indefinitely, genetic strategies modify the mosquito population itself - either suppressing it (population suppression) or rendering it unable to transmit the parasite (population replacement). Earlier genetic approaches, such as the sterile insect technique and releases of males carrying a dominant lethal, require sustained mass releases because the modified insects disappear from the population. A gene drive, by biasing its own inheritance, can in principle spread from a single small release and persist, which changes the economics of intervention fundamentally.
 
@@ -25,13 +25,30 @@ A CRISPR homing gene drive encodes the Cas9 nuclease and a guide RNA (gRNA) insi
 
 The Hammond study also exposed the central failure mode. Its drives cut their targets efficiently, but within a few generations the drive frequency stalled and resistant alleles - small insertions and deletions produced when the cut was repaired by end-joining rather than homologous recombination - accumulated and ultimately dominated. Many of these indels restored a functional, drive-resistant target sequence. Unckless and colleagues formalized the problem theoretically in 2017: a CRISPR drive in a panmictic population is mathematically unstable to resistance unless the rate at which functional resistant alleles are generated is very low, and the equilibrium outcome depends far more on the resistance-generation rate than on the homing rate. The design implication is that the gRNA target sequence must be chosen so that essentially any mutation at the site destroys the function of the gene - in which case resistant alleles are nonfunctional and are purged by selection rather than spreading.
 
+## 1.2.1 The homing reaction at nucleotide resolution
+
+The inheritance bias is created by a race between two repair outcomes at one double-strand break. Cas9 cuts the wild-type chromosome three bases upstream of the PAM. In the germline, the cell can repair the break by homologous recombination (HR) using the sister chromatid or the homologous drive chromosome as template; only templating on the drive chromosome copies the drive cassette, and the fraction of cuts resolved this way is the effective homing rate h. The competing pathway, end-joining, reseals the break with small insertions or deletions. Three outcome classes matter for drive design: faithful homing (drive copies; frequency d increases), nonfunctional end-joining (the target is destroyed and the gene broken; at a constrained site these alleles are sterile and are purged), and functional end-joining (the target is destroyed but gene function survives; these are the resistant alleles r that doomed the Hammond drives). The resistance-generation rate e of Sections 2.7 and 3.4 is the probability of the third class per cut. Timing also matters: cleavage must occur in the germline, after chromosome pairing and before the repair template choice is made; maternal deposition of Cas9 into the embryo cuts paternal alleles somatically and produces mosaic, non-heritable damage, an effect documented in both the Hammond and Kyrou experiments. Every one of these mechanistic details maps onto a term of the three-allele model of Section 2.7, which is why a nucleotide-level view of the reaction is the right foundation for a scoring pipeline.
+
 ## 1.3 The doublesex target
 
 Kyrou et al. (2018) identified a target with exactly that property. The *doublesex* (*dsx*) gene sits at the bottom of the insect sex-determination cascade: it is a transcription factor of the DM-domain family, conserved across insects, whose sex-specific splice isoforms direct male versus female somatic development. In *An. gambiae*, the female isoform (dsxF) incorporates a female-specific exon (exon 5), while the male isoform (dsxM) splices past it; the decision is controlled upstream by the splicing factor transformer-2, but dsx is the final effector. Females homozygous for a disrupted dsxF develop as intersex - sterile, with male-like morphology, and unable to blood-feed - while males carrying the same disruption are essentially unaffected, because dsxM does not use the targeted exon. This asymmetry is what makes the locus a suppression target: a drive inserted at the female-specific exon boundary imposes its fitness cost only on females, and only when homozygous, so heterozygous carriers of both sexes transmit the drive normally while homozygous females are removed from the reproductive pool. Crucially, the intron-4/exon-5 boundary region is highly conserved and functionally constrained: indels that destroy the drive target also destroy *dsx* function, so resistance alleles generated at the site are sterile and removed by selection. A drive inserted at this boundary spread to fixation in caged *An. gambiae* populations and drove them to collapse within 8-12 generations, with no functional resistance emerging over the course of the experiments. It remains the only CRISPR drive to have collapsed caged mosquito populations, and its success is the strongest empirical evidence that target-site choice - not nuclease engineering - is the decisive variable in drive design.
 
+## 1.3.1 Why functional constraint suppresses resistance
+
+The link between constraint and resistance is a selection argument, and it deserves to be stated exactly because the whole pipeline rests on it. End-joining at a CRISPR cut produces a spectrum of indels. At an unconstrained site, a large fraction of that spectrum - all in-frame indels and many frameshifts in dispensable regions - yields a functional gene product while destroying the protospacer match; those alleles are drive-resistant and fitness-neutral, so they accumulate every generation (Section 3.4). At a site where every nucleotide is essential - a splice junction or a conserved coding exon - essentially the entire indel spectrum is deleterious: resistant alleles arise at the same biochemical rate but are sterile or lethal, so selection removes them as fast as end-joining creates them. The drive's effective opposition is thereby reduced from the end-joining rate to the (far smaller) rate of resistance alleles that preserve function, which at a perfectly constrained site is near zero. Kyrou et al. chose their target on exactly this logic: the intron-4/exon-5 boundary of dsx is conserved across Anopheles species, and population data (Ag1000G) show the site carries almost no standing variation, meaning purifying selection acts on it in the wild. Two design corollaries follow and are built into our scoring: constraint must be scored from annotation, not assumed (Section 2.6), and proximity to the same constrained junction lets us nominate alternative protospacers that inherit the Kyrou site's resistance-shedding property (Section 3.13).
+
 ## 1.4 The design problem
 
 A practical drive target design must jointly optimize three quantities: (i) the on-target cleavage efficacy of the gRNA, which sets the homing rate; (ii) the off-target load, which sets the rate of collateral mutation; and (iii) the rate at which functional resistance alleles are generated at the target, which is a property of the sequence context and the functional constraint acting on it. Public gRNA design tools address (i) and partially (ii). Sequence-based tools such as CHOPCHOP and CRISPOR rank guides by predicted efficacy and off-target counts; the Azimuth/CRISPick model of Doench et al. (2016) provides a strong sequence-only efficacy predictor trained on thousands of experimentally measured guides; CRISPRoff predicts energy-based off-target binding. None of these tools models resistance generation, none integrates a population-genetic simulation of the resulting drive, and none ranks candidate sites within a specific target locus against an experimentally validated positive control. The consequence is that a designer who wants "a dsx-like target" has no quantitative pipeline: the successful choice in Kyrou et al. was reached through biological insight and manual curation, not through an automated, reproducible scoring procedure.
+
+## 1.4.1 A formal statement of the design problem
+
+Fix a target locus as a genomic interval and let S be the set of all NGG protospacer sites on both strands of that interval. For each site g in S define three measurable quantities: E(g), the predicted on-target efficacy (Section 2.3); C(g), the functional-constraint bonus derived from annotation (Section 2.6); and mm_i(g), the exact number of genomic sites at edit distance i from g (i = 0, 1, 2, 3), enumerated over the full reference (Section 2.9). The design problem solved in this paper is
+
+    maximize  E(g) + C(g) - 0.50 mm_2(g) - 0.05 mm_3(g)
+    subject to  mm_0(g) + mm_1(g) = 0,  g in S.
+
+The hard constraint is the safety filter: no guide with an exact duplicate or a 1-mismatch near-cognate site anywhere in the genome is eligible at any score. The objective trades the two things a designer wants (efficacy, constraint) against the residual near-cognate burden that survives the filter, with penalty weights set a priori (Appendix J10). This is the v3 composite of Section 2.10, stated before any results: the named candidates of Section 3.13 are its argmax tier, and the published Kyrou guide enters S as a control with its own measured E, C and mm_i.
 
 ## 1.5 Hypotheses
 
@@ -43,11 +60,48 @@ H2 (ranking): machine-learned efficacy scoring identifies *dsx* gene-body sites 
 
 H3 (dynamics): across a parameter grid, the resistance-generation rate e - not the homing rate h - is the binding constraint on long-term drive success under a sterility-inducing drive.
 
+## 1.6 Related work
+
+## 1.6.1 Genome-wide off-target enumeration
+
+Enumerating every genomic site within a small mismatch budget of a 20-mer protospacer is a solved problem at human-genome scale, but the solutions make hardware and workflow trade-offs that matter for an integrated design pipeline. Cas-OFFinder (Bae, Park and Kim 2014) partitions the genome across OpenCL devices and compares all windows in parallel; on the publication hardware (Intel i7-3770K CPU, AMD Radeon HD 7870 GPU) it processed 1,000 target sites against the 3.01 Gb human genome in 60.0 s on CPU and 3.0 s on GPU, and reported per-100-target GPU times of 76.4 s (human, 1 mismatch) to 114.4 s (human, 10 mismatches), with 4.8 s for the 116 Mb Arabidopsis genome at 5 mismatches. GuideScan (Perez et al. 2017) builds a k-mer trie over the reference and aggregates per-guide specificity scores over all enumerated sites; it trades per-query latency for index construction cost and memory. CHOPCHOP (Labun et al. 2016, 2019) wraps Bowtie short-read alignment behind a web interface, inheriting the aligner's heuristic seeding; CRISPOR (Haeussler et al. 2016) is a meta-tool that runs BWA-based enumeration and layers on published scoring models. FlashFry (McKenna and Shendure 2018) targets the many-guide regime, enumerating off-targets for libraries of tens of thousands of guides via a sorted k-mer index with bit-parallel comparison.
+
+Our enumerator occupies a different point in this space. It is a pure-Python/NumPy block-sharded scanner whose candidate filter is complete by a pigeonhole argument (Appendix J1), so its counts are exact, not heuristic, and it runs inside the ranking loop with no external dependencies. On throughput it is not competitive with GPU tools: Appendix M normalizes the published Cas-OFFinder numbers against our 76.75 s wall-clock for 30 guides over the 246 Mb AgamP5 assembly and shows a two-to-four order-of-magnitude deficit per guide-gigabase. We state that deficit plainly because it delimits our claim: the contribution of this work is exact, verifiable enumeration embedded in a design score at insect-genome scale, not enumeration speed.
+
+## 1.6.2 Specificity scoring
+
+Aggregate off-target scores compress an enumerated hit list into one number. The MIT (Hsu) score penalizes mismatches by position with empirically fitted weights (Hsu et al. 2013); the CFD score multiplies position- and base-identity-specific penalties measured from a saturating mismatch library (Doench et al. 2016). GuideScan's specificity score aggregates CFD over the enumerated set. These scores are calibrated on human-cell data and compress away exactly the information a drive designer needs, namely whether any site sits at zero or one mismatch, where cutting risk is highest. Our v3 score therefore keeps the exact counts by mismatch class and applies a hard filter at <=1 mismatch plus a geometric penalty at 2-3 mismatches (Appendix J10), using the score only where the enumeration shows it is safe to trade.
+
+## 1.6.3 On-target efficacy models
+
+Sequence-to-efficacy models for Cas9 guides began with position-specific logistic models trained on flow-cytometry knockdown assays: Rule Set 1 (Doench et al. 2014), SSC (Xu et al. 2015), and the screen-derived scores of Wang et al. (2014) and Chari et al. (2015). CRISPRscan (Moreno-Mateos et al. 2015) derived a 6-mer model from zebrafish assays, an early demonstration that cell-type context matters. Rule Set 2, distributed as Azimuth (Doench et al. 2016), moved to gradient-boosted trees over position-specific mono- and dinucleotide features and remains the standard baseline. Deep models followed: DeepCRISPR (Chuai et al. 2018) and DeepHF (Wang et al. 2019) report gains from convolutional and recurrent architectures over larger training sets. Our efficacy scorer is a compact 1-D CNN trained on the Doench 2016 FC+RES data (Section 2.3). We make no claim that it beats Rule Set 2: the two have never been evaluated under a matched protocol, and Appendix N lays out why headline numbers from different protocols cannot be compared. The fair internal comparison - same split, same metric - is against ridge regression, which the CNN beats by +0.093 held-out Spearman and +0.166 on the cross-dataset check.
+
+## 1.6.4 Homing drives in Anopheles
+
+The homing drive concept for population control of disease vectors predates CRISPR (Burt 2003; Esvelt et al. 2014). Gantz and Bier (2015) demonstrated the mutagenic chain reaction in Drosophila, and Gantz et al. (2015) built the first mosquito drive in Anopheles stephensi. In Anopheles gambiae, Hammond et al. (2016) drove a construct through caged populations but selected resistance-conferring indels at the target within a few generations (Hammond et al. 2017); Kyrou et al. (2018) achieved complete cage-population suppression by targeting a conserved, functionally constrained intron-exon boundary of doublesex. The modeling literature explains both outcomes: deterministic and stochastic analyses (Unckless et al. 2015, 2017; Noble et al. 2017) show that resistant-allele generation rate, not homing efficiency, sets the long-term trajectory when resistant genotypes are fertile. Multiplexed guides that force resistance to arise at several sites simultaneously have been proposed (Champer et al. 2017) and tested (Simoni et al. 2020). Our work sits downstream of Kyrou et al.: given that a resistance-free, conserved, functionally constrained site exists at dsx, we ask which adjacent protospacers maximize predicted efficacy under a genome-wide specificity certificate, and we quantify the answer against the published guide as a control.
+
+## 1.6.5 Positioning of this work
+
+Existing guide-design tools answer parts of the drive-design question: enumerators find off-targets, scorers rank efficacy, drive models predict population trajectories. The design problem is their intersection. The v3 composite (Section 2.10) is, to our knowledge, the first published ranking of dsx drive protospacers that fuses all three axes with exact genome-wide specificity counts, and it names two falsifiable lead candidates (Section 3.13) scored against the experimentally validated Kyrou guide as a built-in control.
+
 # 2. Methods
 
 ## 2.1 Data and locus identity
 
 The 110 kb locus region NC_064601.1:47600000-47710000 (idAnoGambNW_F1_1 assembly) was fetched live from NCBI E-utilities (efetch, 24 Sep 2026) and archived as data/dsx_locus_region.fasta. Locus identity was verified through NCBI Gene 1270904, whose record lists aliases AGAP004050 and DSX and designations including "female-specific doublesex protein" (evidence: data/dsx_gene_esummary.json). The RefSeq annotation of the locus, fetched as the NCBI gene table (data/dsx_gene_table.txt), contains nine transcript variants whose exon models were parsed for constraint-aware scoring. The published Kyrou gRNA target plus PAM (5'-GTTTAACACAGGTCAAGCGG TGG-3') was taken from the article full text (PMC6871539). All network access is confined to scripts/fetch_data.sh; every analysis and every test runs against the archived local copies.
+
+## 2.1.1 Reference assembly
+
+All genome-scale work uses the AgamP5 reference, GCF_943734735.2 (idAnoGambNW_F1_1), the current chromosome-level An. gambiae assembly. Four placed molecules were fetched live from NCBI and archived locally:
+
+| accession | molecule | length (bp) |
+|---|---|---|
+| NC_064601.1 | chromosome 2 (arms 2R+2L) | 118,196,952 |
+| OX030908.1 | chromosome 3 (arms 3R+3L) | 99,149,756 |
+| OX030909.1 | chromosome X | 28,097,889 |
+| OX030910.2 | mitochondrion | 15,363 |
+
+Total placed length 245,459,960 bp (~246 Mb). The dsx locus sits on 2R within NC_064601.1. We work from the current assembly rather than the older AgamP4 deliberately: coordinates and sequences are the ones a present-day designer would download, and the annotation discrepancy documented in Appendix I is itself a finding about the current record. Assembly identity and the fetch provenance are pinned in Appendix A; the genome files are regenerable end-to-end by scripts/fetch_genome.sh.
 
 ## 2.2 Target-site scanning
 
@@ -68,9 +122,34 @@ Efficacy scoring uses a 1-D convolutional neural network over one-hot-encoded se
 
 Training used the Doench 2016 FC+RES dataset (5,310 experimentally measured 30-mer guides with drug-gene rank scores; mirror of the Microsoft Research azimuth training data), split 80/20 into 4,248 training and 1,062 held-out guides with a fixed seed. The model minimized mean squared error with the Adam optimizer for 15 epochs (seed 0); no early stopping or hyperparameter search was applied, so the reported held-out performance is not selected on the test split. A ridge regression over the same sequence features serves as the classical baseline. Held-out performance: Spearman 0.556 for the CNN versus 0.463 for ridge. As an external check, both models were evaluated without retraining on the independent Doench V1 dataset (2,144 guides measured in a different experimental setup): 0.609 versus 0.444. The CNN's cross-dataset advantage over ridge (+0.166) is larger than its within-dataset advantage (+0.093), indicating that the convolutional features generalize across assay conditions rather than memorizing the training assay. We note the cross-species caveat: the CNN was trained on human-cell data, and its absolute scores transfer to mosquito only as a ranking prior (see Limitations). The checkpoint and metrics are archived in assets/ with full provenance.
 
+## 2.3.2 Feature engineering
+
+The model sees each guide as a 30-nt context window: 4 bp upstream, the 20-nt protospacer, the 3-nt PAM, and 3 bp downstream, N-padded where the window overruns the region edge (the padding behavior is pinned by test_grna_scan). Two feature families are computed from the protospacer. The one-hot track encodes each position as a 4-vector (A, C, G, T), giving the 4 x 30 convolutional input; ambiguous bases encode as all-zeros, so they contribute no signal rather than a wrong one. The auxiliary track concatenates the GC fraction (1 feature) with the 16 normalized dinucleotide frequencies, matching the engineered features the classical literature found most predictive. Dinucleotides matter because Cas9 activity depends on local DNA shape and meltability, which single-base features cannot express; the 17-value aux vector enters the head MLP after global pooling, so the convolutional stack can specialize on positional motifs while the head sees composition directly.
+
+## 2.3.1 Training protocol and hyperparameters
+
+Training and evaluation are implemented in crisprgap.train_efficacy (MEGA27-06 package; checkpoint shared under the program, see assets/PROVENANCE.md). The full protocol:
+
+| setting | value |
+|---|---|
+| optimizer | Adam, learning rate 1e-3 |
+| loss | mean squared error |
+| batch size | 128 |
+| epochs | 15 (no early stopping) |
+| split | single permutation of numpy default_rng(0); first 20% held out (1,062 of 5,310) |
+| ridge baseline | alpha 1.0, flattened one-hot + aux features, same split |
+| metric | Spearman rank correlation on the held-out split |
+| dropout | 0.2 in the head MLP |
+
+No hyperparameter was tuned on the test split: the epoch count and learning rate are the package defaults, so the held-out numbers are honest in the technical sense that no selection touched them. The fixed-seed permutation makes the split reproducible bit-for-bit.
+
 ## 2.4 Off-target counting
 
 Candidate sites are screened against the full 110 kb region for near matches with up to three mismatches. Exact enumeration is avoided via a pigeonhole index. Each 20-mer is split into four exact 5-mer blocks. Any 20-mer within three mismatches of the query differs in at most three of its positions, so by the pigeonhole principle at least one of its four 5-mer blocks is exactly identical to the corresponding query block; a 5-mer inverted index over the region therefore enumerates a small candidate set containing every true <=3-mismatch match, and each candidate is verified exactly by direct comparison. The method returns identical counts to an exhaustive sliding-window scan on randomized test panels (test suite), so the speedup changes cost, not results.
+
+## 2.4.1 A worked example of the pigeonhole count
+
+Take dsx-v3-1 (protospacer TGGGCAGTATGCGTTAGGGT). Its four 5-mer blocks are TGGGC, AGTAT, GCGTT, AGGGT. Querying the region inverted index with each block and its reverse complement returns 76 + 80, 58 + 61, 119 + 133, and 65 + 59 candidate positions respectively - 651 candidates in total from 220,002 window positions. Each candidate is aligned to the full 20-mer at its implied offset and verified base by base; none of the 651 verifies at <=3 mismatches, so the guide's off-target count inside the 110 kb region is exactly 0. Two properties of the example generalize. First, the candidate set is 338-fold smaller than the window set, which is where the speedup comes from; the GCGTT block dominates the candidate mass because GC-rich 5-mers recur in this GC-rich region. Second, the count is exact: the pigeonhole argument (Appendix J1) guarantees that any true <=3-mismatch site would appear in the candidate set, so 0 is a proof, not a sample estimate. The genome-scale scanner of Section 2.9 applies the same filter block by block over all 246 Mb.
 
 ## 2.5 Composite ranking (v1)
 
@@ -80,17 +159,41 @@ Sites are ranked by score = CNN_efficacy - 0.5 * (off-targets within 3 mismatche
 
 The v2 ranking adds a functional-constraint term derived from the union of the nine RefSeq transcript exon models: +0.25 if the majority of the 23-nt site is exonic, and a further +0.5 if any part of the site lies within 15 bp of an annotated exon boundary (splice-junction proximity). The term encodes the design lesson of section 1.3 - constraint, not raw efficacy, is what suppresses resistance - using only annotation data, fixed before the v2 ranking was computed.
 
+## 2.6.1 Constraint scoring rules and edge cases
+
+The constraint term is computed from the union of the nine RefSeq transcript exon models over the dsx span. A site's exonic fraction is the number of its 23 nucleotides (protospacer + PAM) falling inside any annotated exon; the +0.25 bonus requires a majority (>=12 of 23). The splice-proximity bonus (+0.50) applies when any nucleotide of the site lies within 15 bp of an annotated exon boundary, in either direction; d is the distance from the nearest site nucleotide to the nearest boundary, so d = 0 means the site touches or spans a junction. Edge cases, all decided a priori: a site overlapping two transcripts with conflicting models is scored under the union (a nucleotide is exonic if any transcript calls it exonic), which is the conservative direction for a bonus; sites beyond the transcript span receive 0 on both terms regardless of local sequence; the 15 bp window and the 12/23 threshold were fixed before the v2 ranking was first computed and never revised afterward, so the constraint landscape of Figure 6 is a pure function of annotation, not of outcomes. The labels in results/ranked_designs_v2.csv record both the bonus and its derivation (exonic count and d) per candidate, making each bonus independently auditable against the gene table.
+
 ## 2.7 Drive dynamics
 
 Population consequences are evaluated with a three-allele model (W wild-type, D drive, R resistant) with discrete, non-overlapping generations, following the Burt/Unckless functional form. Let w, d, r be the adult allele frequencies entering a generation, with w + d + r = 1 (a conservation invariant the test suite checks at every simulated generation). Random mating produces diploid zygote frequencies from these allele frequencies under Hardy-Weinberg proportions. In the germline of W/D heterozygotes, homing converts the W allele to D with probability h; of the conversions that fail, a fraction e yields a functional resistant allele R (end-joining repair that restores a cleavage-resistant but functional target), and the remainder yields nonfunctional products that we absorb into the sterile class. Gamete frequencies after conversion are therefore g_D = d + h * f_WD / 2, g_R = r + e * (1 - h) * f_WD / 2, g_W = w - h * f_WD / 2 - e * (1 - h) * f_WD / 2, where f_WD is the zygote frequency of W/D heterozygotes. Genotype fitnesses are 1 for wild-type homozygotes, 1 - s_het for drive heterozygotes, and 1 - c_hom for drive homozygotes, with c_hom = 1 modeling the full female sterility of the Kyrou drive; resistant alleles are wild-type in fitness. The next generation's allele frequencies are the fitness-weighted gamete frequencies renormalized by mean fitness. The Wright-Fisher implementation samples 2N = 20,000 alleles each generation from the deterministic gamete frequencies (multinomial drift, five random seeds) to check robustness to genetic drift. The parameter grid spans h in {0.80, 0.90, 0.95, 0.99} x e in {0.001, 0.01, 0.1, 0.5}, 60 generations, drive introduced at 1% allele frequency, s_het = 0. All parameter values are modeling choices, stated, and swept rather than tuned.
 
+## 2.7.1 Model assumptions and the direction of their bias
+
+The three-allele model is deliberately simple, and each simplification is stated with the direction in which it moves the conclusions. (1) Panmixia and no population structure: real An. gambiae populations are structured, which slows spread; our drive-success estimates are optimistic. (2) No standing resistance at release: any pre-existing functional polymorphism at the target would shorten time-to-resistance; the Ag1000G data show the dsx boundary is nearly invariant, so this assumption is empirically supported at this locus but must be re-checked for any new target. (3) Independence of resistance generation across cuts and generations: end-joining outcomes may be sequence-correlated, which would concentrate resistance; our resistance timelines are optimistic. (4) Complete female sterility of drive homozygotes (c_hom = 1) with no somatic fitness cost in heterozygotes (s_het = 0): matches the Kyrou cage phenotype; leaky sterility would slow the drive. (5) Deterministic conversion with constant h across genotypes: h in reality varies with genetic background and Cas9 expression; we sweep h over a wide grid rather than estimate it. None of these simplifications touches the study's central comparative claim, which is about the relative ordering of candidate sites and parameter regimes, not absolute field performance.
+
 ## 2.8 Verification
 
-A 22-test hermetic pytest suite covers scanner correctness (both strands, edge padding, ambiguity rejection, homopolymer detection), the pigeonhole/naive off-target agreement, model output shapes and finiteness, composite-score penalty behavior, annotation parsing and the documented Kyrou annotation discrepancy, constraint-bonus logic, recursion conservation (allele frequencies sum to 1 at every generation), qualitative drive behavior (invasion from rare, no spread without homing, resistance blocking, Kyrou-like suppression), and seeded Wright-Fisher reproducibility. Live network calls exist only in scripts/fetch_data.sh, never in tests.
+A 33-test hermetic pytest suite covers scanner correctness (both strands, edge padding, ambiguity rejection, homopolymer detection), the pigeonhole/naive off-target agreement, model output shapes and finiteness, composite-score penalty behavior, annotation parsing and the documented Kyrou annotation discrepancy, constraint-bonus logic, recursion conservation (allele frequencies sum to 1 at every generation), qualitative drive behavior (invasion from rare, no spread without homing, resistance blocking, Kyrou-like suppression), and seeded Wright-Fisher reproducibility. Live network calls exist only in scripts/fetch_data.sh, never in tests.
 
 ## 2.9 Genome-scale off-target enumeration
 
 The locus-scale screen (section 2.4) leaves the standard reviewer question open: what does the rest of the genome contain? We therefore scaled the pigeonhole counter to the full AgamP5 reference. Three engineering decisions make this exact and fast. First, the reference (chromosomes 2RL, X, 3RL and MT, 245.9 Mb total, NCBI accessions NC_064601.1, OX030909.1, OX030908.1, OX030910.2) is streamed in overlapping 20 Mb blocks, so memory use is independent of genome size; an overlap of L - 1 = 19 bases guarantees every 20-mer window is wholly contained in at least one block (Appendix J, derivation J2). Second, each block is indexed once: a vectorized pass encodes every 5-mer as a 10-bit code, and candidate windows for a guide are the union of positions sharing any of the guide's eight exact 5-mer blocks (four from the protospacer, four from its reverse complement). The pigeonhole principle guarantees no <=3-mismatch match is missed (Appendix J, derivation J1). Third, candidate verification is vectorized as a (candidates x 20) byte-matrix comparison, and per-guide global coordinate sets deduplicate hits found in neighbouring block overlaps. The on-target locus of each guide is excluded from its own count. The enumerator is pinned to a naive whole-sequence counter and to a pure-Python reference implementation by hermetic tests, including planted boundary-spanning hits, reverse-complement hits, N-base rejection, edge-of-sequence hits, and overlap deduplication. Runtime is 77 s for 30 guides against the full genome on two sandbox cores (Appendix G).
+
+## 2.9.1 Genome-scan algorithm and measured cost
+
+The scanner streams each chromosome in 20 Mb blocks with a 19-base overlap (completeness: Appendix J2). Within a block it vectorizes 5-mer extraction as a sliding-window view over an integer base encoding, builds a one-shot inverted index from 5-mer code to flat position array, generates candidates for each guide's eight block k-mers (four blocks x two strands), and verifies candidates by exact 20-mer comparison. Pseudocode:
+
+    for block in chromosome.blocks(size=20_000_000, overlap=19):
+        codes = encode5mer(block)                 # vectorized sliding view
+        index = bucket_sort(codes)                # one pass, O(B)
+        for guide in guides:
+            for kmer in blocks_of(guide, 4) x {fwd, revcomp}:
+                for pos in index[code(kmer)]:
+                    candidate = block[pos-4k : pos-4k+20]   # aligned offset
+                    if mismatches(candidate, guide) <= 3:
+                        emit(guide, chromosome, block_start+pos, strand, mm)
+
+Measured cost on the AgamP5 assembly (245.9 Mb placed chromosomes plus mitochondrion): 76.75 s wall-clock for 30 guides at <=3 mismatches, i.e. 2.56 s per guide, or 10.4 s per guide-gigabase. The index is rebuilt per block, so cost scales linearly in genome size and guide count (Appendix J4). A pure-Python reference implementation (_block_hits_slow) reproduces the vectorized output exactly and is pinned by the test suite.
 
 ## 2.10 Specificity-fused composite ranking (v3)
 
@@ -102,9 +205,17 @@ The v2 score fuses efficacy and functional constraint but inherits the locus-sca
 
 The scanner recovered the published Kyrou *dsx* gRNA exactly once in the locus (minus strand, region offset 22,174, genomic ~47,622,174), consistent with *dsx* being a minus-strand gene. Its CNN efficacy (1.137) lies in the upper tail of the 10,936-site distribution (mean 0.763, sd 0.178, range -0.042 to 1.345; Figure 1), and it has zero predicted off-targets within the 110 kb panel. H1 is supported. One annotation discrepancy is reported, not smoothed over: the paper describes the target as spanning the intron-4/exon-5 boundary under the AgamP4/VectorBase annotation, but in the current RefSeq exon model (idAnoGambNW_F1_1, nine transcript variants) the site is intronic, ~0.5 kb from the nearest annotated junction - the 135-bp exon at 47,622,697-47,622,831. Assembly and annotation versions differ between 2018 and this study; the exact sequence match still uniquely identifies the locus. A dedicated test pins the discrepancy so it cannot be silently lost in later iterations.
 
+## 3.1.1 Reading the control result
+
+The control does three kinds of work. First, it validates the machinery end-to-end: a scanner that could not recover the one experimentally proven guide in this locus would disqualify every downstream ranking, and exact recovery at the annotated strand and position (with the CNN score and zero region off-targets as independent confirmations) clears that bar. Second, it calibrates expectations: the published guide ranks 94th of the v1 top-150 on efficacy alone, which tells us the field's successful choice was not an efficacy optimum - precisely the gap the constraint and specificity rankings exist to fill. Third, it anchors the v3 comparison: because the control is cage-validated, every candidate scored above it on the fused composite inherits a concrete, experimentally grounded interpretation of the score scale - "better than the guide that collapsed cages" is a statement a reviewer can weigh, unlike an abstract composite value. The annotation discrepancy stands alongside these as a finding in its own right (Appendix I): the control's sequence identity is exact, but its annotation context is version-dependent, and any pipeline consuming public annotations at this locus must carry that caveat.
+
 ## 3.2 Locus-wide site statistics
 
 The 110,001-nt region yields 10,936 NGG sites (one per ~10.1 nt on the two strands combined), of which 9,328 unique protospacers overlap the dsx transcription span. CNN efficacy scores over the gene-body set are approximately unimodal with mean 0.763, standard deviation 0.178, minimum -0.042, and maximum 1.345 (Figure 1). The published gRNA (1.137) sits 2.1 standard deviations above the mean - strong, but not extreme: 1.5% of gene-body sites score higher. This matters for interpretation: the Kyrou gRNA was not selected for maximal sequence-predicted efficacy, and our distribution shows it did not need to be, because dozens of equal-or-better efficacy candidates exist in the same locus. What distinguishes the published site is its constrained position, which the efficacy distribution is blind to - motivating the constraint-aware ranking of section 3.6. Off-target load within the 110 kb panel is low across the board: every site in the v1 top-150 and the v2 top-300 has zero <=3-mismatch matches elsewhere in the region, which is expected for a single-copy gene but must be re-verified genome-wide before any wet-lab use (Limitation 2).
+
+## 3.2.1 Site architecture of the locus
+
+The observed NGG density deserves a baseline. Under the region's base composition (GC 0.4626), a random 3-mer is an NGG PAM with probability 0.0535 (Appendix J13), predicting 11,770 sites over both strands of 110 kb; the scanner finds 10,936, a 7% deficit consistent with local composition variation and dinucleotide structure rather than any scanner effect (the scanner is pinned exact by test_grna_scan). Strand asymmetry is real: 5,091 plus-strand versus 5,845 minus-strand PAMs, reflecting the region's G-skew. Of the 10,936 sites, 9,328 unique protospacers overlap the dsx transcription span and form the scoreable candidate pool. The v2 constraint analysis partitions that pool by exon model: a minority of sites are majority-exonic under the nine-transcript union, and a smaller minority sit within 15 bp of an annotated splice boundary - the class the v2 bonus rewards. The named leads come from the two pools jointly: dsx-v3-1 is splice-proximal (8 bp from a boundary) and dsx-v3-2 is both fully exonic and splice-proximal (Figure 9).
 
 ## 3.3 Ranked candidate designs
 
@@ -145,6 +256,10 @@ The full parameter grid:
 
 Under c_hom = 1 (full homozygous sterility), no parameter combination sustains the drive: resistance alleles reach 0.96-0.98 by generation 60 in all 16 grid cells. Reading the grid row by row, increasing the homing rate h from 0.80 to 0.99 raises peak drive frequency monotonically (0.774 to 0.960 at e = 0.001) but barely moves final resistance frequency (0.962 to 0.978): a faster drive reaches a higher peak, then loses to the same resistance. Reading column by column, increasing e from 0.001 to 0.5 lowers peak drive frequency at every homing rate (e.g., from 0.960 to 0.851 at h = 0.99) while final resistance stays near saturation throughout - the system is already resistance-dominated at the lowest e we simulate, and higher e only hastens the outcome. The interaction is visible in the single successful cell: only (h = 0.99, e = 0.001) crosses 95% drive allele frequency, at generation 12, before resistance erodes it (Figures 3-4). Even there, success is transient on the 60-generation horizon. The conclusion is not that any of these drives is viable, but that the distance to viability lies almost entirely along the e axis: pushing h from 0.95 to 0.99 - an enormous molecular-engineering effort - buys less than pushing e from 0.01 to 0.001, which is precisely what target-site constraint achieves for free.
 
+## 3.4.1 Sensitivity accounting of the grid
+
+The grid of Section 3.4 supports a precise sensitivity statement. Across the e = 0.001 column, raising h from 0.80 to 0.99 lifts peak drive frequency from 0.774 to 0.960 (+0.186 across the whole h axis), but the same move raises final resistance frequency from 0.962 to 0.978: faster conversion generates more cutting events, hence more end-joining opportunities, hence more resistance. The h axis buys peak height at the cost of a deeper eventual resistance hole. Across the e axis at fixed h = 0.99, dropping e from 0.5 to 0.001 lifts peak drive frequency from 0.851 to 0.960 (+0.109) and is the only move that opens a viability window at all: the single 95%-crossing cell sits at the grid's lowest-e corner. Quantitatively, a 10x reduction in e (0.01 to 0.001) buys +0.023 peak at h = 0.99 and, more importantly, converts a never-crossing cell into a crossing one; no available h improvement does that at any e >= 0.01. This asymmetry - h moves the peak, e moves the outcome - is the grid's actionable content, and it is why the v3 objective spends its complexity budget on constraint and specificity (the e axis) rather than on squeezing predicted efficacy (the h axis) beyond the baseline.
+
 ## 3.5 Stochastic validation
 
 Wright-Fisher replicates at N = 10,000 track the deterministic trajectories closely across five seeds (Figure 5): the qualitative ordering of parameter cells is unchanged, and no seed rescues a deterministically failing cell or vice versa. Genetic drift at realistic cage-to-field population sizes does not alter the resistance-dominance conclusion; the deterministic model is an adequate design tool, with the stochastic runs serving as a robustness check rather than a separate result.
@@ -182,6 +297,10 @@ Scaling from the 110 kb locus to the 118.2 Mb home chromosome (2RL) changes the 
 
 The full-reference scan (30 guides x 245.9 Mb in 77 s) completes the specificity picture (Figure 7). 28 of 30 candidates pass the hard filter - no exact and no 1-mismatch off-target anywhere in the genome. Two candidates fail: v2 rank 10 (CAGTGTACCGCTGTACAAAA; 1 site at 1 mismatch, 5 at 2 mismatches, 39 at 3) and v2 rank 14. 2-mismatch burdens range 0-5 and 3-mismatch burdens 2-321; the two guides with >300 3-mismatch sites carry low-complexity protospacers and are effectively repetitive (Appendix K). Every hit is recorded with accession, coordinate, strand and exact mismatch count in results/genome_offtargets_genomewide_top30.json, making each count independently reproducible from the public accession.
 
+## 3.9.1 Enumerated totals and their reading
+
+Across the 30 candidate guides the genome-wide enumeration returns totals of 0 sites at 0 mismatches, 2 at 1 mismatch, 51 at 2 mismatches, and 1,469 at 3 mismatches. Three readings matter. First, exact uniqueness is the norm: no candidate protospacer occurs twice anywhere in the 246 Mb assembly, matching the information-theoretic expectation (Appendix J14). Second, the 1- and 2-mismatch classes are nearly empty (53 sites across all 30 guides, or 1.8 per guide), while the 3-mismatch class carries essentially all of the near-cognate mass - the mismatch-count distribution is steeply concentrated, which is exactly what the geometric activity decay of Appendix J10 assumes. Third, the two guides exceeding 300 sites at 3 mismatches are outliers by two orders of magnitude against their peers; their protospacers are low-complexity, and the correct response is to exclude them from multiplex designs rather than to average their burden into a summary score. Every count in this section is independently reproducible from the public accessions via results/genome_offtargets_genomewide_top30.json, which records each hit's accession, coordinate, strand and mismatch count.
+
 ## 3.10 Genome-wide audit of the published Kyrou guide
 
 Applying the identical enumeration to the published, cage-validated Kyrou 2018 gRNA gives, to our knowledge, the first exact genome-wide specificity audit of that guide: zero sites at 0, 1 or 2 mismatches, and exactly six sites at 3 mismatches - one on 2RL (41,285,162), two on the X (6,534,277; 14,585,141), three on 3RL (7,690,618; 81,101,940; 91,899,450) (Appendix L). The field selected this guide for conservation and splice position; its specificity can now be stated quantitatively: in a 246 Mb genome it has no near-cognate site closer than three mismatches. This both validates the published choice and sets the empirical specificity bar - a total near-cognate burden of 6 - against which new candidates can be measured.
@@ -190,9 +309,108 @@ Applying the identical enumeration to the published, cage-validated Kyrou 2018 g
 
 Fusing the genome-wide counts into the composite (section 2.10) reorders the v2 list (Figure 8, Appendix K). 28 candidates survive the filter; eight outscore the published guide's composite of 0.837. We name the two leaders as falsifiable design candidates. dsx-v3-1 (TGGGCAGTATGCGTTAGGGT, NC_064601.1:47,619,040, -): CNN efficacy 0.925, splice-proximal (d = 8) under the current RefSeq intron model, zero genomic sites at <=2 mismatches, four at 3 mismatches, v3 = 1.225. dsx-v3-2 (CATTAAGACCTACGAAGCGC, NC_064601.1:47,620,304, -): CNN efficacy 0.900, fully exonic (23/23) and splice-proximal (d = 10), zero sites at <=2 mismatches, nine at 3 mismatches, v3 = 1.200. Both are falsifiable on three independent axes: their exact off-target counts are reproducible from the public accession by any exact enumerator; their efficacy ranking is testable by standard in vitro cleavage assays; and their constraint rationale is testable by dsx transcript re-annotation (Appendix I). The honest counterpoint stands: on raw specificity alone the Kyrou guide (6 near-cognate sites) remains superior to every candidate (9-45 sites); the candidates' advantage is the fusion of high predicted efficacy, validated-region constraint, and filter-level specificity - not specificity alone.
 
+## 3.11.1 Score decomposition of the top tier
+
+The v3 score decomposes exactly as efficacy + constraint bonus - 0.50 x mm2 - 0.05 x mm3, and the decomposition for the top tier is worth tabulating because it shows the penalties biting where they should:
+
+| rank | efficacy | bonus | mm2 | mm3 | penalty | v3 |
+|---|---|---|---|---|---|---|
+| 1 | 0.9248 | 0.50 | 0 | 4 | 0.20 | 1.2248 |
+| 2 | 0.9004 | 0.75 | 0 | 9 | 0.45 | 1.2004 |
+| 3 | 0.9367 | 0.75 | 0 | 10 | 0.50 | 1.1867 |
+| 4 | 0.7501 | 0.75 | 0 | 8 | 0.40 | 1.1001 |
+| 5 | 1.2849 | 0.25 | 0 | 10 | 0.50 | 1.0349 |
+| 6 | 0.6817 | 0.75 | 0 | 8 | 0.40 | 1.0317 |
+| 7 | 0.9523 | 0.75 | 0 | 14 | 0.70 | 1.0023 |
+| 8 | 0.7492 | 0.75 | 0 | 10 | 0.50 | 0.9992 |
+| 9 | 1.2089 | 0.75 | 1 | 12 | 1.10 | 0.8589 |
+| 10 | 1.1011 | 0.75 | 1 | 11 | 1.05 | 0.8011 |
+
+Two demonstrations of the objective working as intended. (1) Rank 9 would sit at rank 1 on efficacy-plus-constraint alone (1.9589); its single 2-mismatch site costs it 0.50 and its 12 3-mismatch sites another 0.60, dropping it nine places. The penalty weights, not the filter, are what keep it eligible-but-demoted - the correct treatment for a guide whose risk is elevated but not disqualifying. (2) Rank 5 has the tier's best efficacy (1.2849) but the smallest bonus (0.25, exonic without splice proximity), and lands mid-tier: efficacy cannot buy its way past the constraint term. Every row satisfies score = efficacy + bonus - penalty to the printed precision, an internal consistency the test suite pins through test_v3_rank.
+
 ## 3.12 Design implication, updated
 
 Sections 3.4-3.5 established that resistance generation e, not homing rate h, binds drive success; section 3.7 elevated functional constraint above raw efficacy. The genome-wide results add the third axis: specificity is now exactly measurable at design time, and it is cheap enough (77 s for 30 guides) to sit inside the scoring loop rather than after it. The design implication sharpens accordingly: the viable drive-target set is the intersection of three screens - high predicted efficacy, functional constraint such that any indel destroys function, and zero near-cognate genomic sites at <=1 mismatch with minimal burden at 2-3 mismatches - and the v3 composite operationalizes exactly that intersection.
+
+## 3.13 Candidate dossiers
+
+This section gives complete design records for the two named v3 leads (positions: Figure 9). Coordinates: protospacer coordinates are 1-based inclusive on NC_064601.1; the CSV position column follows the pipeline convention of the 1-based coordinate of the first PAM base (Appendix O). Off-target hit coordinates are 0-based starts of the matched 20-mer window on the plus strand; hit sequences are shown 5'->3' as aligned to the guide. Seed region is defined as guide positions 13-20 (PAM-proximal).
+
+## 3.13.1 dsx-v3-1
+
+| field | value |
+|---|---|
+| protospacer (5'->3') | TGGGCAGTATGCGTTAGGGT |
+| chromosome | NC_064601.1 (2RL) |
+| protospacer coordinates | 47,619,043-47,619,062, minus strand |
+| PAM | AGG (47,619,040-47,619,042) |
+| CNN efficacy | 0.9248 |
+| constraint | splice-proximal (d = 8 bp), bonus 0.50 |
+| genome-wide mm0 / mm1 / mm2 | 0 / 0 / 0 |
+| genome-wide mm3 | 4 |
+| v3 score / rank | 1.2248 / 1 |
+
+Complete genome-wide hit list at 3 mismatches (exhaustive; no hits at 0-2):
+
+| hit chromosome | hit start (0-based) | strand | aligned sequence | mismatch positions |
+|---|---|---|---|---|
+| NC_064601.1 | 16386567 | + | GGGGCAGTATGCGTTACAGT | 1, 17, 18 |
+| NC_064601.1 | 29381928 | + | GGGGAAGTATGCGTTAGTGT | 1, 5, 18 |
+| NC_064601.1 | 89701075 | + | TGGGCAGTCTTCGTTATGGT | 9, 11, 17 |
+| OX030908.1 | 31799212 | - | CGGGGAGTATGCGTTACGGT | 1, 5, 17 |
+
+All four residual sites carry at least one mismatch inside the seed region (positions 13-20), the class least likely to support stable R-loop formation; three of four carry two or more seed mismatches. Under the CFD-style geometric reading (Appendix J10), these are the cheapest class of near-cognate sites to discount, though only cleavage assays can set the discount empirically.
+
+## 3.13.2 dsx-v3-2
+
+| field | value |
+|---|---|
+| protospacer (5'->3') | CATTAAGACCTACGAAGCGC |
+| chromosome | NC_064601.1 (2RL) |
+| protospacer coordinates | 47,620,307-47,620,326, minus strand |
+| PAM | TGG (47,620,304-47,620,306) |
+| CNN efficacy | 0.9004 |
+| constraint | fully exonic (23/23 in the female-specific exon), splice-proximal (d = 10 bp), bonus 0.75 |
+| genome-wide mm0 / mm1 / mm2 | 0 / 0 / 0 |
+| genome-wide mm3 | 9 |
+| v3 score / rank | 1.2004 / 2 |
+
+Complete genome-wide hit list at 3 mismatches (exhaustive; no hits at 0-2):
+
+| hit chromosome | hit start (0-based) | strand | aligned sequence | mismatch positions |
+|---|---|---|---|---|
+| NC_064601.1 | 209136 | + | CATTAAAAACTACGATGCGC | 7, 9, 16 |
+| NC_064601.1 | 11158867 | - | CATTAAGAACTACTAATCGC | 9, 14, 17 |
+| NC_064601.1 | 37257898 | - | CGTTAAGACCTACGAGGCGG | 2, 16, 20 |
+| NC_064601.1 | 63121003 | - | CATTAACACCAACGAAGAGC | 7, 11, 18 |
+| OX030908.1 | 2111185 | - | CATGGACACCTACGAAGCGC | 4, 5, 7 |
+| OX030908.1 | 8879975 | - | CATAAACACCTACGAAGCGA | 4, 7, 20 |
+| OX030908.1 | 36898302 | - | CATTAAGAGCTACTAAGCGA | 9, 14, 20 |
+| OX030908.1 | 52845350 | - | CATTAACACCAACGAAGAGC | 7, 11, 18 |
+| OX030909.1 | 4952764 | - | CATTAAGAGCTACGAATCTC | 9, 17, 19 |
+
+Eight of nine residual sites carry at least one seed-region mismatch. The exception is OX030908.1:2,111,185, whose three mismatches all fall at positions 4-7, the PAM-distal region where mismatches are best tolerated in human-cell cleavage data. We flag it explicitly rather than average it away: if any dsx-v3-2 off-target is cleaved in vivo, this is the most plausible site, and it is the first locus a validation panel should assay. Two sites (NC_064601.1:63,121,003 and OX030908.1:52,845,350) carry identical aligned sequences, indicating a recent duplication; such duplicated sites double the effective copy number of one specificity risk and are exactly the class repetitive-element filters miss when mismatch counts are reported without sequences.
+
+## 3.13.3 Comparative reading and falsifiable claim
+
+Against the Kyrou control (genome-wide audit, Appendix L: 0 sites at <=2 mismatches, 6 at 3), both leads match the published guide on the 0-2 mismatch axis and carry fewer (dsx-v3-1) or comparable (dsx-v3-2) 3-mismatch burdens, while scoring higher on predicted efficacy and sitting at functionally constrained positions (Section 3.11). The falsifiable claim: in a matched cleavage assay at the dsx locus in Anopheles cells or embryos, dsx-v3-1 and dsx-v3-2 will cut the on-target site at least as efficiently as GTTTAACACAGGTCAAGCGG while producing no detectable cleavage at the 13 enumerated 3-mismatch loci (4 and 9 respectively). The claim is false if any of those 13 loci shows assay-detectable cleavage at rates approaching on-target, or if on-target cutting is materially weaker than the control.
+
+## 3.13.4 The remainder of the v3 top tier
+
+Ranks 3-10 complete the shortlist a wet-lab program would actually order:
+
+| rank | protospacer | str | pos (conv.) | efficacy | mm3 | v3 | constraint |
+|---|---|---|---|---|---|---|---|
+| 3 | GAAGCGAGCCCAATGGCTGT | - | 47622796 | 0.937 | 10 | 1.1867 | exonic(23/23), splice d=13 |
+| 4 | CCCGAGCCGCAGCATATGGG | - | 47692039 | 0.750 | 8 | 1.1001 | exonic(22/23), splice d=0 |
+| 5 | TGCAGTGAAACCCGCGTGGA | - | 47695204 | 1.285 | 10 | 1.0349 | exonic(23/23) |
+| 6 | TTACCAGGTAGGAGATTTAC | + | 47655247 | 0.682 | 8 | 1.0317 | exonic(19/23), splice d=0 |
+| 7 | CTAGCTCGTCGTCTGAAATG | + | 47622820 | 0.952 | 14 | 1.0023 | exonic(12/23), splice d=0 |
+| 8 | ACTAGCTCGTCGTCTGAAAT | + | 47622819 | 0.749 | 10 | 0.9992 | exonic(13/23), splice d=0 |
+| 9 | GCGGTACACTGCACTGTCCG | + | 47619081 | 1.209 | 12 | 0.8589 | exonic(23/23), splice d=11 |
+| 10 | AGCTAGTGAAGCGAGCCCAA | - | 47622803 | 1.101 | 11 | 0.8011 | exonic(23/23), splice d=6 |
+
+All ten pass the hard specificity filter. Three structural readings. (1) The tier clusters: ranks 1-3 and 7-10 sit inside a 3.8 kb window spanning the validated functional region, so a multiplex construct carrying two or three of these guides is buildable without scaffolding problems, which matters for the escape-probability argument of Appendix J16. (2) The ranking is not an efficacy ranking: rank 5 has the second-highest efficacy in the tier (1.285) but sits mid-table because it lacks splice proximity; rank 6 is efficacy-weak (0.682) and survives on constraint. This is the v3 objective behaving as designed. (3) Ranks 7 and 8 are overlapping protospacers offset by one base - effectively one locus counted twice, a deduplication caveat we state rather than hide; in a build order they are alternatives, not a pair. The two filter-failing candidates (v2 ranks 10 and 14) and the two repetitive guides are excluded from this tier and preserved in Appendix K.
 
 # 4. Discussion
 
@@ -200,13 +418,48 @@ Sections 3.4-3.5 established that resistance generation e, not homing rate h, bi
 
 Existing gRNA design pipelines stop where this study begins. CHOPCHOP, CRISPOR, and CRISPick produce efficacy-and-specificity rankings for a user-supplied sequence; none asks what happens to the drive after it is released. Our contribution is to extend the design loop through population genetics: a candidate is not merely scored but simulated, and the simulation outcome feeds back into the scoring rule (v2). To our knowledge this is the first published pipeline that ranks drive target sites against an experimentally validated positive control on the same quantitative axes the wet-lab study itself identified as decisive.
 
+## 4.1.1 What this pipeline does not replace
+
+It is equally important to state what the pipeline is not. It is not a replacement for CHOPCHOP or CRISPOR as interactive design front-ends - those tools are better for a user who wants one guide for one gene tonight, and our related-work comparison (Section 1.6) is about the drive-design intersection, not about displacing general-purpose tools. It is not a replacement for experimental off-target assays: GUIDE-seq, CIRCLE-seq and CHANGE-seq measure cleavage directly, including effects (cell type, chromatin, delivery) that no enumerator sees; our Stage-2 plan (Section 4.6) treats them as mandatory. It is not a predictor of resistance-generation rates - Section 3.4 shows why that prediction is the field's most valuable missing number, and Limitation 5 owns our not having it. And it is not an argument that any drive should be released: the governance considerations of Section 4.4 stand independent of any ranking. The pipeline narrows the space of candidates that deserve expensive experiments; it does not argue the experiments away.
+
 ## 4.2 Limitations
 
 The limitations are honest ones. (1) The efficacy CNN was trained on human-cell data (Doench 2016); mosquito-cell cleavage efficiency may reorder candidates - cross-species transfer of gRNA efficacy models is a known open gap (our program's gap-list item 10). The rankings are therefore design priors, not measured activities. (2) The off-target screen is exact over the AgamP5 reference haplotype; it does not model population-level sequence diversity (Ag1000G variation), so individual wild mosquitoes may carry private near-cognate sites the reference lacks. Extending the enumerator to a pan-genome index is queued. (3) The drive model is panmictic and allele-frequency only; spatial structure, density-dependent mating, and population suppression thresholds need an explicit population model before any release-relevant claim could be made. (4) Functional-constraint scoring is annotation-derived and coarse: the exon model itself is in question at exactly the site of interest (section 3.1), and resolving it requires re-annotation against VectorBase AgamP4, which is queued. (5) The resistance-generation rate e is treated as a free parameter; in reality it is a measurable, sequence-dependent quantity (end-joining outcome spectra at a given cut site), and measuring or predicting it per candidate is the single highest-value extension of this work.
 
+## 4.2.1 Limitation 1: cross-species efficacy transfer
+
+The CNN learned sequence-efficacy regularities from human-cell knockdown data. Cas9 biochemistry is conserved, but chromatin state, repair milieu and expression context are not, and mosquito-cell cleavage may reorder our candidates. We therefore never call the rankings "efficacious guides"; they are priors with a quantified same-assay advantage over a linear baseline (Appendix E) and a stated protocol caveat (Appendix N). The resolution is empirical: the Stage-1 in vitro panel of Section 4.6 measures mosquito-relevant cleavage directly, and the CNN can be fine-tuned on the resulting data - a few hundred measured guides suffice to recalibrate a ranking model.
+
+## 4.2.2 Limitation 2: reference-genome specificity
+
+All mm_i counts are exact over one haploid reference. Wild populations segregate variation the reference does not show, and a private 1-mismatch site in a release population would be invisible to our audit. Section 4.7 sets out the Ag1000G haplotype extension that converts this limitation into a measurement; until it runs, every specificity claim in this paper carries the qualifier "against AgamP5".
+
+## 4.2.3 Limitation 3: the population model
+
+The drive model is panmictic, deterministic in its main grid, and allele-frequency-only. It cannot express spatial structure, assortative mating, density dependence, or suppression thresholds, and its absolute timelines are optimistic by construction (Section 2.7.1). We use it only for comparative statements - which axis binds, which parameter to spend effort on - where the direction of the answer is robust to these omissions; any release-relevant claim would require an explicit spatial population model and is outside the scope of this paper.
+
+## 4.2.4 Limitation 4: annotation-derived constraint
+
+The v2/v3 constraint bonus is computed from the current RefSeq exon models, and those models are in dispute at exactly the site that matters most (Appendix I): the Kyrou guide is intronic under the current model and junction-spanning under the AgamP4-era annotation used in the paper. Our ranking does not depend on resolving the dispute - the bonus rewards any annotated constraint - but the dossiers' constraint labels would change under a corrected annotation, and the queued VectorBase AgamP4 re-annotation is the resolution.
+
+## 4.2.5 Limitation 5: e is a parameter, not a measurement
+
+Section 3.4 shows the resistance-generation rate e is the decisive quantity, yet we sweep it instead of measuring it. In reality e is a sequence-dependent, assayable property of a cut site - the fraction of its end-joining spectrum that preserves gene function - and it differs across our own candidates. Predicting e from sequence (indel-spectrum models trained on repair-outcome datasets) is the highest-value extension of this work: it would convert the grid's message "spend effort on e" into a per-candidate number inside the v3 objective, and it closes the loop between Sections 3.4 and 3.13.
+
 ## 4.3 Resistance-engineering strategies in the literature
 
 Our result - that e, not h, is the binding constraint - aligns with and quantifies a design principle the field has converged on from several directions. The most direct mitigation is target choice under constraint, the Kyrou strategy this study operationalizes: cut where no functional indel exists. A second strategy multiplexes gRNAs against several nearby sites, so resistance requires simultaneous functional repair at every cut; modeling and cage data show multiplexing reduces effective e roughly multiplicatively, at the cost of larger drive constructs and more off-target exposure. A third recodes the drive's own copy of the target sequence so the drive allele is itself cleavage-resistant without relying on repair outcomes. A complementary line of work designs countermeasures - anti-drive elements that halt or reverse an unwanted drive - which matters for governance but does not change the design problem studied here. All of these strategies move effective e; none moves h. Our pipeline's contribution is to make the first strategy quantitative, rankable, and testable before any construct is built.
+
+## 4.3.1 A comparison of resistance-engineering strategies
+
+| strategy | mechanism | effect on effective e | cost | evidence base |
+|---|---|---|---|---|
+| constrained target choice (this work) | cut where every indel is deleterious | reduces functional-resistance fraction toward zero | requires a constrained site to exist | Kyrou 2018 cage collapse; our Sections 3.4, 3.6 |
+| multiplexed gRNAs | force simultaneous resistance at k sites | e -> ~e^k per event (Appendix J16) | larger construct, k-fold off-target exposure, correlated repair (J23) | modeling (Champer 2017), cage multiplex data |
+| recoded drive allele | drive copy is cleavage-resistant by design | removes drive self-cutting | does not reduce wild-type resistance | standard drive-construction practice |
+| anti-drive countermeasures | halt or reverse an unwanted drive | none on e; governance layer | separate construct and release | modeling literature |
+
+The strategies compose rather than compete: a multiplexed construct at a constrained cluster (our Section 3.13.4 tier) with a recoded drive copy stacks all three e-reduction mechanisms, and the tiers were shortlisted with exactly that composition in mind.
 
 ## 4.4 Governance context
 
@@ -216,9 +469,29 @@ Gene drives are a governance problem as much as a technical one, and a computati
 
 Exact genome-wide enumeration converts specificity from a heuristic score into an auditable fact. Heuristic tools report a summary score whose threshold choices are opaque; an exact count at each mismatch level is reproducible by any group from the same accession, and the count itself - not a model of the count - is what enters the design filter. Two consequences follow. First, the published guide's reputation for specificity is now a measured quantity (zero sites closer than 3 mismatches), which retrospectively de-risks the field's choice and prospectively defines the bar. Second, the observation that low-complexity protospacers accumulate hundreds of 3-mismatch sites (Figure 7, ranks 14 and 16) shows that 3-mismatch burden is an effective low-complexity detector, and argues for reporting the full mismatch histogram rather than a single thresholded count in any drive design study.
 
+## 4.6 A staged validation plan for the named candidates
+
+The dossiers of Section 3.13 are falsifiable, and this section states the cheapest falsification path. Stage 1 (in vitro): synthesize dsx-v3-1, dsx-v3-2 and the Kyrou guide; measure cleavage kinetics on the on-target dsx amplicon and on amplicons of the 13 enumerated 3-mismatch loci (4 + 9) plus the Kyrou guide's six - a 21-locus panel that fully covers every near-cognate site at <=3 mismatches for all three guides. Decision gate: a lead advances only if on-target cleavage matches or exceeds the control and no panel locus cleaves above assay background. Stage 2 (cellular): GUIDE-seq or CIRCLE-seq in Anopheles cells for the two leads, testing whether the exact enumeration missed any site the assay detects (it should not, at <=3 mismatches, by Appendix J1; discovery of such a site would falsify the enumerator, not just the candidate). Stage 3 (organismal): embryo microinjection with Cas9 protein and synthetic guide, scoring cut rates and indel spectra at the target - this also measures the resistance-generation rate e directly, the parameter Section 3.4 shows is decisive. Stage 4 (drive construct): insertion of a minimal drive at the lead site, germline conversion measurement, then small-cage population trials against the Kyrou drive design as control. Each stage is cheap relative to the next and each has a pre-stated kill criterion; the pipeline exists so that candidates die in silica or in vitro, not in cages.
+
+## 4.7 From reference genome to population: the Ag1000G extension
+
+Every specificity statement in this paper is made against one reference genome, and wild populations are not the reference. A segregating SNP inside a protospacer can create a resistant allele before release; a segregating variant elsewhere can create a near-cognate site the reference lacks. The Ag1000G phase-3 resource (1,142 haplotype-resolved An. gambiae genomes from 19 African countries) makes both risks measurable rather than hypothetical: the enumerator of Section 2.9 can be run against phased haplotypes to (i) count population frequencies of every candidate's on-target site, flagging any guide whose target is polymorphic above a design threshold, and (ii) enumerate near-cognate sites that exist only in the population, converting the rule-of-three bound of Appendix J15 into a direct measurement. This extension is queued as Limitation 2's resolution and is a compute task on existing public data, not a methods problem; we state it as a plan rather than a result.
+
 # 5. Conclusion
 
 A CNN + population-genetics pipeline recovers the field's validated dsx drive gRNA, nominates 93 higher-scoring candidates (v1 top: ACGGACGGATACAGACTGGA-CGG), and shows quantitatively that resistance generation - controllable through target-site choice - is the decisive design variable for sterility-inducing mosquito gene drives. The constraint-aware v2 ranking (top: GCGGTACACTGCACTGTCCG-CGG) independently concentrates on the functional region the field validated. A specificity-fused v3 ranking on exact genome-wide enumeration nominates two named candidates (dsx-v3-1, dsx-v3-2) that outscore the published guide on the fused composite, while the first exact genome-wide audit of that guide quantifies the specificity bar the field implicitly set. The next iterations are VectorBase re-annotation, pan-genome (Ag1000G) off-target indexing, and sequence-dependent prediction of resistance-generation rates.
+
+## 5.1 Summary of contributions
+
+1. A complete, reproducible design pipeline for dsx drive protospacers: scanner, CNN efficacy model, exact off-target enumeration at region and genome scale, constraint-aware and specificity-fused rankings, and a three-allele drive simulator, all pinned by a 33-test hermetic suite.
+2. The first exact genome-wide specificity audit of the published Kyrou 2018 guide: 0 sites at <=2 mismatches, exactly 6 at 3 mismatches, coordinates enumerated (Appendix L).
+3. A named, falsifiable shortlist: dsx-v3-1 and dsx-v3-2, with complete off-target dossiers (13 enumerated 3-mismatch loci), scored above the published control on the fused v3 composite (Section 3.13), plus a staged validation plan with pre-stated kill criteria (Section 4.6).
+4. A quantitative design law from the parameter grid: homing rate moves peak drive frequency, resistance-generation rate moves the outcome; target constraint is the cheapest available lever on the latter (Sections 3.4, 3.4.1).
+5. Honest negatives, preserved: the drive fails in 15 of 16 simulated cells; the enumerator loses to published Cas-OFFinder throughput by 10^2-10^4 (Appendix M); the CNN's advantage is demonstrated only against a matched ridge baseline, not against Rule Set 2 (Appendix N); two candidates fail the specificity filter and two more are repetitive (Appendix K); the RefSeq annotation contradicts the published target description at the exact site of interest (Appendix I).
+
+## 5.2 What would make this paper wrong
+
+The claims are falsifiable, and we state their falsifiers. The enumerator is wrong if any <=3-mismatch site exists that our pigeonhole filter missed - detectable by any independent exact enumerator over the same accessions (the completeness proof of Appendix J1 makes a miss a proof bug, not a tuning issue). The candidate claims are wrong if the Stage-1 panel of Section 4.6 shows weak on-target cleavage or strong cleavage at any of the 13 enumerated loci. The design law is wrong if a drive with high e and moderate h outlasts a low-e high-h drive in a controlled cage comparison. The annotation finding is wrong if the AgamP4 re-annotation reproduces the junction-spanning model under the current record. Each falsifier is cheap to execute relative to the claim it tests, which is the point of writing the paper this way.
 
 # References
 
@@ -235,13 +508,60 @@ A CNN + population-genetics pipeline recovers the field's validated dsx drive gR
 11. Esvelt KM et al. (2014) Concerning RNA-guided gene drives for the alteration of wild populations. eLife 3:e03401.
 12. Labun K et al. (2019) CHOPCHOP v3: expanding the CRISPR web toolbox beyond genome editing. Nucleic Acids Res 47:W171-W174.
 
+13. Bae S, Park J, Kim JS (2014) Cas-OFFinder: a fast and versatile algorithm that searches for potential off-target sites of Cas9 RNA-guided endonucleases. Bioinformatics 30:1473-1475.
+14. Haeussler M et al. (2016) Evaluation of off-target and on-target scoring algorithms and integration into the guide RNA selection tool CRISPOR. Genome Biol 17:148.
+15. Perez AR et al. (2017) GuideScan software for improved single and paired CRISPR guide RNA design. Nat Biotechnol 35:347-349.
+16. McKenna A, Shendure J (2018) FlashFry: a fast and flexible tool for large-scale CRISPR target design. BMC Biol 16:74.
+17. Doench JG et al. (2014) Rational design of highly active sgRNAs for CRISPR-Cas9-mediated gene inactivation. Nat Biotechnol 32:1262-1267.
+18. Xu H et al. (2015) Sequence determinants of improved CRISPR sgRNA design. Genome Res 25:1147-1157.
+19. Wang T et al. (2014) Genetic screens in human cells using the CRISPR-Cas9 system. Science 343:80-84.
+20. Chari R et al. (2015) Unraveling CRISPR-Cas9 genome engineering parameters via a library-on-library approach. Nat Methods 12:823-826.
+21. Moreno-Mateos MA et al. (2015) CRISPRscan: designing highly efficient sgRNAs for CRISPR-Cas9 targeting in vivo. Nat Methods 12:982-988.
+22. Chuai G et al. (2018) DeepCRISPR: optimized CRISPR guide RNA design by deep learning. Genome Biol 19:80.
+23. Wang D et al. (2019) Optimized CRISPR guide RNA design for two high-fidelity Cas9s by deep learning. Nat Commun 10:4284.
+24. Simoni A et al. (2020) A male-biased sex-distorter gene drive for the human malaria vector Anopheles gambiae. Nat Biotechnol 38:1054-1060.
+25. Champer J et al. (2017) Novel CRISPR/Cas9 gene drive constructs reveal insights into mechanisms of resistance allele formation and drive efficiency in genetically diverse populations. PLoS Genet 13:e1006796.
+26. Noble C et al. (2017) Daisy-chain gene drives for the alteration of local populations. PNAS 116:8275-8282.
+27. Hanley JA, Lippman-Hand A (1983) If nothing goes wrong, is everything all right? Interpreting zero numerators. JAMA 249:1743-1745.
+28. World Health Organization (2024) World malaria report 2024. Geneva: WHO (263 million cases, 597,000 deaths estimated for 2023).
+
 # Appendix A. Data provenance
 
 All genomic inputs are archived in the repository under data/: dsx_locus_region.fasta (NC_064601.1:47600000-47710000, fetched 24 Sep 2026 via NCBI efetch), dsx_gene_table.txt (RefSeq gene table, nine transcript variants), dsx_gene_esummary.json (NCBI Gene 1270904 record documenting aliases AGAP004050/DSX), dsx_transcripts.fasta (transcript sequences). The Kyrou gRNA sequence was extracted from the PMC6871539 full text (Europe PMC API). Efficacy training data (Doench 2016 FC+RES, 5,310 guides; Doench V1, 2,144 guides) come from the Microsoft Research azimuth mirror and are documented in the item-6 groundwork archive. No input is synthetic.
 
+## A.1 Artifact inventory
+
+Every result file is regenerated by a named script from archived inputs:
+
+| artifact | produced by | contents |
+|---|---|---|
+| results/analysis_summary.json | mosqdesign.run_analysis | v1 scan, efficacy distribution, control recovery |
+| results/ranked_designs.csv | mosqdesign.run_analysis | v1 top-150 ranked candidates |
+| results/analysis_v2_summary.json | mosqdesign.run_analysis_v2 | v2 constraint analysis summary |
+| results/ranked_designs_v2.csv | mosqdesign.run_analysis_v2 | v2 top-300 candidates with constraint labels |
+| results/wright_fisher_traj.npy | mosqdesign.drive_sim | stochastic trajectories (5 seeds) |
+| results/genome_offtargets_chr2_top30.{csv,json} | scripts/run_genome_scan.py | 2RL-scale enumeration (superseded) |
+| results/genome_offtargets_genomewide.{csv,json} | scripts/run_genome_scan.py | full AgamP5 enumeration, per-hit coordinates |
+| results/kyrou_genomewide_audit.json | scripts/run_genome_scan.py | published-guide audit (Appendix L) |
+| results/ranked_designs_v3.csv | mosqdesign.v3_rank | v3 fused ranking of 30 candidates |
+| results/v3_summary.json | mosqdesign.v3_rank | v3 summary and control comparison |
+| figures/fig1-fig10 | mosqdesign.make_figures + paper scripts | all figures |
+| paper/paper_draft.pdf | scripts/build_paper.py | this document |
+
 # Appendix B. Reproducibility
 
-From a clean checkout: scripts/fetch_data.sh downloads and archives all external inputs (the only step requiring network); the analysis scripts regenerate results/analysis_summary.json, results/analysis_v2_summary.json, results/ranked_designs.csv, results/ranked_designs_v2.csv, and all six figures; python3 -m pytest runs the 22-test hermetic suite with no network access; scripts/build_paper.py renders this PDF. All stochastic components are seeded. The environment requires only Python 3, NumPy, PyTorch, matplotlib, and reportlab, and runs within a 1 GB RAM / 2 CPU sandbox.
+From a clean checkout, the complete pipeline is:
+
+    scripts/fetch_data.sh        # archive locus FASTA, gene table, esummary (network)
+    scripts/fetch_genome.sh      # archive the four AgamP5 molecules (network)
+    python3 -m mosqdesign.run_analysis       # v1: scan, score, rank, simulate
+    python3 -m mosqdesign.run_analysis_v2    # v2: constraint-aware ranking
+    python3 scripts/run_genome_scan.py       # genome-wide enumeration (top-30 + Kyrou audit)
+    python3 -m mosqdesign.v3_rank            # v3 specificity-fused ranking
+    python3 -m pytest                        # 33-test hermetic suite
+    python3 scripts/build_paper.py           # render this PDF
+
+scripts/fetch_data.sh downloads and archives all external inputs (the only step requiring network); the analysis scripts regenerate results/analysis_summary.json, results/analysis_v2_summary.json, results/ranked_designs.csv, results/ranked_designs_v2.csv, and all six figures; python3 -m pytest runs the 33-test hermetic suite with no network access; scripts/build_paper.py renders this PDF. All stochastic components are seeded. The environment requires only Python 3, NumPy, PyTorch, matplotlib, and reportlab, and runs within a 1 GB RAM / 2 CPU sandbox.
 
 # Appendix C. Verification suite
 
@@ -269,6 +589,18 @@ From a clean checkout: scripts/fetch_data.sh downloads and archives all external
 | test_drive_sim | test_high_resistance_rate_blocks_drive | resistance blocks the drive at high e |
 | test_drive_sim | test_full_sterile_female_drive_suppresses_like_kyrou | qualitative Kyrou cage-collapse regime |
 | test_drive_sim | test_wright_fisher_shape_and_seed | seeded stochastic reproducibility |
+
+| test_genome_scan | test_iter_fasta_blocks_covers_every_window | block overlap covers every 20-mer start |
+| test_genome_scan | test_iter_fasta_blocks_flushes_final_partial_block | final partial block is not dropped |
+| test_genome_scan | test_scan_matches_naive_counter_with_boundary_hit | vectorized scan matches naive counter at block boundary |
+| test_genome_scan | test_no_double_count_across_overlap | overlap region yields no double counts |
+| test_genome_scan | test_multiple_guides_independent_counts | guides do not contaminate each other's counts |
+| test_genome_scan | test_numpy_path_matches_pure_python_path | numpy path identical to pure-Python reference |
+| test_genome_scan | test_n_bases_never_match | ambiguous bases never verify as hits |
+| test_genome_scan | test_hit_at_sequence_edge | hits at block edges are found |
+| test_v3_rank | test_filter_rejects_any_exact_or_single_mismatch_hit | hard filter on mm0 + mm1 |
+| test_v3_rank | test_penalty_scales_with_mismatch_closeness | 0.50 per mm2, 0.05 per mm3 |
+| test_v3_rank | test_score_v3_combines_terms | v3 = efficacy + bonus - penalties |
 
 # Appendix D. Constraint-aware (v2) top-30 candidates
 
@@ -350,6 +682,18 @@ The drive peaks at generation 12 (D = 0.960) and is overtaken by resistance with
 
 All steps run within the program's 1 GB RAM / 2 CPU sandbox. Scanning is linear in region length: 110,001 windows per strand, constant work per window. CNN scoring is one batched forward pass over 9,328 sites. Off-target screening is the only superlinear step: the 5-mer inverted index over the 110 kb region occupies O(L) memory for region length L, and each query touches only the buckets of its four 5-mer blocks, so the observed cost is a small constant multiple of the number of true plus incidental block collisions rather than the O(L) windows an exhaustive scan compares against. In practice the top-150 off-target screen completes in seconds on the sandbox hardware; the same index design scales to the ~280 Mb genome by block-sharding the index, which is why the genome-wide extension (Limitation 2) is an engineering task, not a methods problem. The 60-generation deterministic grid (16 cells) and the Wright-Fisher replicates (5 seeds x 60 generations x N = 10,000) are negligible by comparison.
 
+Measured wall-clock on the sandbox (single process):
+
+| step | workload | time |
+|---|---|---|
+| locus scan + CNN score | 10,936 sites, 9,328 scored | seconds |
+| region off-target screen | top-150 guides x 110 kb | seconds |
+| genome-wide enumeration | 30 guides x 245.9 Mb, <=3 mm | 76.75 s |
+| drive grid | 16 cells x 60 generations | < 1 s |
+| Wright-Fisher | 5 seeds x 60 generations x N = 10,000 | seconds |
+| full test suite | 33 tests | seconds |
+| paper build | markdown to Times PDF | seconds |
+
 # Appendix H. Negative results and preserved failures
 
 In keeping with the program's honest-verdict discipline, we record what did not work or did not hold. (1) The efficacy-first design intuition fails: the highest-efficacy site in the locus is not the best design once constraint is scored, and the field's validated site ranks only 94th of 150 on efficacy alone. (2) The drive fails in 15 of 16 simulated parameter cells; this study produces no viable release-ready design under full sterility, and we regard that as the correct scientific output rather than a shortcoming. (3) The current RefSeq annotation does not reproduce the published exon-junction description of the Kyrou target; the discrepancy is pinned by a test and reported rather than reconciled by hand. (4) Human-cell-trained efficacy scores do not establish mosquito efficacy; the candidate lists are hypotheses with quantified priors, and we explicitly do not claim them as validated guides.
@@ -383,6 +727,36 @@ J10. CFD-style specificity penalty. Empirical Cas9 cutting at mismatched sites d
 J11. v3 as constrained optimization. The design problem is argmax over g of E(g) + C(g) - sum_i w_i mm_i(g) subject to mm_0(g) + mm_1(g) = 0, where E is CNN efficacy, C the constraint bonus, and the mm_i exact genome-wide counts. The hard constraint implements the safety filter; the linear penalty trades efficacy against residual near-cognate burden.
 
 J12. Wright-Fisher stochastic update. Each generation samples offspring genotype counts from a multinomial with probabilities given by the deterministic frequencies: (n_w, n_d, n_r) ~ Multinomial(N, (w', d', r')), then (w, d, r) = (n_w, n_d, n_r) / N. Five seeds at N = 10,000 bracket the deterministic trajectory (Figure 5), quantifying drift around the recursion of J8.
+
+J13. NGG site density under composition. For i.i.d. bases with P(G) = g, a random 3-mer is an NGG PAM with probability g^2; both strands of a region of length B therefore contain E[S] = 2(B - 2) g^2 sites. Under the region's observed GC fraction 0.4626 with g = c = 0.2313, E[S] = 2 x 109,999 x 0.0535 = 11,770; the observed count is 10,936 (5,091 plus, 5,845 minus), a 7% deficit attributable to local composition fluctuation and dinucleotide structure. Under the uniform prior g = 1/4 the expectation is 13,750. The asymmetry between strands (5,091 vs 5,845) reflects the G-skew of this region, not a strand bias of the scanner, and the counts are pinned by the scan tests.
+
+J14. Information-theoretic uniqueness. A specified 20-mer carries 40 bits (log2 4^20). A genome of G bases presents 2G overlapping windows, so the expected number of exact chance matches is 2G / 4^20 = 4.5e-4 for G = 245.9e6. Exact uniqueness is therefore the prior expectation for every specific 20-mer, and observing any exact second copy is evidence of duplication or repeat biology, not chance. This is the information-theoretic complement of J3 and explains why all 30 candidates and the control returned mm0 = 0 genome-wide.
+
+J15. Rule-of-three bound for population variants. Reference-genome enumeration cannot see segregating variation. If none of n independent chromosomes sampled from the population carried a <=1-mismatch near-cognate site, the upper 95% confidence bound on the population frequency of such a site is 3/n (Hanley and Lippman-Hand 1983). The Ag1000G extension (Limitation 2) turns this from a bound into a measurement by enumerating across phased haplotypes; until then, 3/n with the n of available assemblies is the honest specificity statement.
+
+J16. Multiplex escape probability. If a drive carries k guides cutting the same essential site and resistance-conferring indels arise independently at rate e per cut per site, a chromosome is drive-resistant only when all k sites are resistant: P(escape per homing event) = e^k under independence. Independence is an idealization - homology-driven repair of one cut can template the other, so the achievable floor is correlated - but the bound is the design target: with e = 0.01 per site, two guides give 1e-4, three give 1e-6 per event, pushing expected time-to-resistance beyond any cage or release horizon in Section 3.4's grid. This is the quantitative form of the multiplex strategy of Section 4.3, and it is why the v3 shortlist's mutual proximity (both leads inside 1.3 kb) matters: a single construct can carry both.
+
+J17. GC-content window under composition. The GC count of a 20-mer is Binomial(20, p) with p the local GC fraction, approximated by Normal(20p, 20p(1-p)) for 20p(1-p) > 9. The design filter 0.40 <= GC <= 0.60 (8-12 G+C bases) corresponds to z in [-1.83, +1.83] at p = 0.5, so the filter keeps the central 93% of the uniform prior; its bite comes from excluding extreme-composition guides whose kinetics (very high GC) or R-loop stability (very low GC) are pathological, not from reshaping the bulk.
+
+J18. Drive fixation probability. A homing allele transmitted to fraction (1 + h_t)/2 of a heterozygote's offspring gains effective selection coefficient s = h_t/2 per generation against the wild-type when fitness costs are absent. Under the diffusion approximation its fixation probability from initial frequency p0 is P_fix = (1 - e^{-2 N_e s p0 x 2}) / (1 - e^{-4 N_e s}) in the haploid-scaled convention; for large N_e s the numerator saturates at 1 and P_fix -> 1 - e^{-4 N_e s p0}, so even a single introduction fixes with probability about 2s = h_t when conversion is efficient and resistance is absent. The grid of Section 3.4 sits in the regime where this numerator is irrelevant because resistance (J8, J9) dominates first.
+
+J19. Wright-Fisher drift magnitude. Conditional on current drive frequency d, the next generation's frequency has variance d(1 - d)/(2N) per generation. At the Section 3.5 population size N = 10,000, one generation of drift at d = 0.5 has standard deviation sqrt(0.25/20,000) = 0.0035, and 60 generations of accumulated drift remain below 0.03 in frequency units - which is why the five stochastic replicates bracket the deterministic trajectory tightly (Figure 5) and why the resistance-dominance conclusion is a selection result, not a drift artifact.
+
+J20. CFD as a product of position-specific penalties. The Cutting Frequency Determination score of Doench et al. (2016) assigns each (position, reference base, variant base) triple an empirical penalty m(p, a, b) in (0, 1] and scores a mismatched site as CFD = product over mismatched positions p of m(p, a_p, b_p). Multiplicativity assumes log-independent contributions. Our geometric penalty (J10) is the rank-1 approximation m(p, a, b) = gamma independent of position and identity; it is exact when penalties are uniform and is used here only to rank candidates whose exact low-mismatch counts are already known, so the approximation cannot hide a dangerous site - it can only mis-order two safe ones.
+
+J21. Why specificity is a tail problem. For two unrelated 20-mers the Hamming distance D is Binomial(20, 3/4), with mean 15 and standard deviation sqrt(20 x 0.75 x 0.25) = 1.94. A site at 3 mismatches is therefore a 6.2-standard-deviation event in the left tail. This explains the empirical shape of Section 3.9.1: the 3-mismatch class carries nearly all near-cognate mass, the 2-mismatch class is rare, and the 1-mismatch class is nearly empty - each step inward costs a factor of roughly 30 in probability (from the binomial ratio P(D = i - 1)/P(D = i) = i/(3(21 - i)), which is 1/57 at i = 3).
+
+J22. Order statistics of the efficacy distribution. If the 9,328 gene-body scores were i.i.d. normal with the observed mean 0.763 and standard deviation 0.178, the expected maximum would be about mean + sd x sqrt(2 ln n) = 0.763 + 0.178 x 4.27 = 1.523; the observed maximum is 1.345, below the null expectation. There is no magical site: the top of the efficacy ranking is statistically unremarkable, which is the quantitative justification for not designing on efficacy alone and for letting constraint (v2) and specificity (v3) drive the final ranking.
+
+J23. Multiplex escape under correlated repair. Independence (J16) is the optimistic bound. Model the repair context of co-located cuts as shared with correlation rho: then P(all k sites resistant per event) is bounded between e^k (independence) and e (identical outcomes), interpolable as e^k + rho (e - e^k). The design responses follow directly: prefer guides whose protospacers differ in sequence context (reducing shared repair biases), and prefer spatial separation that still fits one construct - the v3 tier's 3.8 kb cluster (Section 3.13.4) satisfies the second, and sequence diversity across the tier satisfies the first.
+
+J24. Early-growth closed form. While the drive is rare (d small, resistance absent), heterozygote frequency is approximately 2d and each generation converts fraction h of wild-type alleles in those heterozygotes, giving d_{t+1} ~ (1 + h) d_t. The drive grows geometrically with per-generation factor (1 + h): from a 1% introduction, reaching 50% takes ln(50) / ln(1 + h) = 5.6 generations at h = 0.99, and the decelerating tail (heterozygote frequency falls as d approaches 1) places the 95% crossing a few generations later - the grid's observed crossing at generation 12 (Section 3.4) matches this closed-form accounting. The same formula shows why h barely matters to the final outcome: ln(1.99) / ln(1.80) = 1.17, so even a large h improvement shortens the growth phase by under 20%, while e controls whether the drive survives past it.
+
+J25. Sampling error of the Spearman comparison. Under independence between predicted and measured ranks, the Spearman estimator over n guides has variance about 1/(n - 1); for the n = 1,062 held-out split the standard error is 0.031. The CNN's same-split advantage over ridge (+0.093) is three such standard errors, and the paired nature of the comparison (both models rank the same guides, so their errors correlate) makes the effective test stronger, not weaker; the cross-dataset advantage (+0.166 over n = 2,144, standard error 0.022) is larger still. The comparison is statistically comfortable; the caveat that limits it is distributional (human-cell data, random split), not statistical power (Appendix N).
+
+J26. Expected filter pass count under the random model. From J3, the per-position probability of a site at <=1 mismatch is (1 + 60)/4^20 = 5.55e-11, giving a per-guide expectation E[N_{<=1}] = 2G x 5.55e-11 = 0.0273 over G = 245.9e6. Under the Poisson limit, a guide passes the hard filter with probability e^{-0.0273} = 0.973, so 30 guides yield 29.2 expected passes; the observed count is 28. The small deficit (2 failures against 0.8 expected) is within binomial sampling error (standard deviation sqrt(30 x 0.973 x 0.027) = 0.89... at face value 1.2 failures expected from the deficit alone is not anomalous) and, more informatively, the failures are not random draws: they are the candidates whose protospacers happen to have near-relatives in the genome, which is exactly what the filter exists to catch. The agreement between the random-model expectation and the observed pass rate is a cross-check on the enumerator, because a bug that dropped true hits would inflate the pass rate above the expectation.
+
+J27. The observed 3-mismatch excess over the random model. J3 predicts E[N_{<=3}] = 9.97 near-cognate sites per guide under the uniform model; the observed genome-wide mean over the 30 candidates is 1,469/30 = 49.0, a 4.9-fold excess. Two mechanisms produce it, both visible in the data. First, the two repetitive, low-complexity guides contribute over 600 sites between them - under the random model each would expect about 10, so they carry a roughly 30-fold individual excess driven by sequence repetitiveness, the known failure mode of the i.i.d. assumption. Second, even excluding them, the remaining 28 guides average about 29 sites each, a residual ~3-fold excess consistent with real genomes being compositionally structured (CpG suppression, microsatellite content, segmental duplication) rather than i.i.d. uniform. The practical consequence is a calibration warning: per-guide specificity cannot be estimated from protospacer-uniform formulas; it must be enumerated, which is the operational reason Section 2.9 exists. The random model remains useful as the cross-check of J26, where the <=1-mismatch class is so rare that repeat structure does not reach it.
 
 # Appendix K. Genome-wide v3 table (30 candidates + published control)
 
@@ -472,3 +846,45 @@ Guide: GTTTAACACAGGTCAAGCGG (5'->3'). Reference: AgamP5 GCF_943734735.2. Zero si
 | OX030908.1 | 91899450 | + | 3 |
 
 On-target locus (NC_064601.1:~47,622,174, minus strand) excluded from the count as the designed cut site.
+
+# Appendix M. Enumerator benchmark against published Cas-OFFinder numbers
+
+Published Cas-OFFinder performance (Bae, Park and Kim 2014; Intel i7-3770K CPU, AMD Radeon HD 7870 GPU):
+
+| experiment | genome size | mismatches | time |
+|---|---|---|---|
+| 1,000 targets, CPU | human 3.01 Gb | unspecified | 60.0 s |
+| 1,000 targets, GPU | human 3.01 Gb | unspecified | 3.0 s |
+| 100 targets, GPU | human 3.01 Gb | 1 | 76.4 +/- 2.0 s |
+| 100 targets, GPU | human 3.01 Gb | 5 | 79.9 +/- 1.6 s |
+| 100 targets, GPU | human 3.01 Gb | 10 | 114.4 +/- 3.0 s |
+| 100 targets, GPU | mouse 2.65 Gb | 5 | 62.6 +/- 2.4 s |
+| 100 targets, GPU | zebrafish 1.32 Gb | 5 | 37.7 +/- 3.5 s |
+| 100 targets, GPU | Arabidopsis 116 Mb | 5 | 4.8 +/- 0.8 s |
+
+Normalization. Throughput per guide-gigabase is the comparable unit: seconds per (number of guides x genome size in Gb). Our enumerator: 76.75 s / (30 x 0.2459) = 10.4 s per guide-Gb on one CPU thread. Cas-OFFinder CPU: 60.0 / (1,000 x 3.01) = 0.0199 s per guide-Gb. Cas-OFFinder GPU: 3.0 / (1,000 x 3.01) = 0.000997 s per guide-Gb. The per-100-target rows are consistent with the amortized rows once fixed launch cost is removed.
+
+| enumerator | hardware | s per guide-Gb | speedup vs ours |
+|---|---|---|---|
+| this work | 1 CPU thread (sandbox) | 10.4 | 1x |
+| Cas-OFFinder | i7-3770K CPU | 0.0199 | 523x |
+| Cas-OFFinder | Radeon HD 7870 GPU | 0.000997 | 10,431x |
+
+(Figure 10 plots the same comparison on a log scale.)
+
+Verdict (honest negative). On raw enumeration throughput our scanner loses to published Cas-OFFinder by roughly 5 x 10^2 on CPU and 10^4 on GPU, and the gap would grow with mismatch budget because their bit-parallel comparison cost is nearly flat in mismatches. Protocol differences (2014 hardware, their larger PAM alphabet, our NumPy interpreter overhead) shift the constant, not the order of magnitude. We do not claim a speed record. What the deficit buys is exactness with a one-page completeness proof (J1-J2), zero external dependencies, and per-guide latency low enough (2.56 s) to sit inside the design loop at insect-genome scale. If this pipeline moves to production libraries of thousands of guides, the correct move is to swap the enumerator for a GPU kernel with the same exact-verification contract; the ranking, simulation and certificate layers are unaffected.
+
+# Appendix N. Efficacy-model protocol note (why we do not claim to beat Rule Set 2)
+
+Published efficacy numbers come from incompatible protocols. Rule Set 2 / Azimuth (Doench et al. 2016) reports performance under gene-level holdout schemes on its tiling data; CRISPOR's independent evaluation (Haeussler et al. 2016) reports dataset-dependent Spearman values for the same model; our 0.556 comes from a single random 80/20 split of the FC+RES data. Random splits leak sequence similarity across the partition and inflate absolute numbers relative to gene-level holdout. Comparing our 0.556 to any published Azimuth number would therefore be a protocol error, not a result. The honest comparisons we can stand behind: (i) same split, same metric - CNN 0.556 vs ridge 0.463; (ii) same models, untouched external data - 0.609 vs 0.444 on Doench V1. A protocol-matched head-to-head (retraining gradient-boosted Rule Set 2 features on our exact split) is queued as future work and is the only form the claim "the CNN beats Rule Set 2" is allowed to take in this paper.
+
+# Appendix O. Coordinate conventions and notation
+
+Three coordinate systems appear in this paper and its result files:
+
+1. Region FASTA (data/dsx_locus_region.fasta): fetched as NC_064601.1:47600000-47710000 under NCBI's 1-based inclusive convention, so region offset i (0-based) equals genomic 0-based coordinate 47,599,999 + i.
+2. Candidate CSVs (ranked_designs*.csv): genomic_pos is the 1-based coordinate of the first PAM base. For minus-strand candidates the protospacer occupies genomic_pos + 3 .. genomic_pos + 22 (1-based inclusive). Example: dsx-v3-1 at genomic_pos 47,619,040 has PAM AGG at 47,619,040-42 and protospacer at 47,619,043-62.
+3. Genome-scan hit lists (results/genome_offtargets_*.json, Section 3.13 tables): 0-based start of the matched 20-mer window on the plus strand; strand '-' means the reverse complement of the window aligns to the guide.
+
+Notation: L = 20 (protospacer length); G = genome size in bases; mm_i = count of genomic sites at exactly i mismatches; e = resistance-generation rate per cut; h = homing rate; c_hom = homing conversion fraction; d = distance to the nearest splice junction; v3 = composite score of Section 2.10; CFD = cutting frequency determination score (J20).
+

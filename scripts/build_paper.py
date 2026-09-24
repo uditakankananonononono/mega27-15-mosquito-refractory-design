@@ -35,6 +35,8 @@ FIGURES = [
     ("fig6_constraint_landscape.png", "Figure 6. Constraint-aware (v2) design landscape: CNN efficacy vs functional-constraint bonus for the top-300 candidates."),
     ("fig7_genomewide_offtargets.png", "Figure 7. Exact genome-wide off-target burden of the v2 top-30 candidates and the published Kyrou guide, stacked by mismatch class (symlog scale; AgamP5, 246 Mb, <=3 mismatches)."),
     ("fig8_v3_ranking.png", "Figure 8. v3 composite ranking of the 28 filter-passing candidates against the published Kyrou 2018 guide (dashed line, v3 = 0.837). Red: named lead candidates dsx-v3-1 and dsx-v3-2."),
+    ("fig9_locus_map.png", "Figure 9. Design map of the dsx locus: v3 candidate protospacers (teal pass, grey fail, red named leads), the published Kyrou 2018 guide (magenta, below axis) and the female-specific exon (dashed)."),
+    ("fig10_enumerator_benchmark.png", "Figure 10. Enumerator throughput vs published Cas-OFFinder numbers, normalized to seconds per guide-Gb (log scale). Our enumerator is 523x slower than Cas-OFFinder CPU and 10,431x slower than GPU; see Appendix M for the honest reading."),
 ]
 
 
