@@ -127,7 +127,8 @@ def make_fig6() -> str:
     ax.set_ylabel("Constraint bonus (exon + splice proximity)")
     ax.set_title("Figure 6. Constraint-aware (v2) design landscape")
     ax.axhline(0.75, color="#C00000", ls="--", lw=1)
-    ax.annotate("135-bp exon cluster (Kyrou-adjacent)", xy=(1.10, 0.75), xytext=(0.55, 0.9),
+    ax.set_ylim(-0.05, 0.88)
+    ax.annotate("exonic + splice-proximal band (incl. 135-bp exon cluster)", xy=(1.10, 0.755), xytext=(0.58, 0.80),
                 arrowprops=dict(arrowstyle="->", color="#C00000"), fontsize=8, color="#C00000")
     fig.tight_layout()
     p = os.path.join(FIGURES, "fig6_constraint_landscape.png")
