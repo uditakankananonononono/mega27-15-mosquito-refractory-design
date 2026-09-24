@@ -1,0 +1,5361 @@
+{
+  "tool": "SnpEff 4.3t (pcingola/SnpEff; Cingolani et al. 2012, Fly)",
+  "database": "custom AgamP4 2R DB (Ensembl Metazoa AgamP4.63 GFF3 + dna_sm FASTA, chromosome 2R only - build-box memory constraint, documented); annotation in the Ag1000G-native AgamP4 coordinate system after an AgamP5-coordinate first pass was rejected as a namespace mismatch",
+  "source": "distinct (pos, ref, alt) sites from the 4,693-sample Ag1000G dsx-window scan (results/ag1000g/on_target.jsonl), GT allele-index resolved",
+  "n_sites": 3897,
+  "effect_classes": {
+    "3_prime_UTR_variant": 1852,
+    "missense_variant": 1033,
+    "synonymous_variant": 582,
+    "intron_variant": 331,
+    "stop_gained": 42,
+    "splice_region_variant&intron_variant": 34,
+    "splice_acceptor_variant&intron_variant": 5,
+    "splice_region_variant": 4,
+    "stop_lost": 4,
+    "missense_variant&splice_region_variant": 4,
+    "splice_donor_variant&intron_variant": 3,
+    "splice_region_variant&synonymous_variant": 2,
+    "stop_retained_variant": 1
+  },
+  "n_target_window_sites": 93,
+  "target_window_sites": [
+    {
+      "pos": 48711498,
+      "ref": "C",
+      "alt": "A",
+      "ac": 6,
+      "targets": [
+        "dsx-v3-1_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711498,
+      "ref": "C",
+      "alt": "T",
+      "ac": 443,
+      "targets": [
+        "dsx-v3-1_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711499,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711499,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711500,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711500,
+      "ref": "C",
+      "alt": "T",
+      "ac": 5733,
+      "targets": [
+        "dsx-v3-1_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711501,
+      "ref": "A",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711501,
+      "ref": "A",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711501,
+      "ref": "A",
+      "alt": "T",
+      "ac": 205,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711502,
+      "ref": "C",
+      "alt": "G",
+      "ac": 13,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711503,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711503,
+      "ref": "C",
+      "alt": "T",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711504,
+      "ref": "C",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711505,
+      "ref": "T",
+      "alt": "C",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711505,
+      "ref": "T",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711506,
+      "ref": "A",
+      "alt": "C",
+      "ac": 148,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711506,
+      "ref": "A",
+      "alt": "G",
+      "ac": 13,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711506,
+      "ref": "A",
+      "alt": "T",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711507,
+      "ref": "C",
+      "alt": "A",
+      "ac": 757,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711507,
+      "ref": "C",
+      "alt": "T",
+      "ac": 2005,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711508,
+      "ref": "C",
+      "alt": "T",
+      "ac": 26,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711509,
+      "ref": "G",
+      "alt": "A",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711510,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711510,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711510,
+      "ref": "C",
+      "alt": "T",
+      "ac": 1998,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711511,
+      "ref": "T",
+      "alt": "A",
+      "ac": 5049,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711511,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711511,
+      "ref": "T",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711512,
+      "ref": "T",
+      "alt": "A",
+      "ac": 4,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711514,
+      "ref": "C",
+      "alt": "A",
+      "ac": 19,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711514,
+      "ref": "C",
+      "alt": "T",
+      "ac": 19,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711515,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711516,
+      "ref": "A",
+      "alt": "G",
+      "ac": 3046,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711517,
+      "ref": "C",
+      "alt": "G",
+      "ac": 7,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711517,
+      "ref": "C",
+      "alt": "T",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711518,
+      "ref": "C",
+      "alt": "T",
+      "ac": 13,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711519,
+      "ref": "C",
+      "alt": "A",
+      "ac": 3,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711519,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48711519,
+      "ref": "C",
+      "alt": "T",
+      "ac": 5,
+      "targets": [
+        "dsx-v3-1_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712762,
+      "ref": "C",
+      "alt": "G",
+      "ac": 12,
+      "targets": [
+        "dsx-v3-2_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712762,
+      "ref": "C",
+      "alt": "T",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712764,
+      "ref": "A",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712765,
+      "ref": "A",
+      "alt": "G",
+      "ac": 9036,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712765,
+      "ref": "A",
+      "alt": "T",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712766,
+      "ref": "C",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712766,
+      "ref": "C",
+      "alt": "T",
+      "ac": 10,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712769,
+      "ref": "T",
+      "alt": "C",
+      "ac": 201,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712769,
+      "ref": "T",
+      "alt": "G",
+      "ac": 3,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712770,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712770,
+      "ref": "T",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712771,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712771,
+      "ref": "C",
+      "alt": "T",
+      "ac": 3,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712772,
+      "ref": "G",
+      "alt": "A",
+      "ac": 7,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712773,
+      "ref": "T",
+      "alt": "A",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712773,
+      "ref": "T",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712774,
+      "ref": "A",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712775,
+      "ref": "G",
+      "alt": "A",
+      "ac": 5,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712775,
+      "ref": "G",
+      "alt": "C",
+      "ac": 214,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712775,
+      "ref": "G",
+      "alt": "T",
+      "ac": 5,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712776,
+      "ref": "G",
+      "alt": "T",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712778,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712778,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712778,
+      "ref": "C",
+      "alt": "T",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712781,
+      "ref": "A",
+      "alt": "C",
+      "ac": 4,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712781,
+      "ref": "A",
+      "alt": "T",
+      "ac": 153,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712782,
+      "ref": "A",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712783,
+      "ref": "T",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712783,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712783,
+      "ref": "T",
+      "alt": "G",
+      "ac": 4,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712784,
+      "ref": "G",
+      "alt": "A",
+      "ac": 115,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712784,
+      "ref": "G",
+      "alt": "C",
+      "ac": 14,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714637,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714638,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714638,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "kyrou_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714640,
+      "ref": "C",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714641,
+      "ref": "C",
+      "alt": "A",
+      "ac": 3,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714641,
+      "ref": "C",
+      "alt": "T",
+      "ac": 102,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714644,
+      "ref": "T",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714644,
+      "ref": "T",
+      "alt": "C",
+      "ac": 2,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "synonymous_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "synonymous_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714646,
+      "ref": "G",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant&splice_region_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant&splice_region_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714648,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant&splice_region_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant&splice_region_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714649,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_acceptor_variant&intron_variant",
+          "impact": "HIGH",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_acceptor_variant&intron_variant",
+      "worst_impact": "HIGH",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714650,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_acceptor_variant&intron_variant",
+          "impact": "HIGH",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_acceptor_variant&intron_variant",
+      "worst_impact": "HIGH",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714652,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_region_variant&intron_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_region_variant&intron_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714652,
+      "ref": "T",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_region_variant&intron_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_region_variant&intron_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714654,
+      "ref": "T",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_region_variant&intron_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_region_variant&intron_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714655,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_region_variant&intron_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_region_variant&intron_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714655,
+      "ref": "T",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_region_variant&intron_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_region_variant&intron_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714656,
+      "ref": "A",
+      "alt": "G",
+      "ac": 227,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_region_variant&intron_variant",
+          "impact": "LOW",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_region_variant&intron_variant",
+      "worst_impact": "LOW",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714657,
+      "ref": "A",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714658,
+      "ref": "A",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714659,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714659,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "intron_variant",
+      "worst_impact": "MODIFIER",
+      "gene": "AGAP004050-RA-E6"
+    }
+  ],
+  "n_protein_altering_target_sites": 28,
+  "protein_altering_target_sites": [
+    {
+      "pos": 48712762,
+      "ref": "C",
+      "alt": "G",
+      "ac": 12,
+      "targets": [
+        "dsx-v3-2_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712762,
+      "ref": "C",
+      "alt": "T",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712764,
+      "ref": "A",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712765,
+      "ref": "A",
+      "alt": "T",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712769,
+      "ref": "T",
+      "alt": "G",
+      "ac": 3,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712770,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712770,
+      "ref": "T",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712771,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712771,
+      "ref": "C",
+      "alt": "T",
+      "ac": 3,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712773,
+      "ref": "T",
+      "alt": "A",
+      "ac": 2,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712773,
+      "ref": "T",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712774,
+      "ref": "A",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712776,
+      "ref": "G",
+      "alt": "T",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712778,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712778,
+      "ref": "C",
+      "alt": "G",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712781,
+      "ref": "A",
+      "alt": "C",
+      "ac": 4,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712782,
+      "ref": "A",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712783,
+      "ref": "T",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712783,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712783,
+      "ref": "T",
+      "alt": "G",
+      "ac": 4,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48712784,
+      "ref": "G",
+      "alt": "C",
+      "ac": 14,
+      "targets": [
+        "dsx-v3-2_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "3_prime_UTR_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714637,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_PAM"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714640,
+      "ref": "C",
+      "alt": "G",
+      "ac": 2,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714644,
+      "ref": "T",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714646,
+      "ref": "G",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant&splice_region_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant&splice_region_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714648,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "missense_variant&splice_region_variant",
+          "impact": "MODERATE",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "missense_variant&splice_region_variant",
+      "worst_impact": "MODERATE",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714649,
+      "ref": "C",
+      "alt": "A",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_acceptor_variant&intron_variant",
+          "impact": "HIGH",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_acceptor_variant&intron_variant",
+      "worst_impact": "HIGH",
+      "gene": "AGAP004050-RA-E6"
+    },
+    {
+      "pos": 48714650,
+      "ref": "T",
+      "alt": "C",
+      "ac": 1,
+      "targets": [
+        "kyrou_proto"
+      ],
+      "effects": [
+        {
+          "effect": "splice_acceptor_variant&intron_variant",
+          "impact": "HIGH",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RB"
+        },
+        {
+          "effect": "intron_variant",
+          "impact": "MODIFIER",
+          "gene": "AGAP004050-RA-E6",
+          "transcript": "transcript:AGAP004050-RA"
+        },
+        {
+          "effect": "intragenic_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RA"
+        },
+        {
+          "effect": "non_coding_transcript_variant",
+          "impact": "MODIFIER",
+          "gene": "gene:AGAP004050",
+          "transcript": "AGAP004050-RB"
+        }
+      ],
+      "worst_effect": "splice_acceptor_variant&intron_variant",
+      "worst_impact": "HIGH",
+      "gene": "AGAP004050-RA-E6"
+    }
+  ],
+  "per_guide_impact_of_variant_sites": {
+    "dsx-v3-1|MODIFIER": 39,
+    "dsx-v3-2|LOW": 11,
+    "dsx-v3-2|MODERATE": 21,
+    "kyrou|HIGH": 2,
+    "kyrou|LOW": 11,
+    "kyrou|MODERATE": 5,
+    "kyrou|MODIFIER": 4
+  },
+  "nested_gene_note": "the nested aminopeptidase N-like gene LOC11175624 (47,636,160-47,639,924) lies ~97 kb outside the scanned window, so this annotation makes no statement about it; it remains a Prodigal/miniprot design caveat only"
+}
