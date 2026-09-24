@@ -1,0 +1,28 @@
+{
+ "tool": "NCBI BLAST+ 2.17.0 (blastn -task blastn-short, word_size 7, dust off, evalue 1000), local DB from the four archived AgamP5 molecules (makeblastdb)",
+ "query": "23-mer protospacer+PAM units of dsx-v3-1, dsx-v3-2, kyrou",
+ "db": "AgamP5 NC_064601.1 + OX030909.1 + OX030908.1 + OX030910.2 (~246 Mb)",
+ "full_length_hits": {
+  "dsx-v3-1": {
+   "exact_mm0": 1,
+   "near_mm1_to_6plus": 0,
+   "site": "NC_064601.1:47,619,040-47,619,062 (minus)"
+  },
+  "dsx-v3-2": {
+   "exact_mm0": 1,
+   "near_mm1_to_6plus": 0,
+   "site": "NC_064601.1:47,620,304-47,620,326 (minus)"
+  },
+  "kyrou": {
+   "exact_mm0": 1,
+   "near_mm1_to_6plus": 0,
+   "site": "NC_064601.1:47,622,174-47,622,196 (minus)"
+  }
+ },
+ "partial_hsps": {
+  "dsx-v3-1": 751,
+  "dsx-v3-2": 640,
+  "kyrou": 780
+ },
+ "reading": "An alignment-based search engine with independent indexing and scoring confirms the aligner-free enumerator's central specificity claim: over the full 23-nt cleavage-relevant unit, every guide has exactly one ungapped full-length genomic hit - its own site, at the cross-assembly-verified coordinate - and zero full-length hits at any non-zero mismatch count. The 2,171 shorter/gapped HSPs are sub-23-bp partial matches, below the cleavage-relevant unit, and do not contradict the <=3-mismatch 23-mer uniqueness result of Section 4.10."
+}
