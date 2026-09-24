@@ -1,0 +1,58 @@
+{
+ "guide": "GTTTAACACAGGTCAAGCGG",
+ "reference": "AgamP5 GCF_943734735.2 full genome (2RL+X+3RL+MT)",
+ "max_mismatches": 3,
+ "on_target_excluded_approx_0based": 47622173,
+ "counts": {
+  "0": 0,
+  "1": 0,
+  "2": 0,
+  "3": 6
+ },
+ "total_le3": 6,
+ "elapsed_seconds": 8.61,
+ "hits": [
+  {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "chrom": "NC_064601.1",
+   "position": 41285162,
+   "strand": "-",
+   "mismatches": 3
+  },
+  {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "chrom": "OX030909.1",
+   "position": 6534277,
+   "strand": "-",
+   "mismatches": 3
+  },
+  {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "chrom": "OX030909.1",
+   "position": 14585141,
+   "strand": "-",
+   "mismatches": 3
+  },
+  {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "chrom": "OX030908.1",
+   "position": 7690618,
+   "strand": "-",
+   "mismatches": 3
+  },
+  {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "chrom": "OX030908.1",
+   "position": 81101940,
+   "strand": "+",
+   "mismatches": 3
+  },
+  {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "chrom": "OX030908.1",
+   "position": 91899450,
+   "strand": "+",
+   "mismatches": 3
+  }
+ ]
+}

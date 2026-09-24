@@ -1,4 +1,5 @@
 {
+ "reference": "AgamP5 GCF_943734735.2 full genome (2RL+X+3RL+MT, ~246 Mb)",
  "control_kyrou": {
   "protospacer": "GTTTAACACAGGTCAAGCGG",
   "strand": "-",
@@ -6,15 +7,15 @@
   "efficacy": 1.137,
   "constraint_bonus": 0.0,
   "constraint_label": "published control (Kyrou 2018); intronic in current RefSeq model",
-  "chr2_mm0": 0,
-  "chr2_mm1": 0,
-  "chr2_mm2": 0,
-  "chr2_mm3": 1,
+  "gw_mm0": 0,
+  "gw_mm1": 0,
+  "gw_mm2": 0,
+  "gw_mm3": 6,
   "specificity_filter": "pass",
-  "score_v3": 1.087,
+  "score_v3": 0.837,
   "rank_v3": "control"
  },
  "n_pass": 28,
  "n_fail": 2,
- "scoring": "v3 = efficacy + constraint_bonus - 0.50*mm2 - 0.05*mm3; hard filter mm0+mm1==0; chromosome 2 (NC_064601.1) exact enumeration"
+ "scoring": "v3 = efficacy + constraint_bonus - 0.50*mm2 - 0.05*mm3; hard filter mm0+mm1==0; exact genome-wide enumeration"
 }
