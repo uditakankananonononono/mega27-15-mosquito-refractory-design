@@ -1,6 +1,6 @@
 """Full Ag1000G dsx-window scan (AgamP4 2R:48,711,450-48,714,700).
 
-Threaded (4 workers - 8 triggered server-side throttling at sample ~590),
+Threaded (WORKERS below - 8 triggered server-side throttling at sample ~590),
 checkpointed. Appends one JSONL row per sample to
 results/ag1000g/on_target.jsonl; skips samples already recorded.
 Keeps ALL non-ref calls in the window with their GQ/DP recorded (no quality
@@ -24,7 +24,7 @@ TARGETS = {
     "kyrou_proto":    (48714640, 48714659),
     "kyrou_PAM":      (48714637, 48714639),
 }
-WORKERS = 4
+WORKERS = 4  # 4->2 at 22:58, reverted 2->4 at 23:28 IST 2026-09-24 per Main 23:25 directive: 4w kill-and-relaunch ~17 rows/min effective beats 2w lumpy ~4-13 (Appendix Q)
 
 def fetch_sample(sid):
     t0 = time.time()

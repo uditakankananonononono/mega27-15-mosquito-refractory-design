@@ -52,7 +52,7 @@
         "39": 2,
         "40": 3
       },
-      "standing_compromised_AF_r0": 0.013605442176870748,
+      "standing_compromised_AF_r0": 0.4010227999147667,
       "e_interval": [
         3.434343434343435e-05,
         0.06868686868686869
@@ -68,12 +68,12 @@
         "e_low": {
           "e": 3.434343434343435e-05,
           "gen_to_95pct_drive": null,
-          "gen_to_50pct_resistance": 13
+          "gen_to_50pct_resistance": 11
         },
         "e_high": {
           "e": 0.06868686868686869,
           "gen_to_95pct_drive": null,
-          "gen_to_50pct_resistance": 12
+          "gen_to_50pct_resistance": 11
         }
       }
     },
@@ -115,7 +115,7 @@
         "39": 4,
         "40": 2
       },
-      "standing_compromised_AF_r0": 0.0,
+      "standing_compromised_AF_r0": 0.02961858086511826,
       "e_interval": [
         1.7994858611825194e-05,
         0.03598971722365039
@@ -130,13 +130,13 @@
       "drive_consequences": {
         "e_low": {
           "e": 1.7994858611825194e-05,
-          "gen_to_95pct_drive": 12,
-          "gen_to_50pct_resistance": 16
+          "gen_to_95pct_drive": null,
+          "gen_to_50pct_resistance": 12
         },
         "e_high": {
           "e": 0.03598971722365039,
           "gen_to_95pct_drive": null,
-          "gen_to_50pct_resistance": 14
+          "gen_to_50pct_resistance": 12
         }
       }
     },
@@ -179,7 +179,7 @@
         "39": 4,
         "40": 4
       },
-      "standing_compromised_AF_r0": 0.0,
+      "standing_compromised_AF_r0": 0.031110164074152995,
       "e_interval": [
         2.1122112211221125e-05,
         0.042244224422442245
@@ -194,13 +194,13 @@
       "drive_consequences": {
         "e_low": {
           "e": 2.1122112211221125e-05,
-          "gen_to_95pct_drive": 12,
-          "gen_to_50pct_resistance": 16
+          "gen_to_95pct_drive": null,
+          "gen_to_50pct_resistance": 12
         },
         "e_high": {
           "e": 0.042244224422442245,
           "gen_to_95pct_drive": null,
-          "gen_to_50pct_resistance": 14
+          "gen_to_50pct_resistance": 12
         }
       }
     }
