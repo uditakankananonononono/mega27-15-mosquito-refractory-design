@@ -386,39 +386,77 @@ J12. Wright-Fisher stochastic update. Each generation samples offspring genotype
 
 # Appendix K. Genome-wide v3 table (30 candidates + published control)
 
-| rank_v3 | protospacer | strand | pos (NC_064601.1) | efficacy | constraint | mm0 | mm1 | mm2 | mm3 | filter | v3 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | TGGGCAGTATGCGTTAGGGT | - | 47619040 | 0.925 | intronic/intergenic,splice_proximal(d=8) | 0 | 0 | 0 | 4 | pass | 1.2248 |
-| 2 | CATTAAGACCTACGAAGCGC | - | 47620304 | 0.900 | exonic(23/23),splice_proximal(d=10) | 0 | 0 | 0 | 9 | pass | 1.2004 |
-| 3 | GAAGCGAGCCCAATGGCTGT | - | 47622796 | 0.937 | exonic(23/23),splice_proximal(d=13) | 0 | 0 | 0 | 10 | pass | 1.1867 |
-| 4 | CCCGAGCCGCAGCATATGGG | - | 47692039 | 0.750 | exonic(22/23),splice_proximal(d=0) | 0 | 0 | 0 | 8 | pass | 1.1001 |
-| 5 | TGCAGTGAAACCCGCGTGGA | - | 47695204 | 1.285 | exonic(23/23) | 0 | 0 | 0 | 10 | pass | 1.0349 |
-| 6 | TTACCAGGTAGGAGATTTAC | + | 47655247 | 0.682 | exonic(19/23),splice_proximal(d=0) | 0 | 0 | 0 | 8 | pass | 1.0317 |
-| 7 | CTAGCTCGTCGTCTGAAATG | + | 47622820 | 0.952 | exonic(12/23),splice_proximal(d=0) | 0 | 0 | 0 | 14 | pass | 1.0023 |
-| 8 | ACTAGCTCGTCGTCTGAAAT | + | 47622819 | 0.749 | exonic(13/23),splice_proximal(d=0) | 0 | 0 | 0 | 10 | pass | 0.9992 |
-| 9 | GCGGTACACTGCACTGTCCG | + | 47619081 | 1.209 | exonic(23/23),splice_proximal(d=11) | 0 | 0 | 1 | 12 | pass | 0.8589 |
-| 10 | AGCTAGTGAAGCGAGCCCAA | - | 47622803 | 1.101 | exonic(23/23),splice_proximal(d=6) | 0 | 0 | 1 | 11 | pass | 0.8011 |
-| 11 | GAACCTGTAAATCTCCTACC | - | 47655250 | 0.901 | exonic(22/23),splice_proximal(d=0) | 0 | 0 | 1 | 9 | pass | 0.7013 |
-| 12 | TCGAGGAAGCGATGGTGCTA | + | 47693451 | 0.841 | exonic(23/23),splice_proximal(d=10) | 0 | 0 | 1 | 12 | pass | 0.4906 |
-| 13 | GGTAGGAGATTTACAGGTTC | + | 47655253 | 0.678 | exonic(23/23),splice_proximal(d=2) | 0 | 0 | 1 | 9 | pass | 0.4784 |
-| 14 | CACTAGCTCGTCGTCTGAAA | + | 47622818 | 0.698 | exonic(14/23),splice_proximal(d=0) | 0 | 0 | 1 | 10 | pass | 0.4481 |
-| 15 | TATGCTGCGGCTCGGGAACG | + | 47692046 | 0.698 | exonic(23/23),splice_proximal(d=6) | 0 | 0 | 0 | 20 | pass | 0.4475 |
-| 16 | ACCTCTCCGAACGTTTGCAT | - | 47700884 | 0.702 | exonic(23/23),splice_proximal(d=14) | 0 | 0 | 1 | 13 | pass | 0.3022 |
-| 17 | CCGTTGCAGTGAAACCCGCG | - | 47695208 | 1.203 | exonic(23/23) | 0 | 0 | 1 | 14 | pass | 0.2527 |
-| 18 | TACTTACCTCCCATATGCTG | + | 47692033 | 0.958 | exonic(16/23),splice_proximal(d=0) | 0 | 0 | 2 | 21 | pass | -0.3421 |
-| 19 | TGCGGCTCGGGAACGTGGTG | + | 47692051 | 0.880 | exonic(23/23),splice_proximal(d=11) | 0 | 0 | 2 | 21 | pass | -0.4196 |
-| 20 | GTCGAGGAAGCGATGGTGCT | + | 47693450 | 0.676 | exonic(23/23),splice_proximal(d=11) | 0 | 0 | 2 | 17 | pass | -0.4235 |
-| 21 | GCACACCAGCGGATCGACGA | - | 47622696 | 0.994 | exonic(22/23),splice_proximal(d=0) | 0 | 0 | 3 | 22 | pass | -0.8559 |
-| 22 | ACACTTACCTTTTTGTACAG | + | 47619062 | 0.935 | exonic(15/23),splice_proximal(d=0) | 0 | 0 | 3 | 23 | pass | -0.9647 |
-| 23 | ACGGACGGATACAGACTGGA | + | 47619412 | 1.345 | exonic(23/23) | 0 | 0 | 1 | 47 | pass | -1.2553 |
-| 24 | GTGCGAAGCGCACGAAACAC | + | 47700905 | 0.711 | exonic(16/23),splice_proximal(d=0) | 0 | 0 | 5 | 20 | pass | -2.0392 |
-| 25 | ATGTACAAAAAGCACACCAG | - | 47622707 | 1.072 | exonic(23/23),splice_proximal(d=10) | 0 | 0 | 4 | 57 | pass | -3.0284 |
-| 26 | TGTGTCGTTTACCTTTTTGG | + | 47620325 | 0.865 | exonic(12/23),splice_proximal(d=0) | 0 | 0 | 6 | 61 | pass | -4.435 |
-| 27 | GCTTACCTTCGTCGATCCGC | + | 47622691 | 0.830 | exonic(17/23),splice_proximal(d=0) | 0 | 0 | 4 | 456 | pass | -23.2198 |
-| 28 | GCGGATCGACGAAGGTAAGC | - | 47622688 | 0.756 | exonic(14/23),splice_proximal(d=0) | 0 | 0 | 4 | 456 | pass | -23.2937 |
-|  | CAGTGTACCGCTGTACAAAA | - | 47619069 | 0.973 | exonic(22/23),splice_proximal(d=0) | 0 | 1 | 5 | 39 | FAIL |  |
-|  | ACGGTGGCGCGCGAGCGAGA | - | 47696369 | 0.672 | exonic(23/23),splice_proximal(d=2) | 0 | 1 | 2 | 46 | FAIL |  |
-| control | GTTTAACACAGGTCAAGCGG | - | 47622174 | 1.137 | published guide (Kyrou 2018) | 0 | 0 | 0 | 6 | pass | 0.837 |
+Identity and score columns; mismatch counts in Table K2.
+
+| rank_v3 | protospacer | str | pos (NC_064601.1) | efficacy | v3 |
+|---|---|---|---|---|---|
+| 1 | TGGGCAGTATGCGTTAGGGT | - | 47619040 | 0.925 | 1.2248 |
+| 2 | CATTAAGACCTACGAAGCGC | - | 47620304 | 0.900 | 1.2004 |
+| 3 | GAAGCGAGCCCAATGGCTGT | - | 47622796 | 0.937 | 1.1867 |
+| 4 | CCCGAGCCGCAGCATATGGG | - | 47692039 | 0.750 | 1.1001 |
+| 5 | TGCAGTGAAACCCGCGTGGA | - | 47695204 | 1.285 | 1.0349 |
+| 6 | TTACCAGGTAGGAGATTTAC | + | 47655247 | 0.682 | 1.0317 |
+| 7 | CTAGCTCGTCGTCTGAAATG | + | 47622820 | 0.952 | 1.0023 |
+| 8 | ACTAGCTCGTCGTCTGAAAT | + | 47622819 | 0.749 | 0.9992 |
+| 9 | GCGGTACACTGCACTGTCCG | + | 47619081 | 1.209 | 0.8589 |
+| 10 | AGCTAGTGAAGCGAGCCCAA | - | 47622803 | 1.101 | 0.8011 |
+| 11 | GAACCTGTAAATCTCCTACC | - | 47655250 | 0.901 | 0.7013 |
+| 12 | TCGAGGAAGCGATGGTGCTA | + | 47693451 | 0.841 | 0.4906 |
+| 13 | GGTAGGAGATTTACAGGTTC | + | 47655253 | 0.678 | 0.4784 |
+| 14 | CACTAGCTCGTCGTCTGAAA | + | 47622818 | 0.698 | 0.4481 |
+| 15 | TATGCTGCGGCTCGGGAACG | + | 47692046 | 0.698 | 0.4475 |
+| 16 | ACCTCTCCGAACGTTTGCAT | - | 47700884 | 0.702 | 0.3022 |
+| 17 | CCGTTGCAGTGAAACCCGCG | - | 47695208 | 1.203 | 0.2527 |
+| 18 | TACTTACCTCCCATATGCTG | + | 47692033 | 0.958 | -0.3421 |
+| 19 | TGCGGCTCGGGAACGTGGTG | + | 47692051 | 0.880 | -0.4196 |
+| 20 | GTCGAGGAAGCGATGGTGCT | + | 47693450 | 0.676 | -0.4235 |
+| 21 | GCACACCAGCGGATCGACGA | - | 47622696 | 0.994 | -0.8559 |
+| 22 | ACACTTACCTTTTTGTACAG | + | 47619062 | 0.935 | -0.9647 |
+| 23 | ACGGACGGATACAGACTGGA | + | 47619412 | 1.345 | -1.2553 |
+| 24 | GTGCGAAGCGCACGAAACAC | + | 47700905 | 0.711 | -2.0392 |
+| 25 | ATGTACAAAAAGCACACCAG | - | 47622707 | 1.072 | -3.0284 |
+| 26 | TGTGTCGTTTACCTTTTTGG | + | 47620325 | 0.865 | -4.435 |
+| 27 | GCTTACCTTCGTCGATCCGC | + | 47622691 | 0.830 | -23.2198 |
+| 28 | GCGGATCGACGAAGGTAAGC | - | 47622688 | 0.756 | -23.2937 |
+|  | CAGTGTACCGCTGTACAAAA | - | 47619069 | 0.973 |  |
+|  | ACGGTGGCGCGCGAGCGAGA | - | 47696369 | 0.672 |  |
+| control | GTTTAACACAGGTCAAGCGG | - | 47622174 | 1.137 | 0.837 |
+
+Table K2. Exact genome-wide off-target counts by mismatch class (AgamP5, 246 Mb) with the hard-filter outcome.
+
+| protospacer | mm0 | mm1 | mm2 | mm3 | filter | constraint |
+|---|---|---|---|---|---|---|
+| TGGGCAGTATGCGTTAGGGT | 0 | 0 | 0 | 4 | pass | intronic/intergenic,splice_proximal(d=8) |
+| CATTAAGACCTACGAAGCGC | 0 | 0 | 0 | 9 | pass | exonic(23/23),splice_proximal(d=10) |
+| GAAGCGAGCCCAATGGCTGT | 0 | 0 | 0 | 10 | pass | exonic(23/23),splice_proximal(d=13) |
+| CCCGAGCCGCAGCATATGGG | 0 | 0 | 0 | 8 | pass | exonic(22/23),splice_proximal(d=0) |
+| TGCAGTGAAACCCGCGTGGA | 0 | 0 | 0 | 10 | pass | exonic(23/23) |
+| TTACCAGGTAGGAGATTTAC | 0 | 0 | 0 | 8 | pass | exonic(19/23),splice_proximal(d=0) |
+| CTAGCTCGTCGTCTGAAATG | 0 | 0 | 0 | 14 | pass | exonic(12/23),splice_proximal(d=0) |
+| ACTAGCTCGTCGTCTGAAAT | 0 | 0 | 0 | 10 | pass | exonic(13/23),splice_proximal(d=0) |
+| GCGGTACACTGCACTGTCCG | 0 | 0 | 1 | 12 | pass | exonic(23/23),splice_proximal(d=11) |
+| AGCTAGTGAAGCGAGCCCAA | 0 | 0 | 1 | 11 | pass | exonic(23/23),splice_proximal(d=6) |
+| GAACCTGTAAATCTCCTACC | 0 | 0 | 1 | 9 | pass | exonic(22/23),splice_proximal(d=0) |
+| TCGAGGAAGCGATGGTGCTA | 0 | 0 | 1 | 12 | pass | exonic(23/23),splice_proximal(d=10) |
+| GGTAGGAGATTTACAGGTTC | 0 | 0 | 1 | 9 | pass | exonic(23/23),splice_proximal(d=2) |
+| CACTAGCTCGTCGTCTGAAA | 0 | 0 | 1 | 10 | pass | exonic(14/23),splice_proximal(d=0) |
+| TATGCTGCGGCTCGGGAACG | 0 | 0 | 0 | 20 | pass | exonic(23/23),splice_proximal(d=6) |
+| ACCTCTCCGAACGTTTGCAT | 0 | 0 | 1 | 13 | pass | exonic(23/23),splice_proximal(d=14) |
+| CCGTTGCAGTGAAACCCGCG | 0 | 0 | 1 | 14 | pass | exonic(23/23) |
+| TACTTACCTCCCATATGCTG | 0 | 0 | 2 | 21 | pass | exonic(16/23),splice_proximal(d=0) |
+| TGCGGCTCGGGAACGTGGTG | 0 | 0 | 2 | 21 | pass | exonic(23/23),splice_proximal(d=11) |
+| GTCGAGGAAGCGATGGTGCT | 0 | 0 | 2 | 17 | pass | exonic(23/23),splice_proximal(d=11) |
+| GCACACCAGCGGATCGACGA | 0 | 0 | 3 | 22 | pass | exonic(22/23),splice_proximal(d=0) |
+| ACACTTACCTTTTTGTACAG | 0 | 0 | 3 | 23 | pass | exonic(15/23),splice_proximal(d=0) |
+| ACGGACGGATACAGACTGGA | 0 | 0 | 1 | 47 | pass | exonic(23/23) |
+| GTGCGAAGCGCACGAAACAC | 0 | 0 | 5 | 20 | pass | exonic(16/23),splice_proximal(d=0) |
+| ATGTACAAAAAGCACACCAG | 0 | 0 | 4 | 57 | pass | exonic(23/23),splice_proximal(d=10) |
+| TGTGTCGTTTACCTTTTTGG | 0 | 0 | 6 | 61 | pass | exonic(12/23),splice_proximal(d=0) |
+| GCTTACCTTCGTCGATCCGC | 0 | 0 | 4 | 456 | pass | exonic(17/23),splice_proximal(d=0) |
+| GCGGATCGACGAAGGTAAGC | 0 | 0 | 4 | 456 | pass | exonic(14/23),splice_proximal(d=0) |
+| CAGTGTACCGCTGTACAAAA | 0 | 1 | 5 | 39 | FAIL | exonic(22/23),splice_proximal(d=0) |
+| ACGGTGGCGCGCGAGCGAGA | 0 | 1 | 2 | 46 | FAIL | exonic(23/23),splice_proximal(d=2) |
+| GTTTAACACAGGTCAAGCGG | 0 | 0 | 0 | 6 | pass | published guide (Kyrou 2018) |
 
 # Appendix L. Kyrou 2018 guide - complete genome-wide audit
 
