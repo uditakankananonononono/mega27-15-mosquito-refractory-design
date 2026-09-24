@@ -81,11 +81,47 @@ After restricting to the *dsx* gene body and deduplicating, 9,328 unique sites w
 
 ## 3.3 Drive dynamics: resistance is the binding constraint
 
+The full parameter grid:
+
+| homing h | resistance e | peak drive freq | final resistance freq | generation drive >= 95% |
+|----------|--------------|-----------------|-----------------------|-------------------------|
+| 0.80 | 0.001 | 0.774 | 0.962 | - |
+| 0.80 | 0.010 | 0.737 | 0.964 | - |
+| 0.80 | 0.100 | 0.654 | 0.966 | - |
+| 0.80 | 0.500 | 0.538 | 0.970 | - |
+| 0.90 | 0.001 | 0.866 | 0.972 | - |
+| 0.90 | 0.010 | 0.830 | 0.973 | - |
+| 0.90 | 0.100 | 0.752 | 0.973 | - |
+| 0.90 | 0.500 | 0.648 | 0.974 | - |
+| 0.95 | 0.001 | 0.915 | 0.976 | - |
+| 0.95 | 0.010 | 0.884 | 0.976 | - |
+| 0.95 | 0.100 | 0.820 | 0.976 | - |
+| 0.95 | 0.500 | 0.726 | 0.976 | - |
+| 0.99 | 0.001 | 0.960 | 0.978 | 12 |
+| 0.99 | 0.010 | 0.937 | 0.978 | - |
+| 0.99 | 0.100 | 0.889 | 0.978 | - |
+| 0.99 | 0.500 | 0.851 | 0.978 | - |
+
 Under c_hom = 1 (full homozygous sterility), no parameter combination sustains the drive: resistance alleles reach 0.96-0.98 by generation 60 in all 16 grid cells. Peak drive frequency ranges from 0.54 (h = 0.8, e = 0.5) to 0.96 (h = 0.99, e = 0.001); only the (h = 0.99, e = 0.001) cell crosses 95% drive allele frequency (generation 12) before resistance erodes it (Figures 3-4). Wright-Fisher replicates track the deterministic trajectory closely at N = 10,000 (Figure 5). H3 is supported: e, not h, controls the outcome, and e is precisely what target-site choice governs - an essential, constrained target makes most resistance alleles nonfunctional (effective e near zero), which is the published explanation for the Kyrou drive's cage success.
 
 ## 3.4 Constraint-aware (v2) ranking
 
-Adding the a priori functional-constraint bonus (+0.25 majority-exonic, +0.5 further for splice-junction proximity within 15 bp, from the union of the 9 RefSeq transcript exon models) reshapes the ranking as intended: all top-10 v2 candidates are exonic and splice-proximal (Figure 6). Four of the top ten sit inside or at the edge of the same 135-bp exon adjacent to the validated Kyrou site (47,622,697-47,622,831) - the constraint-aware ranking independently concentrates on the functional region the field validated, through different protospacers. The v2 leader is GCGGTACACTGCACTGTCCG-CGG (+strand, 47,619,081; efficacy 1.209, fully exonic, 11 bp from a junction, 0 off-targets; score 1.959). Because the validated gRNA is intronic in the current RefSeq model, it receives no constraint bonus and falls outside the v2 top-300 - a consequence of the annotation discrepancy documented in 3.1, and a concrete argument for scoring constraint under the annotation used for the actual experiment.
+Adding the a priori functional-constraint bonus (+0.25 majority-exonic, +0.5 further for splice-junction proximity within 15 bp, from the union of the 9 RefSeq transcript exon models) reshapes the ranking as intended: all top-10 v2 candidates are exonic and splice-proximal (Figure 6). Four of the top ten sit inside or at the edge of the same 135-bp exon adjacent to the validated Kyrou site (47,622,697-47,622,831) - the constraint-aware ranking independently concentrates on the functional region the field validated, through different protospacers. The full v2 top-10:
+
+| rank | protospacer | PAM | strand | genomic pos | efficacy | constraint | off-targets | v2 score |
+|------|-------------|-----|--------|-------------|----------|------------|-------------|----------|
+| 1 | GCGGTACACTGCACTGTCCG | CGG | + | 47,619,081 | 1.209 | exonic(23/23),splice_proximal(d=11) | 0 | 1.959 |
+| 2 | AGCTAGTGAAGCGAGCCCAA | TGG | - | 47,622,803 | 1.101 | exonic(23/23),splice_proximal(d=6) | 0 | 1.851 |
+| 3 | GCACACCAGCGGATCGACGA | AGG | - | 47,622,696 | 0.994 | exonic(22/23),splice_proximal(d=0) | 0 | 1.744 |
+| 4 | TACTTACCTCCCATATGCTG | CGG | + | 47,692,033 | 0.958 | exonic(16/23),splice_proximal(d=0) | 0 | 1.708 |
+| 5 | CTAGCTCGTCGTCTGAAATG | GGG | + | 47,622,820 | 0.952 | exonic(12/23),splice_proximal(d=0) | 0 | 1.702 |
+| 6 | GAAGCGAGCCCAATGGCTGT | TGG | - | 47,622,796 | 0.937 | exonic(23/23),splice_proximal(d=13) | 0 | 1.687 |
+| 7 | GAACCTGTAAATCTCCTACC | TGG | - | 47,655,250 | 0.901 | exonic(22/23),splice_proximal(d=0) | 0 | 1.651 |
+| 8 | CATTAAGACCTACGAAGCGC | TGG | - | 47,620,304 | 0.900 | exonic(23/23),splice_proximal(d=10) | 0 | 1.650 |
+| 9 | TGCGGCTCGGGAACGTGGTG | CGG | + | 47,692,051 | 0.880 | exonic(23/23),splice_proximal(d=11) | 0 | 1.630 |
+| 10 | CAGTGTACCGCTGTACAAAA | AGG | - | 47,619,069 | 0.972 | exonic(22/23),splice_proximal(d=0) | 0 | 1.622 |
+
+The v2 leader is GCGGTACACTGCACTGTCCG-CGG (+strand, 47,619,081; efficacy 1.209, fully exonic, 11 bp from a junction, 0 off-targets; score 1.959). Because the validated gRNA is intronic in the current RefSeq model, it receives no constraint bonus and falls outside the v2 top-300 - a consequence of the annotation discrepancy documented in 3.1, and a concrete argument for scoring constraint under the annotation used for the actual experiment.
 
 ## 3.5 Design implication
 
