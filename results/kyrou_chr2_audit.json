@@ -1,0 +1,23 @@
+{
+ "guide": "GTTTAACACAGGTCAAGCGG",
+ "reference": "NC_064601.1 (Anopheles gambiae chromosome 2)",
+ "max_mismatches": 3,
+ "on_target_excluded_approx_0based": 47622173,
+ "counts": {
+  "0": 0,
+  "1": 0,
+  "2": 0,
+  "3": 1
+ },
+ "total_le3": 1,
+ "elapsed_seconds": 3.58,
+ "hits": [
+  {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "chrom": "NC_064601.1",
+   "position": 41285162,
+   "strand": "-",
+   "mismatches": 3
+  }
+ ]
+}
