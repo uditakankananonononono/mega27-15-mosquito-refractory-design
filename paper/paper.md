@@ -4,7 +4,6 @@ author: "Udita Phookan"
 date: "2026-09-24"
 geometry: margin=1in
 fontsize: 12pt
-fontfamily: newtxtext,newtxmath
 linestretch: 1.3
 ---
 
