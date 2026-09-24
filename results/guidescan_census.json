@@ -1,0 +1,33 @@
+{
+  "tool": "GuideScan2 2.2.1 (bioconda linux-64 binary; pritykinlab/guidescan-cli; Schmidt et al. 2025, Genome Biology)",
+  "index": "AgamP5 = GCF_943734735.2 genomic.fna (191 records), guidescan index built locally",
+  "guides": 421,
+  "mismatches": 3,
+  "comparison": "GuideScan NGG-restricted counts vs NGG-carrying subset of the BWA census of record (results/offtarget_bwa_complete.json, /tmp/bwa_hits_gcf.bed)",
+  "guidescan_totals_per_mm": {
+    "0": 421,
+    "1": 15,
+    "2": 171,
+    "3": 1549
+  },
+  "guidescan_sites": 2156,
+  "census_ngg_per_mm": {
+    "0": 421,
+    "1": 15,
+    "2": 171,
+    "3": 1549
+  },
+  "census_pamless_per_mm": {
+    "0": 6,
+    "1": 212,
+    "2": 2803,
+    "3": 27759
+  },
+  "census_pamless_total": 30780,
+  "census_ngg_total": 2156,
+  "orientation_ambiguous_hits": 0,
+  "n_guide_tier_cells": 1684,
+  "n_discordant_cells": 0,
+  "discordant_cells": [],
+  "verdict": "EXACT AGREEMENT"
+}
