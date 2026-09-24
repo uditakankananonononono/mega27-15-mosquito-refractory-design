@@ -1,0 +1,58 @@
+{
+ "tool": "Prodigal 2.6.3 (hyattpd/Prodigal; Hyatt et al. 2010, BMC Bioinformatics), meta mode",
+ "model_auto_selected": "6|Anaplasma_phagocytophilum_HZ|B|41.6|11|1",
+ "caveat": "prokaryotic gene finder without intron model; used as an annotation-independent coding-potency probe, not a gene-structure predictor",
+ "dsx_locus": {
+  "region": "NC_064601.1:47,610,877-47,700,920 (90,044 bp)",
+  "orfs_predicted": 86,
+  "max_orf_score": 51.96,
+  "best_orf": {
+   "start": 26981,
+   "end": 28792,
+   "strand": "+",
+   "score": 51.96,
+   "conf": 100.0
+  }
+ },
+ "control_window": {
+  "region": "NC_064601.1:4,153,454-4,243,498 (90,044 bp, gene-free in GFF)",
+  "orfs_predicted": 79,
+  "max_orf_score": 15.82
+ },
+ "exon_overlap": {
+  "8265-9460": 1,
+  "11821-11955": 0,
+  "44375-44419": 0,
+  "81164-81689": 1
+ },
+ "lead_exon_map": {
+  "dsx-v3-1": null,
+  "dsx-v3-2": "8265-9460",
+  "kyrou": null,
+  "dsx-v3-3": "11821-11955"
+ },
+ "nested_gene": {
+  "orf": {
+   "start": 26981,
+   "end": 28792,
+   "strand": "+",
+   "score": 51.96,
+   "conf": 100.0
+  },
+  "identity": "LOC11175624 (aminopeptidase N-like), plus strand, NC_064601.1:47,636,160-47,639,924 - nested inside a dsx intron (verified against the GFF 2026-09-25); Prodigal ORF 26981-28792 covers its longest CDS (47,637,931-47,639,581) and reads through the following intron, the expected signature of an unspliced de novo call on a real gene"
+ },
+ "second_orf": {
+  "start": 8265,
+  "end": 9554,
+  "strand": "-",
+  "score": 36.35,
+  "conf": 99.98
+ },
+ "findings": [
+  "ORF COUNT does not discriminate: 86 ORFs in the dsx locus vs 79 in the gene-free control - expected for a prokaryotic tool on eukaryotic sequence.",
+  "ORF SCORE does: the two strongest de novo ORFs in the locus (51.96 and 36.35) are the two real genes, both above 2x the control maximum (15.82).",
+  "Strongest ORF (score 51.96, conf 100.0, + strand, locus 26981-28792 = genomic 47,637,857-47,639,668) is LOC11175624, an aminopeptidase N-like gene NESTED INSIDE A DSX INTRON - recovered with zero annotation input. Design note: any drive-cargo placement in dsx introns downstream of the lead cluster must account for this nested gene (the four leads sit ~13 kb upstream of it).",
+  "Second-strongest (score 36.35, complement(8265..9554)) covers the RefSeq constitutive exon 8265-9460 with an EXACT shared stop-boundary at 8265.",
+  "The lead-target exon map agrees with the miniprot exon audit: dsx-v3-2 (locus 9428) and dsx-v3-3 (11,922) fall inside RefSeq exons; dsx-v3-1 (8,164) and Kyrou (11,298) are intronic - independently corroborated here without using the annotation at prediction time."
+ ]
+}
