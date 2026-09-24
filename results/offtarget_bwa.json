@@ -1,0 +1,127 @@
+{
+ "tool": "BWA 0.7.19-r1273 aln/samse (lh3/bwa d82444c, built from source; Li & Durbin 2009 Bioinformatics 25:1754-60)",
+ "mode": "aln -N -l 20 -k 3 -n 3 -o 0 -e 0: exhaustive ungapped pure-Hamming <=3-mismatch enumeration; samse -n 1000000",
+ "guides": 421,
+ "reference": "AgamP5 = idAnoGambNW_F1_1 (GCF_943734735.2), 4 contigs",
+ "census_per_mm_tier": {
+  "0": 427,
+  "1": 227,
+  "2": 2886,
+  "3": 28765
+ },
+ "census_total": 32305,
+ "bowtie2_census_total": 24278,
+ "superset_check": {
+  "bowtie2_alignments_missing_from_bwa": 0,
+  "bwa_only_alignments": 8027,
+  "bwa_only_by_tier": {
+   "2": 142,
+   "3": 7885
+  }
+ },
+ "bwa_only_sequence_verification": {
+  "sampled": 50,
+  "verified_hamming_le_3": 50,
+  "seed": 7,
+  "method": "direct reference extraction at XA coordinates, reverse-complement for minus strand, Hamming recount vs guide"
+ },
+ "correction": "bowtie2 of-record census 24,278 under-reports by 25%; corrected census 32,305 (MM3 20,880 -> 28,765, +38%). bowtie2 -a still score-trims high-mismatch ungapped hits after seed tuning.",
+ "cds_context_on_corrected_set": {
+  "annotation": "NCBI RefSeq GCF_943734735.2 RS_2023_12 CDS (bedtools 2.31.1 intersect)",
+  "per_mm_tier_total_inCDS": {
+   "0": [
+    427,
+    244
+   ],
+   "1": [
+    227,
+    29
+   ],
+   "2": [
+    2886,
+    412
+   ],
+   "3": [
+    28765,
+    3452
+   ]
+  },
+  "library_guides_with_at_least_one_CDS_overlapping_near_cognate": 308
+ },
+ "leads": {
+  "dsx-v3-1": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     0
+    ],
+    "3": [
+     4,
+     0
+    ]
+   },
+   "cds_overlap_genes": [],
+   "cds_overlap_sites": []
+  },
+  "dsx-v3-2": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     1
+    ],
+    "3": [
+     9,
+     0
+    ]
+   },
+   "cds_overlap_genes": [],
+   "cds_overlap_sites": []
+  },
+  "dsx-v3-3": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     1
+    ],
+    "3": [
+     10,
+     1
+    ]
+   },
+   "cds_overlap_genes": [
+    "LOC1270942"
+   ],
+   "cds_overlap_sites": [
+    [
+     "NC_064601.1",
+     38008162,
+     3,
+     "LOC1270942"
+    ]
+   ]
+  },
+  "kyrou": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     0
+    ],
+    "3": [
+     6,
+     1
+    ]
+   },
+   "cds_overlap_genes": [
+    "LOC1274366"
+   ],
+   "cds_overlap_sites": [
+    [
+     "NC_064601.1",
+     41285163,
+     3,
+     "LOC1274366"
+    ]
+   ]
+  }
+ }
+}
