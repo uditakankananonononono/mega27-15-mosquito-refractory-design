@@ -1,0 +1,30 @@
+{
+ "tool": "Bowtie 1.3.1 (static binary), -v 3 -a: full-length ungapped alignments with up to 3 mismatches, all reported",
+ "index": "bowtie-build over the four archived AgamP5 molecules (clean rebuild; first index was corrupted by an accidental concurrent build and failed its own-site sanity check - detected, rebuilt, verified on a synthetic index)",
+ "query": "23-mer protospacer+PAM units of dsx-v3-1, dsx-v3-2, kyrou",
+ "alignments": [
+  {
+   "guide": "dsx-v3-1",
+   "chrom": "NC_064601.1",
+   "offset_0based": 47619039,
+   "strand": "-",
+   "note": "own site (= 47,619,040 1-based)"
+  },
+  {
+   "guide": "dsx-v3-2",
+   "chrom": "NC_064601.1",
+   "offset_0based": 47620303,
+   "strand": "-",
+   "note": "own site (= 47,620,304 1-based)"
+  },
+  {
+   "guide": "kyrou",
+   "chrom": "NC_064601.1",
+   "offset_0based": 47622173,
+   "strand": "-",
+   "note": "own site (= 47,622,174 1-based)"
+  }
+ ],
+ "secondary_sites_le3mm": 0,
+ "reading": "Bowtie's -v 3 mode is semantically identical to the audit's bar (full-length Hamming distance <=3 over the 23-mer unit). It reports exactly three alignments genome-wide - the three on-target sites at the cross-assembly-verified coordinates - and zero secondary sites. This is the fourth independent confirmation of 23-mer uniqueness (aligner-free enumerator, NCBI BLAST+, minimap2 at block resolution, Bowtie), and the one whose semantics match the claim most directly."
+}
