@@ -1,0 +1,109 @@
+{
+ "method": "exact + pigeonhole near-match (4 blocks, <=3 mismatches), both strands, no aligner",
+ "agamp5_query": "/tmp/chr2R.fasta",
+ "guides": {
+  "dsx-v3-1": {
+   "unit_plus": "CCCACCCTACCGCTTACTACCCA",
+   "guide_unit_plus": "CCCACCCTAACGCATACTGCCCA",
+   "guide_exact_plus": [],
+   "guide_exact_minus": [],
+   "guide_near": {
+    "plus": {
+     "1": [
+      47619039
+     ],
+     "2": [],
+     "3": []
+    },
+    "minus": {
+     "1": [],
+     "2": [],
+     "3": []
+    }
+   },
+   "agamp5_len": 118196952,
+   "exact_plus": [],
+   "exact_minus": [],
+   "near_plus": {
+    "1": [],
+    "2": [],
+    "3": []
+   },
+   "near_minus": {
+    "1": [],
+    "2": [],
+    "3": []
+   }
+  },
+  "dsx-v3-2": {
+   "unit_plus": "CCAACGCTTCGTAGGTCTTAATG",
+   "guide_unit_plus": "CCAGCGCTTCGTAGGTCTTAATG",
+   "guide_exact_plus": [
+    47620303
+   ],
+   "guide_exact_minus": [],
+   "guide_near": {
+    "plus": {
+     "1": [],
+     "2": [],
+     "3": []
+    },
+    "minus": {
+     "1": [],
+     "2": [],
+     "3": []
+    }
+   },
+   "agamp5_len": 118196952,
+   "exact_plus": [],
+   "exact_minus": [],
+   "near_plus": {
+    "1": [
+     47620303
+    ],
+    "2": [],
+    "3": []
+   },
+   "near_minus": {
+    "1": [],
+    "2": [],
+    "3": []
+   }
+  },
+  "kyrou": {
+   "unit_plus": "CCACCGCTTGACCTGTGTTAAAC",
+   "guide_unit_plus": "CCACCGCTTGACCTGTGTTAAAC",
+   "guide_exact_plus": [
+    47622173
+   ],
+   "guide_exact_minus": [],
+   "guide_near": {
+    "plus": {
+     "1": [],
+     "2": [],
+     "3": []
+    },
+    "minus": {
+     "1": [],
+     "2": [],
+     "3": []
+    }
+   },
+   "agamp5_len": 118196952,
+   "exact_plus": [
+    47622173
+   ],
+   "exact_minus": [],
+   "near_plus": {
+    "1": [],
+    "2": [],
+    "3": []
+   },
+   "near_minus": {
+    "1": [],
+    "2": [],
+    "3": []
+   }
+  }
+ }
+}
