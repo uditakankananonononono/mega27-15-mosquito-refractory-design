@@ -1,0 +1,210 @@
+{
+  "tool": "FlashFry 2.0 (mckennalab/FlashFry, McKenna & Mali 2018 doi:10.1186/s12915-018-0545-0)",
+  "database": "AgamP5 4-molecule reference, spcas9-ngg-20 profile, built 192.19 s, 209 MB",
+  "discovery": {
+    "input": "dsx_W1+dsx_W2 windows (3,373 bp)",
+    "maxMismatch": 4,
+    "guides_discovered": 430,
+    "guides_scored": 421
+  },
+  "library": {
+    "guides_scored": 421,
+    "overflow_guides": 0,
+    "guides_zero_offtargets_le4mm": 0,
+    "guides_with_mm0_duplicate": 0,
+    "otcount_median": 14,
+    "otcount_max": 1570,
+    "genomewide_hit_totals_by_mismatch_0to4": [
+      421,
+      15,
+      171,
+      1491,
+      11276
+    ],
+    "top5_by_cfd_specificity": [
+      {
+        "target": "ATCAGGGGCATCATCTCCCACGG",
+        "window": "dsx_W2",
+        "start": 759,
+        "cfd_specificity": 0.9857664175311676,
+        "hsu2013": 99.78740442993008,
+        "otCount": 3,
+        "mm_hist": [
+          1,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "target": "GTGGGTCGCGCCCGTAAGAAGGG",
+        "window": "dsx_W1",
+        "start": 2152,
+        "cfd_specificity": 0.9679566182260927,
+        "hsu2013": 99.9159961481318,
+        "otCount": 3,
+        "mm_hist": [
+          1,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "target": "TTCCCCGCCCCCGGGATTATTGG",
+        "window": "dsx_W1",
+        "start": 1931,
+        "cfd_specificity": 0.9618572650579337,
+        "hsu2013": 99.94452168639421,
+        "otCount": 4,
+        "mm_hist": [
+          1,
+          0,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "target": "TGGACGCAGTGTGGATCTAATGG",
+        "window": "dsx_W1",
+        "start": 425,
+        "cfd_specificity": 0.9493670885475085,
+        "hsu2013": 99.87433589115207,
+        "otCount": 2,
+        "mm_hist": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "target": "ACCCTCCCGGCCGAGCACATCGG",
+        "window": "dsx_W1",
+        "start": 1240,
+        "cfd_specificity": 0.9489051095609116,
+        "hsu2013": 99.98543662622748,
+        "otCount": 2,
+        "mm_hist": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "leads": {
+    "dsx-v3-1": {
+      "target_23mer": "TGGGCAGTATGCGTTAGGGTAGG",
+      "window": "dsx_W1",
+      "window_start": 340,
+      "orientation": "RVS",
+      "cfd_specificity": 0.701964478528104,
+      "cfd_max_ot": 0.14322250650732388,
+      "hsu2013": 98.79316418576055,
+      "doench2014_ontarget": "0.18047016242865074",
+      "mm_hist_0to4": [
+        1,
+        0,
+        0,
+        1,
+        5
+      ],
+      "otCount": 7,
+      "mm1_mm3_offtargets": 1,
+      "closest_hit_mismatches": 3,
+      "dangerous": {
+        "GC": "NONE",
+        "polyT": "NONE",
+        "in_genome": "IN_GENOME=1"
+      }
+    },
+    "dsx-v3-2": {
+      "target_23mer": "CATTAAGACCTACGAAGCGCTGG",
+      "window": "dsx_W1",
+      "window_start": 1604,
+      "orientation": "RVS",
+      "cfd_specificity": 0.7821184400277564,
+      "cfd_max_ot": 0.19164444434364444,
+      "hsu2013": 99.0143057970018,
+      "doench2014_ontarget": "0.33445229915317776",
+      "mm_hist_0to4": [
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "otCount": 4,
+      "mm1_mm3_offtargets": 0,
+      "closest_hit_mismatches": 4,
+      "dangerous": {
+        "GC": "NONE",
+        "polyT": "NONE",
+        "in_genome": "IN_GENOME=1"
+      }
+    },
+    "dsx-v3-3": {
+      "target_23mer": "GAAGCGAGCCCAATGGCTGTTGG",
+      "window": "dsx_W2",
+      "window_start": 796,
+      "orientation": "RVS",
+      "cfd_specificity": 0.5674475708783165,
+      "cfd_max_ot": 0.31111111148888887,
+      "hsu2013": 97.39355695190609,
+      "doench2014_ontarget": "0.08372000899379106",
+      "mm_hist_0to4": [
+        1,
+        0,
+        0,
+        2,
+        7
+      ],
+      "otCount": 10,
+      "mm1_mm3_offtargets": 2,
+      "closest_hit_mismatches": 3,
+      "dangerous": {
+        "GC": "NONE",
+        "polyT": "NONE",
+        "in_genome": "IN_GENOME=1"
+      }
+    },
+    "kyrou-2018": {
+      "target_23mer": "GTTTAACACAGGTCAAGCGGTGG",
+      "window": "dsx_W2",
+      "window_start": 174,
+      "orientation": "RVS",
+      "cfd_specificity": 0.7056216851630774,
+      "cfd_max_ot": 0.19241982506880467,
+      "hsu2013": 98.88182729954012,
+      "doench2014_ontarget": "0.5699321235972956",
+      "mm_hist_0to4": [
+        1,
+        0,
+        0,
+        1,
+        5
+      ],
+      "otCount": 7,
+      "mm1_mm3_offtargets": 1,
+      "closest_hit_mismatches": 3,
+      "dangerous": {
+        "GC": "NONE",
+        "polyT": "NONE",
+        "in_genome": "IN_GENOME=1"
+      }
+    }
+  },
+  "cross_engine_conclusions": [
+    "v3-2 shows ZERO 1-3-mismatch off-targets in AgamP5 (mm_hist 1,0,0,0,3): the one-mismatch site CRISPOR found in AgamP4 and CRISPRoff flagged at 77% of on-target energy is an AgamP4-reference-allele artifact, absent from the AgamP5 assembly; the flag tracks the assembly, not the guide.",
+    "No lead carries an MM0 duplicate in AgamP5 (all mm0 counts = 1, the on-target): CHOPCHOP's MM0=2 flag on a lead is not reproduced by FlashFry, consistent with the CRISPOR cross-engine resolution.",
+    "v3-3 is the least specific lead on this third independent axis too (CFD specificity lowest, 10 off-targets <=4 MM, 2 at 3 MM), adding to the ViennaRNA structural outlier flag.",
+    "v3-2 is the most sequence-specific lead in AgamP5 (CFD specificity highest, only 3 MM4 hits): its withdrawal rests on population-diversity evidence, not reference-genome off-target load."
+  ]
+}
