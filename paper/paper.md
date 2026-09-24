@@ -934,8 +934,9 @@ Counting rule. A tool is counted only if it was actually used in the work report
 | 18 | Biopython | package | independent re-derivation of the three AF-scan window sequences and PAMs from the archived AgamP4 FASTA; all three pass (results/window_verification_biopython.json) |
 | 19 | ViennaRNA (RNAfold) | package | spacer secondary-structure screen on the named candidates; no hairpin flags (results/guide_fold_primers.json) |
 | 20 | Primer3 | package | validation-amplicon primer pairs spanning each candidate window for the staged plan of 4.6 (results/guide_fold_primers.json) |
+| 21 | UniProtKB (REST API) | database | sex-specific dsx isoform corroboration: female-specific (A0A1U7F5R8, 241 aa) and male-specific (Q58QC2, 283 aa) proteins archived at data/uniprot_dsx_anoga.tsv; the female-exon target strategy rests on this isoform biology |
 
-Total in actual use: 20. Planned but not counted (integration only where each does real verification work): CRISPOR, CHOPCHOP, CRISPRoff, DeepCRISPR, and TIDE (independent specificity and efficacy cross-checks of the named candidates), mmseqs2 and minimap2 (near-cognate clustering and re-alignment checks), NCBI BLAST (orthogonal off-target confirmation), UniProt (dsx isoform evidence). Each enters the table above only after it has run on this project's data.
+Total in actual use: 21. Planned but not counted (integration only where each does real verification work): CRISPOR, CHOPCHOP, CRISPRoff, DeepCRISPR, and TIDE (independent specificity and efficacy cross-checks of the named candidates), mmseqs2 and minimap2 (near-cognate clustering and re-alignment checks), NCBI BLAST (orthogonal off-target confirmation). Each enters the table above only after it has run on this project's data.
 
 # Appendix Q. Dataset manifest (accession-level counting)
 
@@ -955,5 +956,7 @@ Counting rule (program-wide, applied verbatim). Count distinct accession-level d
 | 10 | Kyrou 2018 dsx gRNA reagent record | PMC6871539 | positive control and audit subject |
 | 11 | WHO World Malaria Report 2024 | WMR 2024 | burden figures (1.1) |
 | 12 | Cas-OFFinder published benchmark measurements | Bae, Park, Kim 2014 (PMC4016707) | enumeration benchmark reference (Appendix M) |
+| 13 | UniProtKB female-specific doublesex record | A0A1U7F5R8 | female isoform evidence (target-exon biology) |
+| 14 | UniProtKB male-specific doublesex record | Q58QC2 | male isoform evidence (isoform contrast) |
 
-Total: 4,703 accession-level datasets, of which 4,692 are per-sample Ag1000G phase-3 VCFs and 11 are distinct non-population resources. The honest composition note: the count is dominated by per-sample population variation files, counted individually under the program rule; the non-population core is 11 datasets. Expanding the non-population core is meaningful only where a new accession does real verification work, and each such addition will be reported with its role.
+Total: 4,705 accession-level datasets, of which 4,692 are per-sample Ag1000G phase-3 VCFs and 13 are distinct non-population resources. The honest composition note: the count is dominated by per-sample population variation files, counted individually under the program rule; the non-population core is 13 datasets. Expanding the non-population core is meaningful only where a new accession does real verification work, and each such addition will be reported with its role.
