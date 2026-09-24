@@ -59,11 +59,12 @@ def count_offtargets(site: GrnaSite, panel: list[tuple[str, str]], max_mismatche
         s = s.upper()
         for k in range(len(s) - L + 1):
             w = s[k:k + L]
-            if sum(1 for a, b in zip(w, proto) if a != b) <= max_mismatches:
-                if not (name == site.gene and site.position <= k + L and k <= site.position + L):
+            is_self = name == site.gene and abs(k - site.position) < L
+            if not is_self:
+                if sum(1 for a, b in zip(w, proto) if a != b) <= max_mismatches:
                     hits += 1
-            if sum(1 for a, b in zip(w, rc_proto) if a != b) <= max_mismatches:
-                hits += 1
+                if sum(1 for a, b in zip(w, rc_proto) if a != b) <= max_mismatches:
+                    hits += 1
     return hits
 
 

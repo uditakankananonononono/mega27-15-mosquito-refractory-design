@@ -45,8 +45,8 @@ def test_homopolymer_run():
 
 
 def test_count_offtargets_excludes_self():
-    proto = "ACGTACGTACGTACGTACGT"
+    proto = "ATGCCGTAACGTTAGCCTGA"  # not a reverse-complement palindrome
     site = GrnaSite("g1", "+", 4, proto, "TGG", "N" * 30)
     panel = [("g1", "AAAA" + proto + "TGG" + "AAAA"),
-             ("g2", "TTTT" + "ACGTACGTACGTACGTACGA" + "TGG")]
+             ("g2", "TTTT" + "ATGCCGTAACGTTAGCCTAA" + "TGG")]  # 1 mismatch in g2
     assert count_offtargets(site, panel, max_mismatches=1) == 1
