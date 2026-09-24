@@ -931,8 +931,11 @@ Counting rule. A tool is counted only if it was actually used in the work report
 | 15 | pysam / htslib (tabix) | package | indexed remote queries of the Ag1000G per-sample VCFs (4.7) |
 | 16 | pytest | package | the 44-test hermetic verification suite (Appendix C) |
 | 17 | git / GitHub | platform | versioned public archive of code, data, and results |
+| 18 | Biopython | package | independent re-derivation of the three AF-scan window sequences and PAMs from the archived AgamP4 FASTA; all three pass (results/window_verification_biopython.json) |
+| 19 | ViennaRNA (RNAfold) | package | spacer secondary-structure screen on the named candidates; no hairpin flags (results/guide_fold_primers.json) |
+| 20 | Primer3 | package | validation-amplicon primer pairs spanning each candidate window for the staged plan of 4.6 (results/guide_fold_primers.json) |
 
-Total in actual use: 17. Planned but not counted (integration only where each does real verification work): ViennaRNA RNAfold (guide secondary-structure check on the named candidates), Primer3 (validation-amplicon primer design for the staged plan of 4.6), Biopython (independent re-derivation of the verified window bases), CRISPOR, CHOPCHOP, CRISPRoff, DeepCRISPR, and TIDE (independent specificity and efficacy cross-checks of the named candidates), mmseqs2 and minimap2 (near-cognate clustering and re-alignment checks), NCBI BLAST (orthogonal off-target confirmation), UniProt (dsx isoform evidence). Each enters the table above only after it has run on this project's data.
+Total in actual use: 20. Planned but not counted (integration only where each does real verification work): CRISPOR, CHOPCHOP, CRISPRoff, DeepCRISPR, and TIDE (independent specificity and efficacy cross-checks of the named candidates), mmseqs2 and minimap2 (near-cognate clustering and re-alignment checks), NCBI BLAST (orthogonal off-target confirmation), UniProt (dsx isoform evidence). Each enters the table above only after it has run on this project's data.
 
 # Appendix Q. Dataset manifest (accession-level counting)
 

@@ -1,0 +1,32 @@
+{
+  "dsx-v3-1": {
+    "proto_plus": "ACCCTACCGCTTACTACCCA",
+    "ref_minus_derived": "TGGGTAGTAAGCGGTAGGGT",
+    "ref_minus_constant": "TGGGTAGTAAGCGGTAGGGT",
+    "ref_minus_match": true,
+    "pam_minus_derived": "GGG",
+    "pam_expected": "GGG",
+    "pam_match": true,
+    "pass": true
+  },
+  "dsx-v3-2": {
+    "proto_plus": "ACGCTTCGTAGGTCTTAATG",
+    "ref_minus_derived": "CATTAAGACCTACGAAGCGT",
+    "ref_minus_constant": "CATTAAGACCTACGAAGCGT",
+    "ref_minus_match": true,
+    "pam_minus_derived": "TGG",
+    "pam_expected": "TGG",
+    "pam_match": true,
+    "pass": true
+  },
+  "kyrou": {
+    "proto_plus": "CCGCTTGACCTGTGTTAAAC",
+    "ref_minus_derived": "GTTTAACACAGGTCAAGCGG",
+    "ref_minus_constant": "GTTTAACACAGGTCAAGCGG",
+    "ref_minus_match": true,
+    "pam_minus_derived": "TGG",
+    "pam_expected": "TGG",
+    "pam_match": true,
+    "pass": true
+  }
+}

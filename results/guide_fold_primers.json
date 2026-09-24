@@ -1,0 +1,59 @@
+{
+  "dsx-v3-1": {
+    "spacer": "TGGGCAGTATGCGTTAGGGT",
+    "mfe_structure": "...(((...)))........",
+    "mfe_kcal_mol": -1.2,
+    "hairpin_flag": false,
+    "amplicon": {
+      "name": "dsx-v3-1",
+      "designed": true,
+      "left": "TCCAGTTCGATGGAGTGTGC",
+      "right": "CAGTGCAGTGTACCGCTGTA",
+      "left_tm": 60.04,
+      "right_tm": 60.04,
+      "product_size": 438,
+      "amplicon_spans": [
+        48711498,
+        48711520
+      ]
+    }
+  },
+  "dsx-v3-2": {
+    "spacer": "CATTAAGACCTACGAAGCGC",
+    "mfe_structure": "....................",
+    "mfe_kcal_mol": 0.0,
+    "hairpin_flag": false,
+    "amplicon": {
+      "name": "dsx-v3-2",
+      "designed": true,
+      "left": "CGGATCGAGCGATGACTTCA",
+      "right": "TTTCCAATAATCCCGGGGGC",
+      "left_tm": 59.97,
+      "right_tm": 60.11,
+      "product_size": 377,
+      "amplicon_spans": [
+        48712762,
+        48712784
+      ]
+    }
+  },
+  "kyrou": {
+    "spacer": "GTTTAACACAGGTCAAGCGG",
+    "mfe_structure": "((((.((....)).))))..",
+    "mfe_kcal_mol": -1.8,
+    "hairpin_flag": false,
+    "amplicon": {
+      "name": "kyrou",
+      "designed": true,
+      "left": "GACAGTTACAGTGGTGCGGA",
+      "right": "TGCCACGTTCACTGACTTCA",
+      "left_tm": 59.97,
+      "right_tm": 59.82,
+      "product_size": 251,
+      "amplicon_spans": [
+        48714637,
+        48714659
+      ]
+    }
+  }
+}
