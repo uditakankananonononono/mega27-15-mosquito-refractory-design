@@ -1,108 +1,392 @@
 {
  "method": "exact + pigeonhole near-match (4 blocks, <=3 mismatches), both strands, no aligner",
- "agamp5_query": "/tmp/chr2R.fasta",
+ "molecules": {
+  "NC_064601.1": 118196952,
+  "OX030908.1": 99149756,
+  "OX030909.1": 28097889,
+  "OX030910.2": 15363
+ },
+ "agamp5_query": [
+  "/tmp/chr2R.fasta",
+  "/tmp/OX030908.1.fasta",
+  "/tmp/OX030909.1.fasta",
+  "/tmp/OX030910.2.fasta"
+ ],
  "guides": {
   "dsx-v3-1": {
    "unit_plus": "CCCACCCTACCGCTTACTACCCA",
    "guide_unit_plus": "CCCACCCTAACGCATACTGCCCA",
-   "guide_exact_plus": [],
-   "guide_exact_minus": [],
-   "guide_near": {
-    "plus": {
-     "1": [
-      47619039
-     ],
-     "2": [],
-     "3": []
+   "molecules": {
+    "NC_064601.1": {
+     "length": 118196952,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [
+        47619039
+       ],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
     },
-    "minus": {
-     "1": [],
-     "2": [],
-     "3": []
+    "OX030908.1": {
+     "length": 99149756,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
+    },
+    "OX030909.1": {
+     "length": 28097889,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
+    },
+    "OX030910.2": {
+     "length": 15363,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
     }
-   },
-   "agamp5_len": 118196952,
-   "exact_plus": [],
-   "exact_minus": [],
-   "near_plus": {
-    "1": [],
-    "2": [],
-    "3": []
-   },
-   "near_minus": {
-    "1": [],
-    "2": [],
-    "3": []
    }
   },
   "dsx-v3-2": {
    "unit_plus": "CCAACGCTTCGTAGGTCTTAATG",
    "guide_unit_plus": "CCAGCGCTTCGTAGGTCTTAATG",
-   "guide_exact_plus": [
-    47620303
-   ],
-   "guide_exact_minus": [],
-   "guide_near": {
-    "plus": {
-     "1": [],
-     "2": [],
-     "3": []
+   "molecules": {
+    "NC_064601.1": {
+     "length": 118196952,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [
+       47620303
+      ],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [
+      47620303
+     ],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
     },
-    "minus": {
-     "1": [],
-     "2": [],
-     "3": []
+    "OX030908.1": {
+     "length": 99149756,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
+    },
+    "OX030909.1": {
+     "length": 28097889,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
+    },
+    "OX030910.2": {
+     "length": 15363,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
     }
-   },
-   "agamp5_len": 118196952,
-   "exact_plus": [],
-   "exact_minus": [],
-   "near_plus": {
-    "1": [
-     47620303
-    ],
-    "2": [],
-    "3": []
-   },
-   "near_minus": {
-    "1": [],
-    "2": [],
-    "3": []
    }
   },
   "kyrou": {
    "unit_plus": "CCACCGCTTGACCTGTGTTAAAC",
    "guide_unit_plus": "CCACCGCTTGACCTGTGTTAAAC",
-   "guide_exact_plus": [
-    47622173
-   ],
-   "guide_exact_minus": [],
-   "guide_near": {
-    "plus": {
-     "1": [],
-     "2": [],
-     "3": []
+   "molecules": {
+    "NC_064601.1": {
+     "length": 118196952,
+     "exact_plus": [
+      47622173
+     ],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [
+      47622173
+     ],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
     },
-    "minus": {
-     "1": [],
-     "2": [],
-     "3": []
+    "OX030908.1": {
+     "length": 99149756,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
+    },
+    "OX030909.1": {
+     "length": 28097889,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
+    },
+    "OX030910.2": {
+     "length": 15363,
+     "exact_plus": [],
+     "exact_minus": [],
+     "near_plus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "near_minus": {
+      "1": [],
+      "2": [],
+      "3": []
+     },
+     "guide_exact_plus": [],
+     "guide_exact_minus": [],
+     "guide_near": {
+      "plus": {
+       "1": [],
+       "2": [],
+       "3": []
+      },
+      "minus": {
+       "1": [],
+       "2": [],
+       "3": []
+      }
+     }
     }
-   },
-   "agamp5_len": 118196952,
-   "exact_plus": [
-    47622173
-   ],
-   "exact_minus": [],
-   "near_plus": {
-    "1": [],
-    "2": [],
-    "3": []
-   },
-   "near_minus": {
-    "1": [],
-    "2": [],
-    "3": []
    }
   }
  }
