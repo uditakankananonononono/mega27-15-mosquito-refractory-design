@@ -1,1 +1,4 @@
 *.tbi
+__pycache__/
+*.pyc
+*.tbi.tmp_*
