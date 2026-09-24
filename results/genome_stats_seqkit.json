@@ -1,0 +1,5 @@
+{
+ "tool": "seqkit 2.10.0 stats (static binary)",
+ "finding": "the four archived AgamP5 molecules total 245,459,960 bp (NC_064601.1 118,196,952; OX030908.1 99,149,756; OX030909.1 28,097,889; OX030910.2 15,363), matching Section 2.1.1's placed length exactly and exposing three stale '245.9 Mb' mentions elsewhere in the paper, now corrected to 245.46 Mb",
+ "stats_tsv": "file\tformat\ttype\tnum_seqs\tsum_len\tmin_len\tavg_len\tmax_len\n/tmp/agam_genome.fasta\tFASTA\tDNA\t4\t245459960\t15363\t61364990.0\t118196952"
+}
