@@ -135,3 +135,72 @@ def make_fig6() -> str:
     fig.savefig(p, dpi=200)
     plt.close(fig)
     return p
+
+
+def make_fig7() -> str:
+    """Figure 7: genome-wide off-target burden of the v2 top-30 + Kyrou control,
+    stacked by mismatch class (log scale)."""
+    import csv
+    import json
+    fig, ax = plt.subplots(figsize=(8, 4.8))
+    rows = list(csv.DictReader(open(os.path.join(RESULTS, "genome_offtargets_genomewide_top30.csv"))))
+    ky = json.load(open(os.path.join(RESULTS, "kyrou_genomewide_audit.json")))
+    labels = [f"#{i+1}" for i in range(len(rows))] + ["Kyrou"]
+    mm1 = [int(r["gw_mm1"]) for r in rows] + [int(ky["counts"]["1"])]
+    mm2 = [int(r["gw_mm2"]) for r in rows] + [int(ky["counts"]["2"])]
+    mm3 = [int(r["gw_mm3"]) for r in rows] + [int(ky["counts"]["3"])]
+    x = range(len(labels))
+    ax.bar(x, mm3, color="#4472C4", label="3 mismatches")
+    ax.bar(x, mm2, bottom=mm3, color="#ED7D31", label="2 mismatches")
+    ax.bar(x, mm1, bottom=[a + b for a, b in zip(mm3, mm2)], color="#C00000", label="1 mismatch")
+    ax.axhline(1, color="grey", lw=0.6, ls=":")
+    ax.set_yscale("symlog", linthresh=1)
+    totals = [a + b + c for a, b, c in zip(mm1, mm2, mm3)]
+    ax.set_ylim(0, max(totals) * 1.35)
+    ax.set_ylabel("genome-wide off-target sites (<=3 mm, log)")
+    ax.set_xlabel("candidate (v2 rank order) and published control")
+    ax.set_xticks(list(x)); ax.set_xticklabels(labels, fontsize=6, rotation=90)
+    ax.set_title("Figure 7. Exact genome-wide off-target burden (AgamP5, 246 Mb, <=3 mismatches)")
+    ax.legend(frameon=False)
+    fig.tight_layout()
+    p = os.path.join(FIGURES, "fig7_genomewide_offtargets.png")
+    fig.savefig(p, dpi=200)
+    plt.close(fig)
+    return p
+
+
+def make_fig8() -> str:
+    """Figure 8: v3 composite ranking - candidates vs published Kyrou control."""
+    import csv
+    fig, ax = plt.subplots(figsize=(7, 4.4))
+    rows = list(csv.DictReader(open(os.path.join(RESULTS, "ranked_designs_v3.csv"))))
+    passed = [r for r in rows if r["score_v3"]]
+    scores = [float(r["score_v3"]) for r in passed]
+    labels = [f"dsx-v3-{i+1}" for i in range(len(passed))]
+    colors = ["#C00000" if i < 2 else "#4472C4" for i in range(len(passed))]
+    ax.bar(range(len(scores)), scores, color=colors)
+    import json
+    ctrl = json.load(open(os.path.join(RESULTS, "v3_summary.json")))["control_kyrou"]["score_v3"]
+    ax.axhline(ctrl, color="black", ls="--", lw=1.2)
+    ax.set_ylim(-2, 1.65)
+    n_clip = sum(1 for sc in scores if sc < -2)
+    if n_clip:
+        ax.text(0.02, 0.965, f"note: {n_clip} lowest candidates clipped (v3 < -2; repetitive 3-mm burden)",
+                transform=ax.transAxes, ha="left", fontsize=8, color="#4472C4")
+    ax.annotate(f"Kyrou 2018 guide (v3 = {ctrl})", xy=(21, ctrl), xytext=(14.5, 1.32),
+                fontsize=9, arrowprops=dict(arrowstyle="->", color="black"))
+    ax.set_ylabel("v3 composite score")
+    ax.set_xlabel("candidate rank (filter: no exact or 1-mismatch genomic off-target)")
+    ax.set_title("Figure 8. v3 ranking: 28 candidates vs the published dsx guide (dashed)")
+    fig.tight_layout()
+    p = os.path.join(FIGURES, "fig8_v3_ranking.png")
+    fig.savefig(p, dpi=200)
+    plt.close(fig)
+    return p
+
+
+if __name__ == "__main__":
+    print(make())
+    print(make_fig6())
+    print(make_fig7())
+    print(make_fig8())

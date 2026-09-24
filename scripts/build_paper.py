@@ -33,6 +33,8 @@ FIGURES = [
     ("fig4_resistance.png", "Figure 4. Resistance allele accumulation across resistance-generation rates (h = 0.99)."),
     ("fig5_wright_fisher.png", "Figure 5. Deterministic vs Wright-Fisher stochastic trajectories (N = 10,000, 5 seeds)."),
     ("fig6_constraint_landscape.png", "Figure 6. Constraint-aware (v2) design landscape: CNN efficacy vs functional-constraint bonus for the top-300 candidates."),
+    ("fig7_genomewide_offtargets.png", "Figure 7. Exact genome-wide off-target burden of the v2 top-30 candidates and the published Kyrou guide, stacked by mismatch class (symlog scale; AgamP5, 246 Mb, <=3 mismatches)."),
+    ("fig8_v3_ranking.png", "Figure 8. v3 composite ranking of the 28 filter-passing candidates against the published Kyrou 2018 guide (dashed line, v3 = 0.837). Red: named lead candidates dsx-v3-1 and dsx-v3-2."),
 ]
 
 
