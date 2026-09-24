@@ -1,0 +1,60 @@
+{
+ "tool": "miniprot 0.18-r281 (lh3/miniprot @ 81f9b93; Li 2023 Bioinformatics 39:btad014)",
+ "query": "D. melanogaster Dsx, UniProt P23023 (549 aa)",
+ "target": "AgamP5 dsx locus NC_064601.1:47,610,877-47,700,920",
+ "dm_domain_mapping": {
+  "query_residues": "1-108 (DM domain)",
+  "genomic_span": "NC_064601.1:47692251-47692565, minus strand",
+  "identity": 0.713,
+  "positive": 0.8241,
+  "refseq_exons_overlapping": [
+   [
+    47692040,
+    47693483
+   ],
+   [
+    47692245,
+    47693483
+   ],
+   [
+    47692260,
+    47693483
+   ]
+  ],
+  "boundary_agreement": "miniprot left edge within 6-11 bp of RefSeq splice-acceptor variants (47,692,245 / 47,692,260); the DM domain is the conserved 5' portion of that shared exon"
+ },
+ "lead_sites_vs_refseq_annotation": {
+  "dsx-v3-1": {
+   "in_refseq_exon": false,
+   "exon": null,
+   "distance_to_nearest_exon_boundary_bp": 30
+  },
+  "dsx-v3-2": {
+   "in_refseq_exon": true,
+   "exon": [
+    47619070,
+    47620336
+   ],
+   "distance_to_nearest_exon_boundary_bp": 32
+  },
+  "kyrou": {
+   "in_refseq_exon": false,
+   "exon": null,
+   "distance_to_nearest_exon_boundary_bp": 523
+  },
+  "dsx-v3-3": {
+   "in_refseq_exon": true,
+   "exon": [
+    47622697,
+    47622831
+   ],
+   "distance_to_nearest_exon_boundary_bp": 33
+  }
+ },
+ "honest_limitations": [
+  "miniprot recovers ONLY the DM-domain exon: outside the DM domain, D. melanogaster vs A. gambiae Dsx is too diverged for protein-to-genome alignment, so the sex-specific region containing all four lead sites cannot be confirmed by cross-species protein alignment",
+  "v3-1 and kyrou are intronic in the AgamP5 RefSeq model (30 bp and 523 bp from the nearest annotated exon boundary); the Kyrou published drive junction is not junction-spanning in AgamP5's annotation - the female-specific exon structure is incompletely annotated (consistent with dsx being 'uncharacterized LOC1270904'); lead-site targeting rests on DNA-level verification (Bowtie/BLAST/BWA own-site hits) and Ag1000G population data, not on cross-species protein conservation",
+  "the fast-evolving sex-specific region is expected biology for a sex-determination gene; recorded as a caveat for conservation-based guide design"
+ ],
+ "exonerate_status": "blocked: requires glib dev headers, none in sandbox, no sudo; documented, not counted"
+}
