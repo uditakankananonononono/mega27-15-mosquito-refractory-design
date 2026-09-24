@@ -173,7 +173,7 @@ The three-allele model is deliberately simple, and each simplification is stated
 
 ## 2.8 Verification
 
-A 33-test hermetic pytest suite covers scanner correctness (both strands, edge padding, ambiguity rejection, homopolymer detection), the pigeonhole/naive off-target agreement, model output shapes and finiteness, composite-score penalty behavior, annotation parsing and the documented Kyrou annotation discrepancy, constraint-bonus logic, recursion conservation (allele frequencies sum to 1 at every generation), qualitative drive behavior (invasion from rare, no spread without homing, resistance blocking, Kyrou-like suppression), and seeded Wright-Fisher reproducibility. Live network calls exist only in scripts/fetch_data.sh, never in tests.
+A 36-test hermetic pytest suite covers scanner correctness (both strands, edge padding, ambiguity rejection, homopolymer detection), the pigeonhole/naive off-target agreement, model output shapes and finiteness, composite-score penalty behavior, annotation parsing and the documented Kyrou annotation discrepancy, constraint-bonus logic, recursion conservation (allele frequencies sum to 1 at every generation), qualitative drive behavior (invasion from rare, no spread without homing, resistance blocking, Kyrou-like suppression), and seeded Wright-Fisher reproducibility. Live network calls exist only in scripts/fetch_data.sh, never in tests.
 
 ## 2.9 Genome-scale off-target enumeration
 
@@ -208,6 +208,10 @@ The scanner recovered the published Kyrou *dsx* gRNA exactly once in the locus (
 ## 3.1.1 Reading the control result
 
 The control does three kinds of work. First, it validates the machinery end-to-end: a scanner that could not recover the one experimentally proven guide in this locus would disqualify every downstream ranking, and exact recovery at the annotated strand and position (with the CNN score and zero region off-targets as independent confirmations) clears that bar. Second, it calibrates expectations: the published guide ranks 94th of the v1 top-150 on efficacy alone, which tells us the field's successful choice was not an efficacy optimum - precisely the gap the constraint and specificity rankings exist to fill. Third, it anchors the v3 comparison: because the control is cage-validated, every candidate scored above it on the fused composite inherits a concrete, experimentally grounded interpretation of the score scale - "better than the guide that collapsed cages" is a statement a reviewer can weigh, unlike an abstract composite value. The annotation discrepancy stands alongside these as a finding in its own right (Appendix I): the control's sequence identity is exact, but its annotation context is version-dependent, and any pipeline consuming public annotations at this locus must carry that caveat.
+
+## 3.1.2 The annotation discrepancy, resolved
+
+The queued AgamP4 re-annotation is complete (Appendix I). Under the VectorBase/AgamP4 genebuild the Kyrou protospacer (exact match at 2R:48,714,640-48,714,659, minus strand) spans a splice boundary with 9 of 20 bases in the coding sequence of an RB-specific exon that the current RefSeq model lacks - the 2018 junction-spanning description is confirmed, and the discrepancy reduces to a gene-model difference between annotation releases. The same mapping quantifies assembly sensitivity for our leads: dsx-v3-2 carries exactly one mismatch to the AgamP4 reference, at the PAM-adjacent seed base (position 20), and dsx-v3-1 carries three. The v3 ranking, computed on AgamP5, is therefore a reference-relative result, and population-level verification (Section 4.7) is a prerequisite for wet-lab use, not an optional refinement.
 
 ## 3.2 Locus-wide site statistics
 
@@ -424,7 +428,7 @@ It is equally important to state what the pipeline is not. It is not a replaceme
 
 ## 4.2 Limitations
 
-The limitations are honest ones. (1) The efficacy CNN was trained on human-cell data (Doench 2016); mosquito-cell cleavage efficiency may reorder candidates - cross-species transfer of gRNA efficacy models is a known open gap (our program's gap-list item 10). The rankings are therefore design priors, not measured activities. (2) The off-target screen is exact over the AgamP5 reference haplotype; it does not model population-level sequence diversity (Ag1000G variation), so individual wild mosquitoes may carry private near-cognate sites the reference lacks. Extending the enumerator to a pan-genome index is queued. (3) The drive model is panmictic and allele-frequency only; spatial structure, density-dependent mating, and population suppression thresholds need an explicit population model before any release-relevant claim could be made. (4) Functional-constraint scoring is annotation-derived and coarse: the exon model itself is in question at exactly the site of interest (section 3.1), and resolving it requires re-annotation against VectorBase AgamP4, which is queued. (5) The resistance-generation rate e is treated as a free parameter; in reality it is a measurable, sequence-dependent quantity (end-joining outcome spectra at a given cut site), and measuring or predicting it per candidate is the single highest-value extension of this work.
+The limitations are honest ones. (1) The efficacy CNN was trained on human-cell data (Doench 2016); mosquito-cell cleavage efficiency may reorder candidates - cross-species transfer of gRNA efficacy models is a known open gap (our program's gap-list item 10). The rankings are therefore design priors, not measured activities. (2) The off-target screen is exact over the AgamP5 reference haplotype; it does not model population-level sequence diversity (Ag1000G variation), so individual wild mosquitoes may carry private near-cognate sites the reference lacks. The AgamP4 mapping of Section 3.1.2 shows this is not hypothetical: the two named leads carry one and three mismatches respectively against the older reference, one of them at the PAM-adjacent seed base. Extending the enumerator to a pan-genome index is the highest-priority queued extension alongside per-candidate e prediction. (3) The drive model is panmictic and allele-frequency only; spatial structure, density-dependent mating, and population suppression thresholds need an explicit population model before any release-relevant claim could be made. (4) Functional-constraint scoring is annotation-derived and coarse: the exon model itself is in question at exactly the site of interest (section 3.1), and resolving it requires re-annotation against VectorBase AgamP4, which is queued. (5) The resistance-generation rate e is treated as a free parameter; in reality it is a measurable, sequence-dependent quantity (end-joining outcome spectra at a given cut site), and measuring or predicting it per candidate is the single highest-value extension of this work.
 
 ## 4.2.1 Limitation 1: cross-species efficacy transfer
 
@@ -483,11 +487,12 @@ A CNN + population-genetics pipeline recovers the field's validated dsx drive gR
 
 ## 5.1 Summary of contributions
 
-1. A complete, reproducible design pipeline for dsx drive protospacers: scanner, CNN efficacy model, exact off-target enumeration at region and genome scale, constraint-aware and specificity-fused rankings, and a three-allele drive simulator, all pinned by a 33-test hermetic suite.
+1. A complete, reproducible design pipeline for dsx drive protospacers: scanner, CNN efficacy model, exact off-target enumeration at region and genome scale, constraint-aware and specificity-fused rankings, and a three-allele drive simulator, all pinned by a 36-test hermetic suite.
 2. The first exact genome-wide specificity audit of the published Kyrou 2018 guide: 0 sites at <=2 mismatches, exactly 6 at 3 mismatches, coordinates enumerated (Appendix L).
 3. A named, falsifiable shortlist: dsx-v3-1 and dsx-v3-2, with complete off-target dossiers (13 enumerated 3-mismatch loci), scored above the published control on the fused v3 composite (Section 3.13), plus a staged validation plan with pre-stated kill criteria (Section 4.6).
 4. A quantitative design law from the parameter grid: homing rate moves peak drive frequency, resistance-generation rate moves the outcome; target constraint is the cheapest available lever on the latter (Sections 3.4, 3.4.1).
-5. Honest negatives, preserved: the drive fails in 15 of 16 simulated cells; the enumerator loses to published Cas-OFFinder throughput by 10^2-10^4 (Appendix M); the CNN's advantage is demonstrated only against a matched ridge baseline, not against Rule Set 2 (Appendix N); two candidates fail the specificity filter and two more are repetitive (Appendix K); the RefSeq annotation contradicts the published target description at the exact site of interest (Appendix I).
+5. The annotation discrepancy of the original Appendix I resolved: the Kyrou guide is junction-spanning with 9 coding bp under the AgamP4/VectorBase genebuild, and the leads are quantifiably assembly-sensitive (Section 3.1.2).
+6. Honest negatives, preserved: the drive fails in 15 of 16 simulated cells; the enumerator loses to published Cas-OFFinder throughput by 10^2-10^4 (Appendix M); the CNN's advantage is demonstrated only against a matched ridge baseline, not against Rule Set 2 (Appendix N); two candidates fail the specificity filter and two more are repetitive (Appendix K); the RefSeq annotation contradicts the published target description at the exact site of interest (Appendix I).
 
 ## 5.2 What would make this paper wrong
 
@@ -545,6 +550,9 @@ Every result file is regenerated by a named script from archived inputs:
 | results/kyrou_genomewide_audit.json | scripts/run_genome_scan.py | published-guide audit (Appendix L) |
 | results/ranked_designs_v3.csv | mosqdesign.v3_rank | v3 fused ranking of 30 candidates |
 | results/v3_summary.json | mosqdesign.v3_rank | v3 summary and control comparison |
+| data/agamp4/AGAP004050_AgamP4.gff3 | scripts/fetch_agamp4.sh | archived VectorBase genebuild excerpt |
+| data/agamp4/AgamP4_2R_dsx_region.fasta | scripts/fetch_agamp4.sh | archived AgamP4 2R dsx region |
+| results/agamp4_reannotation.json | scripts/agamp4_reannotation.py | junction-spanning resolution + lead mapping |
 | figures/fig1-fig10 | mosqdesign.make_figures + paper scripts | all figures |
 | paper/paper_draft.pdf | scripts/build_paper.py | this document |
 
@@ -558,7 +566,9 @@ From a clean checkout, the complete pipeline is:
     python3 -m mosqdesign.run_analysis_v2    # v2: constraint-aware ranking
     python3 scripts/run_genome_scan.py       # genome-wide enumeration (top-30 + Kyrou audit)
     python3 -m mosqdesign.v3_rank            # v3 specificity-fused ranking
-    python3 -m pytest                        # 33-test hermetic suite
+    scripts/fetch_agamp4.sh                # archive AgamP4 evidence (network)
+    python3 scripts/agamp4_reannotation.py # AgamP4 re-annotation of the Kyrou site
+    python3 -m pytest                        # 36-test hermetic suite
     python3 scripts/build_paper.py           # render this PDF
 
 scripts/fetch_data.sh downloads and archives all external inputs (the only step requiring network); the analysis scripts regenerate results/analysis_summary.json, results/analysis_v2_summary.json, results/ranked_designs.csv, results/ranked_designs_v2.csv, and all six figures; python3 -m pytest runs the 33-test hermetic suite with no network access; scripts/build_paper.py renders this PDF. All stochastic components are seeded. The environment requires only Python 3, NumPy, PyTorch, matplotlib, and reportlab, and runs within a 1 GB RAM / 2 CPU sandbox.
@@ -601,6 +611,9 @@ scripts/fetch_data.sh downloads and archives all external inputs (the only step 
 | test_v3_rank | test_filter_rejects_any_exact_or_single_mismatch_hit | hard filter on mm0 + mm1 |
 | test_v3_rank | test_penalty_scales_with_mismatch_closeness | 0.50 per mm2, 0.05 per mm3 |
 | test_v3_rank | test_score_v3_combines_terms | v3 = efficacy + bonus - penalties |
+| test_agamp4 | test_kyrou_site_junction_spanning_under_agamp4 | 9-bp coding overlap at the AgamP4 RB exon boundary |
+| test_agamp4 | test_female_exon_135bp_present | 135-bp female exon at 2R:48,715,161-48,715,295 |
+| test_agamp4 | test_leads_are_assembly_sensitive | dsx-v3-2 seed-base mismatch, dsx-v3-1 3 mismatches vs AgamP4 |
 
 # Appendix D. Constraint-aware (v2) top-30 candidates
 
@@ -691,16 +704,22 @@ Measured wall-clock on the sandbox (single process):
 | genome-wide enumeration | 30 guides x 245.9 Mb, <=3 mm | 76.75 s |
 | drive grid | 16 cells x 60 generations | < 1 s |
 | Wright-Fisher | 5 seeds x 60 generations x N = 10,000 | seconds |
-| full test suite | 33 tests | seconds |
+| full test suite | 36 tests | seconds |
 | paper build | markdown to Times PDF | seconds |
 
 # Appendix H. Negative results and preserved failures
 
-In keeping with the program's honest-verdict discipline, we record what did not work or did not hold. (1) The efficacy-first design intuition fails: the highest-efficacy site in the locus is not the best design once constraint is scored, and the field's validated site ranks only 94th of 150 on efficacy alone. (2) The drive fails in 15 of 16 simulated parameter cells; this study produces no viable release-ready design under full sterility, and we regard that as the correct scientific output rather than a shortcoming. (3) The current RefSeq annotation does not reproduce the published exon-junction description of the Kyrou target; the discrepancy is pinned by a test and reported rather than reconciled by hand. (4) Human-cell-trained efficacy scores do not establish mosquito efficacy; the candidate lists are hypotheses with quantified priors, and we explicitly do not claim them as validated guides.
+In keeping with the program's honest-verdict discipline, we record what did not work or did not hold. (1) The efficacy-first design intuition fails: the highest-efficacy site in the locus is not the best design once constraint is scored, and the field's validated site ranks only 94th of 150 on efficacy alone. (2) The drive fails in 15 of 16 simulated parameter cells; this study produces no viable release-ready design under full sterility, and we regard that as the correct scientific output rather than a shortcoming. (3) The current RefSeq annotation does not reproduce the published exon-junction description of the Kyrou target; the discrepancy was pinned by a test, reported rather than smoothed over, and is now resolved as a gene-model difference between annotation releases (Appendix I). (4) Human-cell-trained efficacy scores do not establish mosquito efficacy; the candidate lists are hypotheses with quantified priors, and we explicitly do not claim them as validated guides.
 
-# Appendix I. The Kyrou annotation discrepancy in detail
+# Appendix I. The Kyrou annotation discrepancy, resolved against AgamP4
 
-The published target is described as spanning the intron-4/exon-5 boundary of the female-specific dsx transcript under the AgamP4 (VectorBase) annotation. Our constraint model is built from the current RefSeq gene table for NCBI Gene 1270904 on the idAnoGambNW_F1_1 assembly, which contains nine transcript-variant exon models (data/dsx_gene_table.txt). In that model set, the exact 20-nt protospacer of the published gRNA lies inside an intron, approximately 0.5 kb from the nearest annotated exon - a 135-bp exon at 47,622,697-47,622,831 that the v2 ranking independently concentrates on. Three resolutions are possible: (i) the RefSeq model is incomplete at this locus and the AgamP4 model is correct, in which case the published site is genuinely junction-spanning and our constraint bonus should be scored under AgamP4; (ii) the RefSeq model is correct and the 2018 description reflects the older annotation, in which case the functional-constraint logic still holds but applies to the neighboring exon our v2 ranking identifies; (iii) both annotations are partial and the truth requires transcript evidence (RNA-seq) to adjudicate. We do not choose between these in this study. The discrepancy is pinned by test_annotation.py::test_kyrou_site_annotation_discrepancy_documented so that any future annotation update that silently changes the site's status fails the suite, and the VectorBase re-annotation is an explicit queued follow-up. This is the kind of provenance issue that automated design pipelines must surface rather than absorb: a constraint score computed against the wrong annotation would have missed the one region the field has experimentally validated.
+The published target is described as spanning the intron-4/exon-5 boundary of the female-specific dsx transcript under the AgamP4 (VectorBase) annotation, while the current RefSeq exon model on the AgamP5 assembly places the site inside an intron, about 0.5 kb from the 135-bp female-specific exon. Earlier sections pinned the discrepancy without resolving it; the queued re-annotation is now done.
+
+Method (scripts/agamp4_reannotation.py, hermetic; evidence archived under data/agamp4/). We fetched the AgamP4 chromosome 2R annotation and sequence from Ensembl Metazoa's current release (Anopheles_gambiae.AgamP4.63.chromosome.2R.gff3.gz, which carries the VectorBase community genebuild, and the matching soft-masked 2R DNA), extracted the full AGAP004050 model, and located the Kyrou protospacer by exact sequence match.
+
+Findings. (1) Under AgamP4, dsx (2R:48,703,664-48,788,460, minus strand) has two transcripts: AGAP004050-RA (6 exons) and AGAP004050-RB (7 exons), the second distinguished by an extra 1,692-bp exon (2R:48,712,957-48,714,648) whose terminal 92 bp are coding. (2) The Kyrou protospacer matches exactly once in AgamP4, at 2R:48,714,640-48,714,659 (minus strand), and 9 of its 20 bases (48,714,640-48,714,648) lie inside that extra exon's coding sequence: the guide spans the exon's splice boundary with 9 coding bp plus 11 intronic bp. The 2018 description is therefore correct under the annotation it used: resolution (i) of the earlier Appendix is confirmed - the RefSeq/AgamP5 model simply lacks the RB-specific exon, which is why the current record calls the site intronic. (3) The 135-bp female-specific exon exists identically in both annotations (AgamP4 2R:48,715,161-48,715,295; AgamP5 NC_064601.1:47,622,697-47,622,831). (4) Assembly sensitivity of the named leads: mapped onto AgamP4, dsx-v3-2's protospacer carries exactly one mismatch, at guide position 20 - the base immediately adjacent to the PAM, the most cleavage-critical position - and dsx-v3-1's carries three. The AgamP4 and AgamP5 references differ at real sequence positions inside the target region, so a guide that is exact against one assembly may be a seed-mismatch guide against the other. This is a concrete, quantified demonstration of Limitation 2 and the strongest internal argument for the Ag1000G population-level enumeration of Section 4.7: specificity and efficacy must both be verified against population sequence, not a single reference.
+
+The discrepancy is thus closed: both annotations are internally consistent, they disagree in gene model rather than in sequence truth, the 2018 authors described their site correctly, and our constraint scoring - which rewarded the region under either annotation - is unaffected in its ranking conclusions. All findings are pinned by tests/test_agamp4.py (3 tests), including the 9-bp coding overlap and the leads' mismatch positions, so any future annotation update that changes these facts fails the suite.
 
 # Appendix J. Mathematical derivations
 

@@ -1,0 +1,105 @@
+{
+ "source": "Ensembl Metazoa FTP current release: Anopheles_gambiae.AgamP4.63.chromosome.2R.gff3.gz (VectorBase community models) + AgamP4.dna_sm.chromosome.2R.fa.gz; fetched 24 Sep 2026",
+ "gene_span_2R": [
+  48703664,
+  48788460
+ ],
+ "transcripts": [
+  "AGAP004050-RA",
+  "AGAP004050-RB"
+ ],
+ "female_exon_135bp": [
+  [
+   48715161,
+   48715295
+  ],
+  [
+   48715161,
+   48715295
+  ]
+ ],
+ "guides": {
+  "kyrou_2018": {
+   "guide": "GTTTAACACAGGTCAAGCGG",
+   "assembly_position_2R": [
+    48714640,
+    48714659
+   ],
+   "strand": "-",
+   "mismatches_vs_AgamP4": 0,
+   "aligned_sequence": "GTTTAACACAGGTCAAGCGG",
+   "exact_match": true,
+   "exon_overlaps": {
+    "AGAP004050-RB": [
+     [
+      48712957,
+      48714648,
+      48714640,
+      48714648
+     ]
+    ]
+   },
+   "cds_overlaps": {
+    "AGAP004050-RB": [
+     [
+      48714557,
+      48714648,
+      48714640,
+      48714648
+     ]
+    ]
+   }
+  },
+  "dsx-v3-1": {
+   "guide": "TGGGCAGTATGCGTTAGGGT",
+   "assembly_position_2R": [
+    48711501,
+    48711520
+   ],
+   "strand": "-",
+   "mismatches_vs_AgamP4": 3,
+   "aligned_sequence": "TGGGTAGTAAGCGGTAGGGT",
+   "exact_match": false
+  },
+  "dsx-v3-2": {
+   "guide": "CATTAAGACCTACGAAGCGC",
+   "assembly_position_2R": [
+    48712765,
+    48712784
+   ],
+   "strand": "-",
+   "mismatches_vs_AgamP4": 1,
+   "aligned_sequence": "CATTAAGACCTACGAAGCGT",
+   "exact_match": false,
+   "exon_overlaps": {
+    "AGAP004050-RA": [
+     [
+      48711528,
+      48712794,
+      48712765,
+      48712784
+     ]
+    ],
+    "AGAP004050-RB": [
+     [
+      48711528,
+      48712794,
+      48712765,
+      48712784
+     ]
+    ]
+   },
+   "cds_overlaps": {
+    "AGAP004050-RA": [
+     [
+      48711599,
+      48712794,
+      48712765,
+      48712784
+     ]
+    ]
+   }
+  }
+ },
+ "kyrou_junction_spanning": true
+}
