@@ -113,3 +113,24 @@ def make() -> list[str]:
     fig.savefig(p5, dpi=200)
     plt.close(fig)
     return [p1, p2, p3, p4, p5]
+
+
+def make_fig6() -> str:
+    """Figure 6: v2 constraint-aware landscape - efficacy vs constraint bonus."""
+    import csv
+    fig, ax = plt.subplots(figsize=(7, 4.6))
+    rows = list(csv.DictReader(open(os.path.join(RESULTS, "ranked_designs_v2.csv"))))
+    eff = [float(r["efficacy"]) for r in rows]
+    bon = [float(r["constraint_bonus"]) for r in rows]
+    ax.scatter(eff, bon, s=18, color="#4472C4", alpha=0.6, label="top-300 candidates")
+    ax.set_xlabel("CNN efficacy score")
+    ax.set_ylabel("Constraint bonus (exon + splice proximity)")
+    ax.set_title("Figure 6. Constraint-aware (v2) design landscape")
+    ax.axhline(0.75, color="#C00000", ls="--", lw=1)
+    ax.annotate("135-bp exon cluster (Kyrou-adjacent)", xy=(1.10, 0.75), xytext=(0.55, 0.9),
+                arrowprops=dict(arrowstyle="->", color="#C00000"), fontsize=8, color="#C00000")
+    fig.tight_layout()
+    p = os.path.join(FIGURES, "fig6_constraint_landscape.png")
+    fig.savefig(p, dpi=200)
+    plt.close(fig)
+    return p

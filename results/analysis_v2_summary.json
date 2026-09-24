@@ -1,0 +1,107 @@
+{
+  "n_sites": 9328,
+  "n_ranked": 300,
+  "kyrou_v2": null,
+  "top10_v2": [
+    {
+      "protospacer": "GCGGTACACTGCACTGTCCG",
+      "pam": "CGG",
+      "strand": "+",
+      "genomic_pos": 47619081,
+      "efficacy": 1.2088900804519653,
+      "constraint": "exonic(23/23),splice_proximal(d=11)",
+      "offtargets": 0,
+      "score_v2": 1.9588900804519653
+    },
+    {
+      "protospacer": "AGCTAGTGAAGCGAGCCCAA",
+      "pam": "TGG",
+      "strand": "-",
+      "genomic_pos": 47622803,
+      "efficacy": 1.101070523262024,
+      "constraint": "exonic(23/23),splice_proximal(d=6)",
+      "offtargets": 0,
+      "score_v2": 1.851070523262024
+    },
+    {
+      "protospacer": "GCACACCAGCGGATCGACGA",
+      "pam": "AGG",
+      "strand": "-",
+      "genomic_pos": 47622696,
+      "efficacy": 0.9940816760063171,
+      "constraint": "exonic(22/23),splice_proximal(d=0)",
+      "offtargets": 0,
+      "score_v2": 1.7440816760063171
+    },
+    {
+      "protospacer": "TACTTACCTCCCATATGCTG",
+      "pam": "CGG",
+      "strand": "+",
+      "genomic_pos": 47692033,
+      "efficacy": 0.9578846096992493,
+      "constraint": "exonic(16/23),splice_proximal(d=0)",
+      "offtargets": 0,
+      "score_v2": 1.7078846096992493
+    },
+    {
+      "protospacer": "CTAGCTCGTCGTCTGAAATG",
+      "pam": "GGG",
+      "strand": "+",
+      "genomic_pos": 47622820,
+      "efficacy": 0.9523329138755798,
+      "constraint": "exonic(12/23),splice_proximal(d=0)",
+      "offtargets": 0,
+      "score_v2": 1.7023329138755798
+    },
+    {
+      "protospacer": "GAAGCGAGCCCAATGGCTGT",
+      "pam": "TGG",
+      "strand": "-",
+      "genomic_pos": 47622796,
+      "efficacy": 0.9367281198501587,
+      "constraint": "exonic(23/23),splice_proximal(d=13)",
+      "offtargets": 0,
+      "score_v2": 1.6867281198501587
+    },
+    {
+      "protospacer": "GAACCTGTAAATCTCCTACC",
+      "pam": "TGG",
+      "strand": "-",
+      "genomic_pos": 47655250,
+      "efficacy": 0.9012904763221741,
+      "constraint": "exonic(22/23),splice_proximal(d=0)",
+      "offtargets": 0,
+      "score_v2": 1.651290476322174
+    },
+    {
+      "protospacer": "CATTAAGACCTACGAAGCGC",
+      "pam": "TGG",
+      "strand": "-",
+      "genomic_pos": 47620304,
+      "efficacy": 0.9003596901893616,
+      "constraint": "exonic(23/23),splice_proximal(d=10)",
+      "offtargets": 0,
+      "score_v2": 1.6503596901893616
+    },
+    {
+      "protospacer": "TGCGGCTCGGGAACGTGGTG",
+      "pam": "CGG",
+      "strand": "+",
+      "genomic_pos": 47692051,
+      "efficacy": 0.8803940415382385,
+      "constraint": "exonic(23/23),splice_proximal(d=11)",
+      "offtargets": 0,
+      "score_v2": 1.6303940415382385
+    },
+    {
+      "protospacer": "CAGTGTACCGCTGTACAAAA",
+      "pam": "AGG",
+      "strand": "-",
+      "genomic_pos": 47619069,
+      "efficacy": 0.9724913239479065,
+      "constraint": "exonic(22/23),splice_proximal(d=0)",
+      "offtargets": 0,
+      "score_v2": 1.6224913239479064
+    }
+  ]
+}
