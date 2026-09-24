@@ -44,19 +44,23 @@ def make() -> list[str]:
     fig.savefig(p1, dpi=200)
     plt.close(fig)
 
-    # fig 2: top-20 ranked designs
-    top = summary["top10_designs"]
+    # fig 2: top-20 ranked designs + the published Kyrou gRNA shown at its true rank
     import csv
-    rows = list(csv.DictReader(open(os.path.join(RESULTS, "ranked_designs.csv"))))[:20]
-    fig, ax = plt.subplots(figsize=(8, 5))
-    labels = [f"{r['protospacer'][:10]}... ({r['strand']}{r['genomic_pos']})" for r in rows]
+    all_rows = list(csv.DictReader(open(os.path.join(RESULTS, "ranked_designs.csv"))))
+    rows = all_rows[:20]
+    kyrou_rows = [r for r in all_rows if r["protospacer"] == KYROU]
+    kyrou_rank = int(kyrou_rows[0]["rank"]) if kyrou_rows else None
+    if kyrou_rows:
+        rows = rows + [kyrou_rows[0]]
+    fig, ax = plt.subplots(figsize=(8, 5.4))
+    labels = [f"#{r['rank']} {r['protospacer'][:10]}... ({r['strand']}{r['genomic_pos']})" for r in rows]
     scores = [float(r["score"]) for r in rows]
     colors = ["#C00000" if r["protospacer"] == KYROU else "#4472C4" for r in rows]
     ax.barh(range(len(rows))[::-1], scores, color=colors)
     ax.set_yticks(range(len(rows))[::-1])
     ax.set_yticklabels(labels, fontsize=6, family="monospace")
     ax.set_xlabel("Composite design score")
-    ax.set_title("Figure 2. Top 20 candidate drive target sites in dsx (red = published gRNA)")
+    ax.set_title(f"Figure 2. Top dsx drive target candidates (red: published gRNA, rank {kyrou_rank}/{len(all_rows)})", fontsize=11)
     fig.tight_layout()
     p2 = os.path.join(FIGURES, "fig2_top_designs.png")
     fig.savefig(p2, dpi=200)
