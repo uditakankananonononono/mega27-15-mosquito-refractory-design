@@ -1,0 +1,167 @@
+{
+ "tool": "CRISPOR (Haeussler et al. 2016), https://crispor.gi.ucsc.edu/crispor.py, accessed 2026-09-25",
+ "method": "Two dsx windows (CRISPOR input limit 2,300 bp): W1 AgamP5 NC_064601.1:47,618,700-47,620,999 (2,300 bp; dsx-v3-1 + dsx-v3-2) and W2 47,622,000-47,623,000 (1,001 bp; Kyrou + dsx-v3-3). All four spacers verified present in the submitted sequences by exact string match before submission. pam=NGG (Sp Cas9).",
+ "runs": {
+  "agamp4": {
+   "genome": "ensAnoGam - Anopheles gambiae, EnsemblMetazoa 76 (AgamP4)",
+   "batch_urls": {
+    "W1": "https://crispor.gi.ucsc.edu/crispor.py?batchId=W3xteqHaUZBayGdaDFz5",
+    "W2": "https://crispor.gi.ucsc.edu/crispor.py?batchId=5ZlWiVBOsR2HZBCJ9mzO"
+   },
+   "guides_ranked": {
+    "W1": 345,
+    "W2": 85
+   }
+  },
+  "acoln3": {
+   "genome": "GCF_943734685.1 - Anopheles coluzzii (AcolN3)",
+   "batch_urls": {
+    "W1": "https://crispor.gi.ucsc.edu/crispor.py?batchId=FuBYOfv71qhlKQGVvBop",
+    "W2": "https://crispor.gi.ucsc.edu/crispor.py?batchId=YR58KOD5Z3WnrFqhmRyu"
+   },
+   "guides_ranked": {
+    "W1": 345,
+    "W2": 85
+   }
+  }
+ },
+ "leads": {
+  "dsx-v3-1": {
+   "spacer": "TGGGCAGTATGCGTTAGGGT",
+   "agamp4": {
+    "guideId": "341rev",
+    "mit_spec": 99,
+    "cfd_spec": 100,
+    "mm": {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 2,
+     "4": 4
+    }
+   },
+   "acoln3": {
+    "guideId": "341rev",
+    "mit_spec": 98,
+    "cfd_spec": 99,
+    "mm": {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 2,
+     "4": 7
+    }
+   }
+  },
+  "dsx-v3-2": {
+   "spacer": "CATTAAGACCTACGAAGCGC",
+   "agamp4": {
+    "guideId": "1605rev",
+    "mit_spec": 70,
+    "cfd_spec": 99,
+    "mm": {
+     "0": 0,
+     "1": 1,
+     "2": 0,
+     "3": 0,
+     "4": 5
+    },
+    "mm1_site": {
+     "position": "2R:48,712,762-48,712,784(-)",
+     "locus": "exon:AGAP004050 (dsx)",
+     "mit": 41.7,
+     "cfd": 0.3,
+     "interpretation": "the guide's OWN target locus: AgamP4 reference carries allele CATTAAGACCTACGAAGCGT (PAM-distal position 20 C>T) where the guide is ...CGC; already recorded in results/agamp4_reannotation.json (mismatches_vs_AgamP4=1 at 2R:48,712,765-48,712,784). Not a dispersed off-target."
+    }
+   },
+   "acoln3": {
+    "guideId": "1605rev",
+    "mit_spec": 100,
+    "cfd_spec": 100,
+    "mm": {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 0,
+     "4": 2
+    },
+    "note": "A. coluzzii reference matches the guide's C allele at position 20 - zero hits through 3 mismatches"
+   }
+  },
+  "dsx-v3-3": {
+   "spacer": "GAAGCGAGCCCAATGGCTGT",
+   "agamp4": {
+    "guideId": "797rev",
+    "mit_spec": 97,
+    "cfd_spec": 100,
+    "mm": {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 2,
+     "4": 6
+    },
+    "locus": "exon:AGAP004050 (dsx on-target)"
+   },
+   "acoln3": {
+    "guideId": "797rev",
+    "mit_spec": 97,
+    "cfd_spec": 99,
+    "mm": {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 2,
+     "4": 6
+    }
+   }
+  },
+  "kyrou": {
+   "spacer": "GTTTAACACAGGTCAAGCGG",
+   "agamp4": {
+    "guideId": "175rev",
+    "mit_spec": 98,
+    "cfd_spec": 100,
+    "mm": {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 0,
+     "4": 7
+    },
+    "locus": "exon:AGAP004050 (dsx on-target)"
+   },
+   "acoln3": {
+    "guideId": "175rev",
+    "mit_spec": 98,
+    "cfd_spec": 99,
+    "mm": {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 0,
+     "4": 7
+    }
+   }
+  }
+ },
+ "cross_engine_comparison": [
+  {
+   "lead": "dsx-v3-1",
+   "verdict": "AGREE: CHOPCHOP AgamP4 MM0/1/2=0 (2 MM3) = CRISPOR AgamP4 MM0/1/2=0 (2 MM3)"
+  },
+  {
+   "lead": "dsx-v3-2",
+   "verdict": "AGREE + RESOLVED: CHOPCHOP MM1=1; CRISPOR MM1=1 at the guide's own locus - the AgamP4 reference allele differs at PAM-distal position 20 (C>T). A target-site allele difference between assemblies, not a dispersed off-target. A. coluzzii matches the guide (0 hits through MM3)."
+  },
+  {
+   "lead": "dsx-v3-3",
+   "verdict": "DISAGREE: CHOPCHOP reports MM0=2 in AgamP4 (own site + one exact duplicate); CRISPOR reports MM0=0 in AgamP4 and MM0=0 in A. coluzzii. The duplicate is not reproduced by the second independent curated index; the assembly-dependent copy-number flag on dsx-v3-3 is downgraded from confirmed to engine-specific and unresolved."
+  },
+  {
+   "lead": "kyrou",
+   "verdict": "AGREE after counting conventions: CHOPCHOP MM0=1 is the conserved own site (CHOPCHOP counts the on-target genomic match); CRISPOR excludes own-site matches, MM0=0, nothing nearer than MM4."
+  }
+ ],
+ "cross_species_conservation": "All four on-target sites (three leads + Kyrou control) are recovered in the Anopheles coluzzii AcolN3 assembly at the dsx ortholog locus (coluzzii transcripts XM_049607256.1/XM_049607255.1/XM_040369033.2 etc.) with the guide sequences exactly present; the drive target sites are conserved across the two sympatric, hybridizing members of the gambiae complex. dsx-v3-2 and the Kyrou guide have zero hits through 3 mismatches in coluzzii; dsx-v3-1 and dsx-v3-3 are clean through 2 mismatches (2 MM3 each)."
+}
