@@ -1,0 +1,87 @@
+{
+ "tool": "miniprot 0.18-r281 (lh3/miniprot 81f9b93; Li 2023 Bioinformatics 39:btad014)",
+ "query": "D. melanogaster Dsx (UniProt P23023)",
+ "reference": "complete GCF_943734735.2 idAnoGambNW_F1_1, per-contig",
+ "memory_engineering": {
+  "whole_genome": "OOM-killed twice at default settings (2 GB sandbox)",
+  "chr2_default_M1": "OOM-killed during index build (923,414 blocks)",
+  "M2": "fits: peaks 0.034-0.943 GB per contig",
+  "M3": "fits trivially (0.613 GB chr2) but loses ALL hits incl. known dsx locus - sampling sensitivity floor"
+ },
+ "per_contig_scans": {
+  "NC_064601.1": {
+   "chromosome": "chr2",
+   "mode": "-M2 (1/4 modimiser sampling)",
+   "peak_rss_gb": 0.943,
+   "mrna_features": [
+    {
+     "seqid": "NC_064601.1",
+     "start": 47545556,
+     "end": 47692565,
+     "score": "676",
+     "strand": "-",
+     "attrs": "ID=MP000001;Rank=1;Identity=0.3547;Positive=0.4706;Target=sp|P23023|DSX_DROME 1 535"
+    }
+   ]
+  },
+  "NC_064602.1": {
+   "chromosome": "chr3",
+   "mode": "-M2 (1/4 modimiser sampling)",
+   "peak_rss_gb": 0.791,
+   "mrna_features": []
+  },
+  "NC_064600.1": {
+   "chromosome": "chrX",
+   "mode": "-M2 (1/4 modimiser sampling)",
+   "peak_rss_gb": 0.251,
+   "mrna_features": []
+  },
+  "NC_083487.1": {
+   "chromosome": "mito",
+   "mode": "-M2 (1/4 modimiser sampling)",
+   "peak_rss_gb": 0.034,
+   "mrna_features": []
+  },
+  "NW_scaffolds_187": {
+   "chromosome": "unplaced (187 scaffolds, 19.0 Mb)",
+   "mode": "-M2",
+   "peak_rss_gb": 0.104,
+   "mrna_features": []
+  }
+ },
+ "paralog_locus_checks": {
+  "dmd4_annotation": "LOC1281789, NC_064601.1:4056166-4057948 (chr2)",
+  "dmrta2_annotation": "LOC1271814, NC_064600.1:7711435-7726245 (chrX)",
+  "dmd4": {
+   "locus_window": "NC_064601.1:4000000-4200000",
+   "dsx_query_default_sensitivity_mrnas": [],
+   "dsx_query_loose_chaining_paf_lines": 0,
+   "native_protein_control_mrnas": [
+    {
+     "seqid": "NC_064601.1",
+     "start": 56256,
+     "end": 57803,
+     "score": "1528",
+     "strand": "-",
+     "attrs": "ID=MP000001;Rank=1;Identity=1.0000;Positive=1.0000;Target=XP_061501728.1 1 294"
+    }
+   ]
+  },
+  "dmrta2": {
+   "locus_window": "NC_064600.1:7600000-7800000",
+   "dsx_query_default_sensitivity_mrnas": [],
+   "dsx_query_loose_chaining_paf_lines": 0,
+   "native_protein_control_mrnas": [
+    {
+     "seqid": "OX030909.1",
+     "start": 112232,
+     "end": 125360,
+     "score": "2323",
+     "strand": "+",
+     "attrs": "ID=MP000001;Rank=1;Identity=1.0000;Positive=1.0000;Target=XP_310668.5 1 443"
+    }
+   ]
+  }
+ },
+ "verdict": "miniprot genome census with cross-species Dsx query detects 1/3 DM-family genes (dsx only, full 8-CDS structure on chr2); dmd-4 and DmrtA2 missed at every configuration incl. full-sensitivity locus runs - documented seed-chaining sensitivity limit, controls map both loci at 100% identity. HMMER (profile HMM) remains the 3/3 family census."
+}

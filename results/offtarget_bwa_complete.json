@@ -1,0 +1,186 @@
+{
+ "tool": "BWA 0.7.19-r1273 aln/samse (genome-completeness rerun)",
+ "mode": "aln -N -l 20 -k 3 -n 3 -o 0 -e 0; samse -n 1000000 (identical to census of record)",
+ "guides": 421,
+ "reference": "COMPLETE AgamP5 = idAnoGambNW_F1_1 (GCF_943734735.2) genomic.fna: 191 records, 264,466,744 bp (4 chromosomes byte-identical to the 4-record reference + 187 NW_* scaffolds, 19,006,784 bp = 7.2% of assembly)",
+ "census_per_mm_tier": {
+  "0": 427,
+  "1": 227,
+  "2": 2974,
+  "3": 29308
+ },
+ "census_total": 32936,
+ "chromosomes_per_mm_tier": {
+  "0": 427,
+  "1": 227,
+  "2": 2886,
+  "3": 28765
+ },
+ "scaffolds_per_mm_tier": {
+  "2": 88,
+  "3": 543
+ },
+ "prior_census_4record_total": 32305,
+ "forward_map_check": {
+  "method": "old hits mapped by accession (sequences md5-identical); compared as (guide, chrom, pos, strand)",
+  "old_alignments_missing_from_complete": 0
+ },
+ "scaffold_hit_verification": {
+  "scaffold_alignments_total": 631,
+  "sampled": 50,
+  "verified_hamming_le_3": 50,
+  "seed": 11,
+  "method": "direct reference extraction at SAM coordinates, reverse-complement for minus strand, Hamming recount vs guide"
+ },
+ "cds_context_on_complete_set": {
+  "annotation": "NCBI RefSeq GCF_943734735.2 RS_2023_12 CDS, 31 seqids incl. scaffolds (bedtools 2.31.1 intersect)",
+  "per_mm_tier_total_inCDS": {
+   "0": [
+    427,
+    247
+   ],
+   "1": [
+    227,
+    60
+   ],
+   "2": [
+    2974,
+    816
+   ],
+   "3": [
+    29308,
+    7136
+   ]
+  },
+  "library_guides_with_at_least_one_CDS_overlapping_near_cognate": 367
+ },
+ "leads": {
+  "dsx-v3-1": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     0
+    ],
+    "3": [
+     4,
+     0
+    ]
+   },
+   "cds_overlap_genes": [],
+   "cds_overlap_sites": []
+  },
+  "dsx-v3-2": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     1
+    ],
+    "3": [
+     9,
+     1
+    ]
+   },
+   "cds_overlap_genes": [
+    "LOC1278105"
+   ],
+   "cds_overlap_sites": [
+    [
+     "NC_064602.1",
+     2111186,
+     3,
+     "LOC1278105"
+    ]
+   ]
+  },
+  "dsx-v3-3": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     1
+    ],
+    "3": [
+     10,
+     1
+    ]
+   },
+   "cds_overlap_genes": [
+    "LOC1270942"
+   ],
+   "cds_overlap_sites": [
+    [
+     "NC_064601.1",
+     38008162,
+     3,
+     "LOC1270942"
+    ]
+   ]
+  },
+  "kyrou": {
+   "mm_tiers_total_inCDS": {
+    "0": [
+     1,
+     0
+    ],
+    "3": [
+     6,
+     1
+    ]
+   },
+   "cds_overlap_genes": [
+    "LOC1274366"
+   ],
+   "cds_overlap_sites": [
+    [
+     "NC_064601.1",
+     41285163,
+     3,
+     "LOC1274366"
+    ]
+   ]
+  }
+ },
+ "lead_mm_tier_totals": {
+  "kyrou": {
+   "0": 1,
+   "3": 6
+  },
+  "dsx-v3-1": {
+   "0": 1,
+   "3": 4
+  },
+  "dsx-v3-3": {
+   "0": 1,
+   "3": 10
+  },
+  "dsx-v3-2": {
+   "0": 1,
+   "3": 9
+  }
+ },
+ "correction_decomposition": {
+  "previously_reported_guides_with_cds_near_cognate": 308,
+  "same_32305_sites_accession_fixed": 367,
+  "complete_genome": 367,
+  "scaffold_hit_driven_guides": 7,
+  "scaffold_only_new_guides": 0,
+  "explanation": "The entire 308->367 delta is an accession-mismatch correction, not new sequence: the 4-record reference named chromosomes X/3/mito with INSDC accessions (OX030909.1/OX030908.1/OX030910.2) while the RefSeq CDS annotation names them NC_064600.1/NC_064602.1/NC_083487.1, so every chr3/X/mito CDS overlap was silently invisible to the intersect. Scaffolds add 631 alignments but zero additional CDS-carrying guides (all 7 scaffold-driven guides already had a chromosome CDS hit)."
+ },
+ "v32_new_cds_site_verification": {
+  "site": "NC_064602.1:2111186-2111205",
+  "guide": "dsx_W1_1604_1627_RVS",
+  "strand": "rev",
+  "guide_seq": "CATTAAGACCTACGAAGCGC",
+  "ref_seq": "CATGGACACCTACGAAGCGC",
+  "hamming": 3,
+  "mismatch_positions_1based": [
+   4,
+   5,
+   7
+  ],
+  "pam_3prime_3bp": "CCC",
+  "is_ngg": false,
+  "gene": "LOC1278105 (probable aconitate hydratase, mitochondrial)",
+  "verdict": "true MM3 site, PAM CCC not NGG - Cas9-inert",
+  "why_new": "site present in the 4-record census (as OX030908.1:2111186) but its CDS overlap was invisible under the INSDC/RefSeq accession mismatch; complete-assembly rerun uses native RefSeq accessions"
+ }
+}
