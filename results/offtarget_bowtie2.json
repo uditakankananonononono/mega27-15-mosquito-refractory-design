@@ -1,0 +1,5395 @@
+{
+ "summary": {
+  "tool": "bowtie2 2.5.4 (BenLangmead bowtie2, FM-index; Langmead & Salzberg 2012 Nat Methods 9:357)",
+  "index": "AgamP5 (4 molecules incl. NC_064601.1 whole chr 2), bowtie2-build --threads 2",
+  "align": "-f -U --end-to-end --score-min L,0,-0.9 --rdg/--rfg 1000,1000 --very-sensitive -D 100 -R 5 -L 14 -N 1 -i S,1,0.50 -a -p 2 --no-unal (end-to-end, all alignments, <=3 MM, ungapped, PAM-agnostic; first default-preset pass under-reported 2-3MM sites and was superseded)",
+  "guides": 421,
+  "guides_with_self_hit": 421,
+  "guides_missing_self_hit": [],
+  "library_offtargets_le3mm_pam_agnostic": 23851,
+  "library_ot_mm_hist": {
+   "1": 227,
+   "2": 2744,
+   "3": 20880
+  },
+  "median_ot_per_guide": 9,
+  "max_ot_per_guide": 6598,
+  "leads": {
+   "v3-1": {
+    "guide_id": "dsx_W1_340_363_RVS",
+    "contig": "dsx_W1",
+    "start": 340,
+    "orientation": "RVS",
+    "self_hits_mm0": 1,
+    "offtargets_le3mm_pam_agnostic": 3,
+    "ot_mm_hist": {
+     "3": 3
+    },
+    "flashfry_otcount": 7,
+    "flashfry_mm_0_4": "1,0,0,1,5"
+   },
+   "v3-2": {
+    "guide_id": "dsx_W1_1604_1627_RVS",
+    "contig": "dsx_W1",
+    "start": 1604,
+    "orientation": "RVS",
+    "self_hits_mm0": 1,
+    "offtargets_le3mm_pam_agnostic": 3,
+    "ot_mm_hist": {
+     "3": 3
+    },
+    "flashfry_otcount": 4,
+    "flashfry_mm_0_4": "1,0,0,0,3"
+   },
+   "v3-3": {
+    "guide_id": "dsx_W2_796_819_RVS",
+    "contig": "dsx_W2",
+    "start": 796,
+    "orientation": "RVS",
+    "self_hits_mm0": 1,
+    "offtargets_le3mm_pam_agnostic": 4,
+    "ot_mm_hist": {
+     "3": 4
+    },
+    "flashfry_otcount": 10,
+    "flashfry_mm_0_4": "1,0,0,2,7"
+   },
+   "kyrou": {
+    "guide_id": "dsx_W2_174_197_RVS",
+    "contig": "dsx_W2",
+    "start": 174,
+    "orientation": "RVS",
+    "self_hits_mm0": 1,
+    "offtargets_le3mm_pam_agnostic": 2,
+    "ot_mm_hist": {
+     "3": 2
+    },
+    "flashfry_otcount": 7,
+    "flashfry_mm_0_4": "1,0,0,1,5"
+   }
+  },
+  "note": "PAM-agnostic counts >= FlashFry PAM-adjacent counts by construction; comparison of record is the bowtie1 sweep (same search space).",
+  "mm0_duplicate_resolution": "427 MM0 alignments for 421 guides: 3 guides (dsx_W1_876_899_FWD, dsx_W1_578_601_RVS, dsx_W1_1445_1468_FWD) carry 6 perfect 20-mer copies at other AgamP5 loci; none of the 6 copies has an adjacent NGG PAM (checked NGG downstream for +strand, CCN upstream for -strand), so all are Cas9-inert. FlashFry's zero-MM0-duplicate result for NGG-adjacent Cas9 sites is therefore confirmed; 3/421 guides (0.7%) have PAM-less perfect genomic copies visible only to PAM-agnostic aligners."
+ },
+ "per_guide": {
+  "dsx_W1_4_27_RVS": {
+   "contig": "dsx_W1",
+   "start": 4,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_7_30_RVS": {
+   "contig": "dsx_W1",
+   "start": 7,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,2,9"
+  },
+  "dsx_W1_11_34_RVS": {
+   "contig": "dsx_W1",
+   "start": 11,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 5,
+    "3": 6
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_12_35_RVS": {
+   "contig": "dsx_W1",
+   "start": 12,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "3": 16
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_17_40_FWD": {
+   "contig": "dsx_W1",
+   "start": 17,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 30,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 28
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W1_40_63_RVS": {
+   "contig": "dsx_W1",
+   "start": 40,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 55,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 51
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,3,12"
+  },
+  "dsx_W2_45_68_FWD": {
+   "contig": "dsx_W2",
+   "start": 45,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 810,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 61,
+    "3": 748
+   },
+   "flashfry_otcount": 359,
+   "flashfry_mm_0_4": "1,0,1,28,329"
+  },
+  "dsx_W2_49_72_RVS": {
+   "contig": "dsx_W2",
+   "start": 49,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "3": 13
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W2_50_73_RVS": {
+   "contig": "dsx_W2",
+   "start": 50,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,0,4"
+  },
+  "dsx_W1_53_76_FWD": {
+   "contig": "dsx_W1",
+   "start": 53,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 2
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W2_58_81_FWD": {
+   "contig": "dsx_W2",
+   "start": 58,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,1,8"
+  },
+  "dsx_W1_61_84_RVS": {
+   "contig": "dsx_W1",
+   "start": 61,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W2_63_86_FWD": {
+   "contig": "dsx_W2",
+   "start": 63,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_69_92_FWD": {
+   "contig": "dsx_W1",
+   "start": 69,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,0,0,19"
+  },
+  "dsx_W1_71_94_RVS": {
+   "contig": "dsx_W1",
+   "start": 71,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 17,
+   "ot_mm_hist": {
+    "3": 17
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,1,11"
+  },
+  "dsx_W2_87_110_FWD": {
+   "contig": "dsx_W2",
+   "start": 87,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 10
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,1,11"
+  },
+  "dsx_W2_88_111_FWD": {
+   "contig": "dsx_W2",
+   "start": 88,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "3": 16
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,1,6"
+  },
+  "dsx_W2_91_114_FWD": {
+   "contig": "dsx_W2",
+   "start": 91,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 3
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_91_114_FWD": {
+   "contig": "dsx_W1",
+   "start": 91,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W1_92_115_FWD": {
+   "contig": "dsx_W1",
+   "start": 92,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 3
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_95_118_FWD": {
+   "contig": "dsx_W1",
+   "start": 95,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,2,11"
+  },
+  "dsx_W1_96_119_FWD": {
+   "contig": "dsx_W1",
+   "start": 96,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 5
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W2_98_121_RVS": {
+   "contig": "dsx_W2",
+   "start": 98,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W1_101_124_FWD": {
+   "contig": "dsx_W1",
+   "start": 101,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,0,25"
+  },
+  "dsx_W1_106_129_RVS": {
+   "contig": "dsx_W1",
+   "start": 106,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W1_107_130_RVS": {
+   "contig": "dsx_W1",
+   "start": 107,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_108_131_RVS": {
+   "contig": "dsx_W1",
+   "start": 108,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 6
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_109_132_RVS": {
+   "contig": "dsx_W1",
+   "start": 109,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 10
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W2_126_149_RVS": {
+   "contig": "dsx_W2",
+   "start": 126,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 38,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 37
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_126_149_RVS": {
+   "contig": "dsx_W1",
+   "start": 126,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,1,6"
+  },
+  "dsx_W1_127_150_FWD": {
+   "contig": "dsx_W1",
+   "start": 127,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 17
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,2,14"
+  },
+  "dsx_W2_131_154_RVS": {
+   "contig": "dsx_W2",
+   "start": 131,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 210,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 10,
+    "3": 199
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,3,15"
+  },
+  "dsx_W1_157_180_RVS": {
+   "contig": "dsx_W1",
+   "start": 157,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,2,3"
+  },
+  "dsx_W1_160_183_FWD": {
+   "contig": "dsx_W1",
+   "start": 160,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_170_193_RVS": {
+   "contig": "dsx_W1",
+   "start": 170,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,1,13"
+  },
+  "dsx_W1_171_194_RVS": {
+   "contig": "dsx_W1",
+   "start": 171,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,0,12"
+  },
+  "dsx_W1_172_195_RVS": {
+   "contig": "dsx_W1",
+   "start": 172,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 10
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,4,6"
+  },
+  "dsx_W2_174_197_RVS": {
+   "contig": "dsx_W2",
+   "start": 174,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W1_176_199_RVS": {
+   "contig": "dsx_W1",
+   "start": 176,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "3": 10
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W2_177_200_RVS": {
+   "contig": "dsx_W2",
+   "start": 177,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,1,6"
+  },
+  "dsx_W1_177_200_RVS": {
+   "contig": "dsx_W1",
+   "start": 177,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "3": 12
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,0,15"
+  },
+  "dsx_W2_185_208_RVS": {
+   "contig": "dsx_W2",
+   "start": 185,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 47,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 44
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,0,14"
+  },
+  "dsx_W2_186_209_FWD": {
+   "contig": "dsx_W2",
+   "start": 186,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 34,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 30
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,2,16"
+  },
+  "dsx_W2_191_214_FWD": {
+   "contig": "dsx_W2",
+   "start": 191,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 63,
+   "ot_mm_hist": {
+    "1": 4,
+    "2": 7,
+    "3": 52
+   },
+   "flashfry_otcount": 60,
+   "flashfry_mm_0_4": "1,0,0,6,53"
+  },
+  "dsx_W1_192_215_FWD": {
+   "contig": "dsx_W1",
+   "start": 192,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,0,12"
+  },
+  "dsx_W2_196_219_FWD": {
+   "contig": "dsx_W2",
+   "start": 196,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 38,
+   "ot_mm_hist": {
+    "1": 2,
+    "2": 8,
+    "3": 28
+   },
+   "flashfry_otcount": 31,
+   "flashfry_mm_0_4": "1,0,0,2,28"
+  },
+  "dsx_W2_205_228_FWD": {
+   "contig": "dsx_W2",
+   "start": 205,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W1_208_231_RVS": {
+   "contig": "dsx_W1",
+   "start": 208,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 6
+   },
+   "flashfry_otcount": 21,
+   "flashfry_mm_0_4": "1,0,1,0,19"
+  },
+  "dsx_W1_215_238_RVS": {
+   "contig": "dsx_W1",
+   "start": 215,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 102,
+   "ot_mm_hist": {
+    "1": 7,
+    "2": 31,
+    "3": 64
+   },
+   "flashfry_otcount": 73,
+   "flashfry_mm_0_4": "1,0,0,8,64"
+  },
+  "dsx_W2_218_241_FWD": {
+   "contig": "dsx_W2",
+   "start": 218,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "3": 10
+   },
+   "flashfry_otcount": 21,
+   "flashfry_mm_0_4": "1,0,0,0,20"
+  },
+  "dsx_W2_225_248_FWD": {
+   "contig": "dsx_W2",
+   "start": 225,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "3": 9
+   },
+   "flashfry_otcount": 24,
+   "flashfry_mm_0_4": "1,0,0,3,20"
+  },
+  "dsx_W1_229_252_RVS": {
+   "contig": "dsx_W1",
+   "start": 229,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W1_259_282_RVS": {
+   "contig": "dsx_W1",
+   "start": 259,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 31,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 29
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,1,15"
+  },
+  "dsx_W1_260_283_RVS": {
+   "contig": "dsx_W1",
+   "start": 260,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 32,
+   "ot_mm_hist": {
+    "1": 1,
+    "3": 31
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W1_272_295_FWD": {
+   "contig": "dsx_W1",
+   "start": 272,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_273_296_FWD": {
+   "contig": "dsx_W1",
+   "start": 273,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,0,14"
+  },
+  "dsx_W1_287_310_RVS": {
+   "contig": "dsx_W1",
+   "start": 287,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 37,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 33
+   },
+   "flashfry_otcount": 33,
+   "flashfry_mm_0_4": "1,0,1,2,29"
+  },
+  "dsx_W2_292_315_FWD": {
+   "contig": "dsx_W2",
+   "start": 292,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,0,12"
+  },
+  "dsx_W1_310_333_RVS": {
+   "contig": "dsx_W1",
+   "start": 310,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W1_311_334_RVS": {
+   "contig": "dsx_W1",
+   "start": 311,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_312_335_RVS": {
+   "contig": "dsx_W1",
+   "start": 312,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_319_342_RVS": {
+   "contig": "dsx_W1",
+   "start": 319,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W2_322_345_RVS": {
+   "contig": "dsx_W2",
+   "start": 322,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W2_329_352_RVS": {
+   "contig": "dsx_W2",
+   "start": 329,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,3,11"
+  },
+  "dsx_W1_335_358_RVS": {
+   "contig": "dsx_W1",
+   "start": 335,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W2_335_358_RVS": {
+   "contig": "dsx_W2",
+   "start": 335,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_336_359_RVS": {
+   "contig": "dsx_W1",
+   "start": 336,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_340_363_RVS": {
+   "contig": "dsx_W1",
+   "start": 340,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W1_344_367_RVS": {
+   "contig": "dsx_W1",
+   "start": 344,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_345_368_RVS": {
+   "contig": "dsx_W1",
+   "start": 345,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 2
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W2_354_377_RVS": {
+   "contig": "dsx_W2",
+   "start": 354,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 0,
+   "ot_mm_hist": {},
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_359_382_RVS": {
+   "contig": "dsx_W1",
+   "start": 359,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 5
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,0,13"
+  },
+  "dsx_W1_360_383_RVS": {
+   "contig": "dsx_W1",
+   "start": 360,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 24,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 23
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W1_362_385_FWD": {
+   "contig": "dsx_W1",
+   "start": 362,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 5
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_369_392_RVS": {
+   "contig": "dsx_W1",
+   "start": 369,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 27,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 4,
+    "3": 22
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W2_372_395_FWD": {
+   "contig": "dsx_W2",
+   "start": 372,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 0,
+   "ot_mm_hist": {},
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_381_404_FWD": {
+   "contig": "dsx_W1",
+   "start": 381,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,0,12"
+  },
+  "dsx_W2_387_410_RVS": {
+   "contig": "dsx_W2",
+   "start": 387,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 11
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,2,9"
+  },
+  "dsx_W1_398_421_RVS": {
+   "contig": "dsx_W1",
+   "start": 398,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 23,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 19
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,2,15"
+  },
+  "dsx_W1_405_428_FWD": {
+   "contig": "dsx_W1",
+   "start": 405,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 37,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 35
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,0,1,18"
+  },
+  "dsx_W1_416_439_FWD": {
+   "contig": "dsx_W1",
+   "start": 416,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 3
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W1_425_448_FWD": {
+   "contig": "dsx_W1",
+   "start": 425,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 2,
+   "flashfry_mm_0_4": "1,0,0,1,0"
+  },
+  "dsx_W1_429_452_FWD": {
+   "contig": "dsx_W1",
+   "start": 429,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,2,16"
+  },
+  "dsx_W2_435_458_RVS": {
+   "contig": "dsx_W2",
+   "start": 435,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 15
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,1,17"
+  },
+  "dsx_W2_436_459_RVS": {
+   "contig": "dsx_W2",
+   "start": 436,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,1,15"
+  },
+  "dsx_W2_437_460_FWD": {
+   "contig": "dsx_W2",
+   "start": 437,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 8
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,0,13"
+  },
+  "dsx_W2_438_461_FWD": {
+   "contig": "dsx_W2",
+   "start": 438,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 15
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_438_461_FWD": {
+   "contig": "dsx_W1",
+   "start": 438,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_449_472_FWD": {
+   "contig": "dsx_W1",
+   "start": 449,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,1,8"
+  },
+  "dsx_W1_450_473_FWD": {
+   "contig": "dsx_W1",
+   "start": 450,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W1_453_476_FWD": {
+   "contig": "dsx_W1",
+   "start": 453,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 16
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,3,13"
+  },
+  "dsx_W1_464_487_RVS": {
+   "contig": "dsx_W1",
+   "start": 464,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 9
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W2_473_496_FWD": {
+   "contig": "dsx_W2",
+   "start": 473,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_488_511_RVS": {
+   "contig": "dsx_W1",
+   "start": 488,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W1_491_514_RVS": {
+   "contig": "dsx_W1",
+   "start": 491,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W2_498_521_FWD": {
+   "contig": "dsx_W2",
+   "start": 498,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,0,4"
+  },
+  "dsx_W1_499_522_FWD": {
+   "contig": "dsx_W1",
+   "start": 499,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 17,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 15
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W1_502_525_FWD": {
+   "contig": "dsx_W1",
+   "start": 502,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "3": 16
+   },
+   "flashfry_otcount": 21,
+   "flashfry_mm_0_4": "1,0,0,2,18"
+  },
+  "dsx_W1_512_535_FWD": {
+   "contig": "dsx_W1",
+   "start": 512,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,1,0,9"
+  },
+  "dsx_W1_514_537_RVS": {
+   "contig": "dsx_W1",
+   "start": 514,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 4
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,0,1,18"
+  },
+  "dsx_W2_515_538_RVS": {
+   "contig": "dsx_W2",
+   "start": 515,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 26,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 23
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,0,16"
+  },
+  "dsx_W1_515_538_RVS": {
+   "contig": "dsx_W1",
+   "start": 515,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_523_546_FWD": {
+   "contig": "dsx_W1",
+   "start": 523,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W1_531_554_RVS": {
+   "contig": "dsx_W1",
+   "start": 531,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,0,15"
+  },
+  "dsx_W1_541_564_FWD": {
+   "contig": "dsx_W1",
+   "start": 541,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 87,
+   "ot_mm_hist": {
+    "2": 6,
+    "3": 81
+   },
+   "flashfry_otcount": 105,
+   "flashfry_mm_0_4": "1,0,0,13,91"
+  },
+  "dsx_W1_541_564_RVS": {
+   "contig": "dsx_W1",
+   "start": 541,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 432,
+   "ot_mm_hist": {
+    "2": 33,
+    "3": 399
+   },
+   "flashfry_otcount": 101,
+   "flashfry_mm_0_4": "1,0,0,18,82"
+  },
+  "dsx_W2_542_565_RVS": {
+   "contig": "dsx_W2",
+   "start": 542,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 15,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 14
+   },
+   "flashfry_otcount": 25,
+   "flashfry_mm_0_4": "1,0,0,2,22"
+  },
+  "dsx_W1_542_565_RVS": {
+   "contig": "dsx_W1",
+   "start": 542,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 189,
+   "ot_mm_hist": {
+    "2": 16,
+    "3": 173
+   },
+   "flashfry_otcount": 98,
+   "flashfry_mm_0_4": "1,0,2,10,85"
+  },
+  "dsx_W2_546_569_FWD": {
+   "contig": "dsx_W2",
+   "start": 546,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "3": 13
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,2,5"
+  },
+  "dsx_W2_547_570_RVS": {
+   "contig": "dsx_W2",
+   "start": 547,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,0,14"
+  },
+  "dsx_W1_550_573_FWD": {
+   "contig": "dsx_W1",
+   "start": 550,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 13
+   },
+   "flashfry_otcount": 36,
+   "flashfry_mm_0_4": "1,0,0,3,32"
+  },
+  "dsx_W1_555_578_FWD": {
+   "contig": "dsx_W1",
+   "start": 555,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,2,13"
+  },
+  "dsx_W1_566_589_RVS": {
+   "contig": "dsx_W1",
+   "start": 566,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "3": 11
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,1,11"
+  },
+  "dsx_W1_578_601_RVS": {
+   "contig": "dsx_W1",
+   "start": 578,
+   "orientation": "RVS",
+   "self_hits_mm0": 4,
+   "offtargets_le3mm_pam_agnostic": 6598,
+   "ot_mm_hist": {
+    "1": 107,
+    "2": 929,
+    "3": 5562
+   },
+   "flashfry_otcount": 1570,
+   "flashfry_mm_0_4": "1,10,70,354,1135"
+  },
+  "dsx_W2_598_621_FWD": {
+   "contig": "dsx_W2",
+   "start": 598,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,2,5"
+  },
+  "dsx_W2_604_627_FWD": {
+   "contig": "dsx_W2",
+   "start": 604,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 0,
+   "ot_mm_hist": {},
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W2_606_629_RVS": {
+   "contig": "dsx_W2",
+   "start": 606,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W2_607_630_RVS": {
+   "contig": "dsx_W2",
+   "start": 607,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,0,13"
+  },
+  "dsx_W2_611_634_FWD": {
+   "contig": "dsx_W2",
+   "start": 611,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W2_614_637_RVS": {
+   "contig": "dsx_W2",
+   "start": 614,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,0,4"
+  },
+  "dsx_W1_614_637_RVS": {
+   "contig": "dsx_W1",
+   "start": 614,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W1_617_640_FWD": {
+   "contig": "dsx_W1",
+   "start": 617,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,0,4"
+  },
+  "dsx_W1_618_641_RVS": {
+   "contig": "dsx_W1",
+   "start": 618,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W1_618_641_FWD": {
+   "contig": "dsx_W1",
+   "start": 618,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 3
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W1_619_642_FWD": {
+   "contig": "dsx_W1",
+   "start": 619,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W2_622_645_RVS": {
+   "contig": "dsx_W2",
+   "start": 622,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W2_623_646_RVS": {
+   "contig": "dsx_W2",
+   "start": 623,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,1,4"
+  },
+  "dsx_W1_631_654_FWD": {
+   "contig": "dsx_W1",
+   "start": 631,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 12
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,2,12"
+  },
+  "dsx_W2_632_655_FWD": {
+   "contig": "dsx_W2",
+   "start": 632,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W1_634_657_FWD": {
+   "contig": "dsx_W1",
+   "start": 634,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 24,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 20
+   },
+   "flashfry_otcount": 41,
+   "flashfry_mm_0_4": "1,0,1,5,34"
+  },
+  "dsx_W1_659_682_FWD": {
+   "contig": "dsx_W1",
+   "start": 659,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 3
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,2,9"
+  },
+  "dsx_W1_663_686_RVS": {
+   "contig": "dsx_W1",
+   "start": 663,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 10
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_664_687_RVS": {
+   "contig": "dsx_W1",
+   "start": 664,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 1,
+    "3": 8
+   },
+   "flashfry_otcount": 23,
+   "flashfry_mm_0_4": "1,0,0,2,20"
+  },
+  "dsx_W1_666_689_FWD": {
+   "contig": "dsx_W1",
+   "start": 666,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 10
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,0,15"
+  },
+  "dsx_W1_667_690_FWD": {
+   "contig": "dsx_W1",
+   "start": 667,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 1,
+    "3": 8
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_678_701_FWD": {
+   "contig": "dsx_W1",
+   "start": 678,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 6
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W2_679_702_RVS": {
+   "contig": "dsx_W2",
+   "start": 679,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W2_688_711_RVS": {
+   "contig": "dsx_W2",
+   "start": 688,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 9
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,2,12"
+  },
+  "dsx_W2_691_714_FWD": {
+   "contig": "dsx_W2",
+   "start": 691,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 9
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_693_716_FWD": {
+   "contig": "dsx_W1",
+   "start": 693,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W2_696_719_RVS": {
+   "contig": "dsx_W2",
+   "start": 696,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 17,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 14
+   },
+   "flashfry_otcount": 24,
+   "flashfry_mm_0_4": "1,0,0,2,21"
+  },
+  "dsx_W1_697_720_FWD": {
+   "contig": "dsx_W1",
+   "start": 697,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 13
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,0,15"
+  },
+  "dsx_W2_707_730_RVS": {
+   "contig": "dsx_W2",
+   "start": 707,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 36,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 32
+   },
+   "flashfry_otcount": 27,
+   "flashfry_mm_0_4": "1,0,0,3,23"
+  },
+  "dsx_W1_708_731_FWD": {
+   "contig": "dsx_W1",
+   "start": 708,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 6
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,0,16"
+  },
+  "dsx_W1_712_735_FWD": {
+   "contig": "dsx_W1",
+   "start": 712,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 4
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,1,13"
+  },
+  "dsx_W1_716_739_FWD": {
+   "contig": "dsx_W1",
+   "start": 716,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 4
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W2_716_739_FWD": {
+   "contig": "dsx_W2",
+   "start": 716,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 14
+   },
+   "flashfry_otcount": 22,
+   "flashfry_mm_0_4": "1,0,0,1,20"
+  },
+  "dsx_W1_722_745_FWD": {
+   "contig": "dsx_W1",
+   "start": 722,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,0,18"
+  },
+  "dsx_W1_723_746_FWD": {
+   "contig": "dsx_W1",
+   "start": 723,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 3
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_727_750_FWD": {
+   "contig": "dsx_W1",
+   "start": 727,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W1_728_751_FWD": {
+   "contig": "dsx_W1",
+   "start": 728,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 5
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,1,1,17"
+  },
+  "dsx_W1_732_755_FWD": {
+   "contig": "dsx_W1",
+   "start": 732,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 18
+   },
+   "flashfry_otcount": 49,
+   "flashfry_mm_0_4": "1,0,0,1,47"
+  },
+  "dsx_W2_732_755_RVS": {
+   "contig": "dsx_W2",
+   "start": 732,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,1,6"
+  },
+  "dsx_W1_733_756_FWD": {
+   "contig": "dsx_W1",
+   "start": 733,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 12
+   },
+   "flashfry_otcount": 30,
+   "flashfry_mm_0_4": "1,0,0,0,29"
+  },
+  "dsx_W2_742_765_FWD": {
+   "contig": "dsx_W2",
+   "start": 742,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 6
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,0,0,19"
+  },
+  "dsx_W2_743_766_FWD": {
+   "contig": "dsx_W2",
+   "start": 743,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 2,
+    "3": 7
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W2_744_767_FWD": {
+   "contig": "dsx_W2",
+   "start": 744,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 9
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_746_769_RVS": {
+   "contig": "dsx_W1",
+   "start": 746,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 3
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_752_775_FWD": {
+   "contig": "dsx_W1",
+   "start": 752,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,1,2"
+  },
+  "dsx_W2_759_782_FWD": {
+   "contig": "dsx_W2",
+   "start": 759,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W2_760_783_FWD": {
+   "contig": "dsx_W2",
+   "start": 760,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "3": 10
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_771_794_RVS": {
+   "contig": "dsx_W1",
+   "start": 771,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 22,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 19
+   },
+   "flashfry_otcount": 28,
+   "flashfry_mm_0_4": "1,0,1,2,24"
+  },
+  "dsx_W1_771_794_FWD": {
+   "contig": "dsx_W1",
+   "start": 771,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 19,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 18
+   },
+   "flashfry_otcount": 28,
+   "flashfry_mm_0_4": "1,0,1,2,24"
+  },
+  "dsx_W1_772_795_FWD": {
+   "contig": "dsx_W1",
+   "start": 772,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "3": 11
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W2_775_798_RVS": {
+   "contig": "dsx_W2",
+   "start": 775,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,1,6"
+  },
+  "dsx_W2_776_799_RVS": {
+   "contig": "dsx_W2",
+   "start": 776,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,1,11"
+  },
+  "dsx_W1_779_802_RVS": {
+   "contig": "dsx_W1",
+   "start": 779,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 56,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 12,
+    "3": 43
+   },
+   "flashfry_otcount": 144,
+   "flashfry_mm_0_4": "1,0,3,19,121"
+  },
+  "dsx_W1_782_805_RVS": {
+   "contig": "dsx_W1",
+   "start": 782,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 209,
+   "ot_mm_hist": {
+    "1": 4,
+    "2": 38,
+    "3": 167
+   },
+   "flashfry_otcount": 437,
+   "flashfry_mm_0_4": "1,0,6,43,387"
+  },
+  "dsx_W1_784_807_FWD": {
+   "contig": "dsx_W1",
+   "start": 784,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 91,
+   "ot_mm_hist": {
+    "1": 2,
+    "2": 11,
+    "3": 78
+   },
+   "flashfry_otcount": 86,
+   "flashfry_mm_0_4": "1,0,2,10,73"
+  },
+  "dsx_W1_785_808_RVS": {
+   "contig": "dsx_W1",
+   "start": 785,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 459,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 44,
+    "3": 414
+   },
+   "flashfry_otcount": 320,
+   "flashfry_mm_0_4": "1,0,9,41,269"
+  },
+  "dsx_W2_786_809_RVS": {
+   "contig": "dsx_W2",
+   "start": 786,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 6
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W2_787_810_FWD": {
+   "contig": "dsx_W2",
+   "start": 787,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 6
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,3,6"
+  },
+  "dsx_W2_788_811_FWD": {
+   "contig": "dsx_W2",
+   "start": 788,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "3": 9
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,1,8"
+  },
+  "dsx_W1_788_811_FWD": {
+   "contig": "dsx_W1",
+   "start": 788,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 459,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 44,
+    "3": 414
+   },
+   "flashfry_otcount": 231,
+   "flashfry_mm_0_4": "1,0,2,20,208"
+  },
+  "dsx_W1_789_812_RVS": {
+   "contig": "dsx_W1",
+   "start": 789,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 817,
+   "ot_mm_hist": {
+    "1": 2,
+    "2": 56,
+    "3": 759
+   },
+   "flashfry_otcount": 310,
+   "flashfry_mm_0_4": "1,0,2,44,263"
+  },
+  "dsx_W1_789_812_FWD": {
+   "contig": "dsx_W1",
+   "start": 789,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 810,
+   "ot_mm_hist": {
+    "1": 3,
+    "2": 93,
+    "3": 714
+   },
+   "flashfry_otcount": 158,
+   "flashfry_mm_0_4": "1,0,1,21,135"
+  },
+  "dsx_W1_790_813_RVS": {
+   "contig": "dsx_W1",
+   "start": 790,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 977,
+   "ot_mm_hist": {
+    "1": 2,
+    "2": 96,
+    "3": 879
+   },
+   "flashfry_otcount": 257,
+   "flashfry_mm_0_4": "1,0,5,30,221"
+  },
+  "dsx_W2_796_819_RVS": {
+   "contig": "dsx_W2",
+   "start": 796,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,2,7"
+  },
+  "dsx_W1_801_824_FWD": {
+   "contig": "dsx_W1",
+   "start": 801,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 22,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 21
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W1_802_825_FWD": {
+   "contig": "dsx_W1",
+   "start": 802,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 15
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W2_803_826_RVS": {
+   "contig": "dsx_W2",
+   "start": 803,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,1,4"
+  },
+  "dsx_W2_818_841_FWD": {
+   "contig": "dsx_W2",
+   "start": 818,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W2_819_842_FWD": {
+   "contig": "dsx_W2",
+   "start": 819,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W2_820_843_FWD": {
+   "contig": "dsx_W2",
+   "start": 820,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W2_829_852_FWD": {
+   "contig": "dsx_W2",
+   "start": 829,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 21,
+   "ot_mm_hist": {
+    "3": 21
+   },
+   "flashfry_otcount": 23,
+   "flashfry_mm_0_4": "1,0,0,3,19"
+  },
+  "dsx_W1_829_852_FWD": {
+   "contig": "dsx_W1",
+   "start": 829,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_831_854_RVS": {
+   "contig": "dsx_W1",
+   "start": 831,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W1_832_855_RVS": {
+   "contig": "dsx_W1",
+   "start": 832,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 8
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,0,12"
+  },
+  "dsx_W1_847_870_FWD": {
+   "contig": "dsx_W1",
+   "start": 847,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,1,11"
+  },
+  "dsx_W1_860_883_FWD": {
+   "contig": "dsx_W1",
+   "start": 860,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 27,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 4,
+    "3": 22
+   },
+   "flashfry_otcount": 37,
+   "flashfry_mm_0_4": "1,0,0,2,34"
+  },
+  "dsx_W1_861_884_RVS": {
+   "contig": "dsx_W1",
+   "start": 861,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 23,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 19
+   },
+   "flashfry_otcount": 29,
+   "flashfry_mm_0_4": "1,0,2,0,26"
+  },
+  "dsx_W2_862_885_FWD": {
+   "contig": "dsx_W2",
+   "start": 862,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 97,
+   "ot_mm_hist": {
+    "2": 5,
+    "3": 92
+   },
+   "flashfry_otcount": 37,
+   "flashfry_mm_0_4": "1,0,0,1,35"
+  },
+  "dsx_W1_862_885_RVS": {
+   "contig": "dsx_W1",
+   "start": 862,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 21,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 18
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,2,13"
+  },
+  "dsx_W2_865_888_FWD": {
+   "contig": "dsx_W2",
+   "start": 865,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 42,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 38
+   },
+   "flashfry_otcount": 29,
+   "flashfry_mm_0_4": "1,0,0,0,28"
+  },
+  "dsx_W2_866_889_FWD": {
+   "contig": "dsx_W2",
+   "start": 866,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 28,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 26
+   },
+   "flashfry_otcount": 23,
+   "flashfry_mm_0_4": "1,0,0,2,20"
+  },
+  "dsx_W2_867_890_FWD": {
+   "contig": "dsx_W2",
+   "start": 867,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 21,
+   "ot_mm_hist": {
+    "2": 6,
+    "3": 15
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,2,16"
+  },
+  "dsx_W2_868_891_FWD": {
+   "contig": "dsx_W2",
+   "start": 868,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 15,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 14
+   },
+   "flashfry_otcount": 27,
+   "flashfry_mm_0_4": "1,0,0,1,25"
+  },
+  "dsx_W1_876_899_FWD": {
+   "contig": "dsx_W1",
+   "start": 876,
+   "orientation": "FWD",
+   "self_hits_mm0": 2,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 27,
+   "flashfry_mm_0_4": "1,0,0,2,24"
+  },
+  "dsx_W2_880_903_RVS": {
+   "contig": "dsx_W2",
+   "start": 880,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 34,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 32
+   },
+   "flashfry_otcount": 29,
+   "flashfry_mm_0_4": "1,0,1,2,25"
+  },
+  "dsx_W1_886_909_FWD": {
+   "contig": "dsx_W1",
+   "start": 886,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_888_911_RVS": {
+   "contig": "dsx_W1",
+   "start": 888,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,0,13"
+  },
+  "dsx_W2_894_917_FWD": {
+   "contig": "dsx_W2",
+   "start": 894,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 77,
+   "ot_mm_hist": {
+    "2": 5,
+    "3": 72
+   },
+   "flashfry_otcount": 34,
+   "flashfry_mm_0_4": "1,0,0,1,32"
+  },
+  "dsx_W1_898_921_FWD": {
+   "contig": "dsx_W1",
+   "start": 898,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_907_930_FWD": {
+   "contig": "dsx_W1",
+   "start": 907,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "1": 1,
+    "3": 4
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W2_913_936_FWD": {
+   "contig": "dsx_W2",
+   "start": 913,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W2_914_937_FWD": {
+   "contig": "dsx_W2",
+   "start": 914,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W2_921_944_FWD": {
+   "contig": "dsx_W2",
+   "start": 921,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W2_921_944_RVS": {
+   "contig": "dsx_W2",
+   "start": 921,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W2_922_945_FWD": {
+   "contig": "dsx_W2",
+   "start": 922,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W1_932_955_RVS": {
+   "contig": "dsx_W1",
+   "start": 932,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 13
+   },
+   "flashfry_otcount": 34,
+   "flashfry_mm_0_4": "1,0,0,5,28"
+  },
+  "dsx_W1_934_957_FWD": {
+   "contig": "dsx_W1",
+   "start": 934,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 15,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 13
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,0,13"
+  },
+  "dsx_W2_936_959_FWD": {
+   "contig": "dsx_W2",
+   "start": 936,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W1_938_961_RVS": {
+   "contig": "dsx_W1",
+   "start": 938,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_946_969_FWD": {
+   "contig": "dsx_W1",
+   "start": 946,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_949_972_RVS": {
+   "contig": "dsx_W1",
+   "start": 949,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 9
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W1_950_973_RVS": {
+   "contig": "dsx_W1",
+   "start": 950,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 15
+   },
+   "flashfry_otcount": 51,
+   "flashfry_mm_0_4": "1,0,1,3,46"
+  },
+  "dsx_W1_959_982_RVS": {
+   "contig": "dsx_W1",
+   "start": 959,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 11
+   },
+   "flashfry_otcount": 22,
+   "flashfry_mm_0_4": "1,0,1,2,18"
+  },
+  "dsx_W1_964_987_RVS": {
+   "contig": "dsx_W1",
+   "start": 964,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 6
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,3,2"
+  },
+  "dsx_W1_965_988_RVS": {
+   "contig": "dsx_W1",
+   "start": 965,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 8
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,1,13"
+  },
+  "dsx_W2_971_994_RVS": {
+   "contig": "dsx_W2",
+   "start": 971,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 1,
+    "3": 10
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_971_994_RVS": {
+   "contig": "dsx_W1",
+   "start": 971,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W2_978_1001_RVS": {
+   "contig": "dsx_W2",
+   "start": 978,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "3": 10
+   },
+   "flashfry_otcount": 32,
+   "flashfry_mm_0_4": "1,0,0,0,31"
+  },
+  "dsx_W1_980_1003_RVS": {
+   "contig": "dsx_W1",
+   "start": 980,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,1,13"
+  },
+  "dsx_W1_1001_1024_FWD": {
+   "contig": "dsx_W1",
+   "start": 1001,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_1005_1028_RVS": {
+   "contig": "dsx_W1",
+   "start": 1005,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 6
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,0,16"
+  },
+  "dsx_W1_1008_1031_RVS": {
+   "contig": "dsx_W1",
+   "start": 1008,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,1,8"
+  },
+  "dsx_W1_1013_1036_RVS": {
+   "contig": "dsx_W1",
+   "start": 1013,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_1014_1037_FWD": {
+   "contig": "dsx_W1",
+   "start": 1014,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 10
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,2,2"
+  },
+  "dsx_W1_1015_1038_FWD": {
+   "contig": "dsx_W1",
+   "start": 1015,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 2
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_1019_1042_FWD": {
+   "contig": "dsx_W1",
+   "start": 1019,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,1,6"
+  },
+  "dsx_W1_1019_1042_RVS": {
+   "contig": "dsx_W1",
+   "start": 1019,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_1020_1043_FWD": {
+   "contig": "dsx_W1",
+   "start": 1020,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_1024_1047_FWD": {
+   "contig": "dsx_W1",
+   "start": 1024,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,1,0,10"
+  },
+  "dsx_W1_1025_1048_FWD": {
+   "contig": "dsx_W1",
+   "start": 1025,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_1026_1049_FWD": {
+   "contig": "dsx_W1",
+   "start": 1026,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,3,9"
+  },
+  "dsx_W1_1030_1053_FWD": {
+   "contig": "dsx_W1",
+   "start": 1030,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_1043_1066_RVS": {
+   "contig": "dsx_W1",
+   "start": 1043,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 36,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 34
+   },
+   "flashfry_otcount": 61,
+   "flashfry_mm_0_4": "1,0,0,12,48"
+  },
+  "dsx_W1_1049_1072_FWD": {
+   "contig": "dsx_W1",
+   "start": 1049,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 55,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 20,
+    "3": 34
+   },
+   "flashfry_otcount": 32,
+   "flashfry_mm_0_4": "1,0,1,3,27"
+  },
+  "dsx_W1_1050_1073_FWD": {
+   "contig": "dsx_W1",
+   "start": 1050,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 46,
+   "ot_mm_hist": {
+    "2": 8,
+    "3": 38
+   },
+   "flashfry_otcount": 42,
+   "flashfry_mm_0_4": "1,0,1,2,38"
+  },
+  "dsx_W1_1051_1074_FWD": {
+   "contig": "dsx_W1",
+   "start": 1051,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 16
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,1,24"
+  },
+  "dsx_W1_1058_1081_RVS": {
+   "contig": "dsx_W1",
+   "start": 1058,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,3,12"
+  },
+  "dsx_W1_1059_1082_RVS": {
+   "contig": "dsx_W1",
+   "start": 1059,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 8
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,2,4"
+  },
+  "dsx_W1_1068_1091_FWD": {
+   "contig": "dsx_W1",
+   "start": 1068,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "3": 18
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,6,19"
+  },
+  "dsx_W1_1083_1106_RVS": {
+   "contig": "dsx_W1",
+   "start": 1083,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 2
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,0,12"
+  },
+  "dsx_W1_1094_1117_FWD": {
+   "contig": "dsx_W1",
+   "start": 1094,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 25,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 21
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,1,24"
+  },
+  "dsx_W1_1095_1118_FWD": {
+   "contig": "dsx_W1",
+   "start": 1095,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 22,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 20
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W1_1096_1119_FWD": {
+   "contig": "dsx_W1",
+   "start": 1096,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "3": 11
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W1_1099_1122_FWD": {
+   "contig": "dsx_W1",
+   "start": 1099,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 10
+   },
+   "flashfry_otcount": 38,
+   "flashfry_mm_0_4": "1,0,0,2,35"
+  },
+  "dsx_W1_1100_1123_FWD": {
+   "contig": "dsx_W1",
+   "start": 1100,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 16
+   },
+   "flashfry_otcount": 43,
+   "flashfry_mm_0_4": "1,0,0,4,38"
+  },
+  "dsx_W1_1103_1126_RVS": {
+   "contig": "dsx_W1",
+   "start": 1103,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "3": 16
+   },
+   "flashfry_otcount": 65,
+   "flashfry_mm_0_4": "1,0,0,8,56"
+  },
+  "dsx_W1_1106_1129_RVS": {
+   "contig": "dsx_W1",
+   "start": 1106,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,3,15"
+  },
+  "dsx_W1_1107_1130_FWD": {
+   "contig": "dsx_W1",
+   "start": 1107,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 21,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 19
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,0,4,15"
+  },
+  "dsx_W1_1109_1132_RVS": {
+   "contig": "dsx_W1",
+   "start": 1109,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 17,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 14
+   },
+   "flashfry_otcount": 30,
+   "flashfry_mm_0_4": "1,0,0,1,28"
+  },
+  "dsx_W1_1110_1133_RVS": {
+   "contig": "dsx_W1",
+   "start": 1110,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 17,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 14
+   },
+   "flashfry_otcount": 25,
+   "flashfry_mm_0_4": "1,0,0,2,22"
+  },
+  "dsx_W1_1111_1134_RVS": {
+   "contig": "dsx_W1",
+   "start": 1111,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "3": 11
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_1112_1135_RVS": {
+   "contig": "dsx_W1",
+   "start": 1112,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 19
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,2,15"
+  },
+  "dsx_W1_1113_1136_RVS": {
+   "contig": "dsx_W1",
+   "start": 1113,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 25,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 21
+   },
+   "flashfry_otcount": 34,
+   "flashfry_mm_0_4": "1,0,0,6,27"
+  },
+  "dsx_W1_1125_1148_FWD": {
+   "contig": "dsx_W1",
+   "start": 1125,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "1": 1,
+    "3": 11
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,0,18"
+  },
+  "dsx_W1_1139_1162_FWD": {
+   "contig": "dsx_W1",
+   "start": 1139,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 15,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 14
+   },
+   "flashfry_otcount": 25,
+   "flashfry_mm_0_4": "1,0,0,3,21"
+  },
+  "dsx_W1_1148_1171_RVS": {
+   "contig": "dsx_W1",
+   "start": 1148,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_1152_1175_FWD": {
+   "contig": "dsx_W1",
+   "start": 1152,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_1157_1180_RVS": {
+   "contig": "dsx_W1",
+   "start": 1157,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W1_1168_1191_FWD": {
+   "contig": "dsx_W1",
+   "start": 1168,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 17
+   },
+   "flashfry_otcount": 32,
+   "flashfry_mm_0_4": "1,0,0,1,30"
+  },
+  "dsx_W1_1178_1201_RVS": {
+   "contig": "dsx_W1",
+   "start": 1178,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 27,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 25
+   },
+   "flashfry_otcount": 77,
+   "flashfry_mm_0_4": "1,0,1,6,69"
+  },
+  "dsx_W1_1180_1203_FWD": {
+   "contig": "dsx_W1",
+   "start": 1180,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "3": 13
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W1_1181_1204_FWD": {
+   "contig": "dsx_W1",
+   "start": 1181,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 27,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 25
+   },
+   "flashfry_otcount": 25,
+   "flashfry_mm_0_4": "1,0,0,2,22"
+  },
+  "dsx_W1_1182_1205_FWD": {
+   "contig": "dsx_W1",
+   "start": 1182,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 39,
+   "ot_mm_hist": {
+    "2": 9,
+    "3": 30
+   },
+   "flashfry_otcount": 32,
+   "flashfry_mm_0_4": "1,0,0,3,28"
+  },
+  "dsx_W1_1184_1207_RVS": {
+   "contig": "dsx_W1",
+   "start": 1184,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 24,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 23
+   },
+   "flashfry_otcount": 55,
+   "flashfry_mm_0_4": "1,0,0,6,48"
+  },
+  "dsx_W1_1185_1208_FWD": {
+   "contig": "dsx_W1",
+   "start": 1185,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 17,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 15
+   },
+   "flashfry_otcount": 32,
+   "flashfry_mm_0_4": "1,0,0,1,30"
+  },
+  "dsx_W1_1186_1209_FWD": {
+   "contig": "dsx_W1",
+   "start": 1186,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 39,
+   "flashfry_mm_0_4": "1,0,0,3,35"
+  },
+  "dsx_W1_1187_1210_RVS": {
+   "contig": "dsx_W1",
+   "start": 1187,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "2": 5,
+    "3": 15
+   },
+   "flashfry_otcount": 56,
+   "flashfry_mm_0_4": "1,0,0,7,48"
+  },
+  "dsx_W1_1199_1222_FWD": {
+   "contig": "dsx_W1",
+   "start": 1199,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 5,
+    "3": 2
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,1,6"
+  },
+  "dsx_W1_1199_1222_RVS": {
+   "contig": "dsx_W1",
+   "start": 1199,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,6,9"
+  },
+  "dsx_W1_1200_1223_FWD": {
+   "contig": "dsx_W1",
+   "start": 1200,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 5,
+    "3": 2
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W1_1203_1226_FWD": {
+   "contig": "dsx_W1",
+   "start": 1203,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,1,8"
+  },
+  "dsx_W1_1214_1237_FWD": {
+   "contig": "dsx_W1",
+   "start": 1214,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W1_1226_1249_RVS": {
+   "contig": "dsx_W1",
+   "start": 1226,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 3
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_1229_1252_RVS": {
+   "contig": "dsx_W1",
+   "start": 1229,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 8
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_1230_1253_FWD": {
+   "contig": "dsx_W1",
+   "start": 1230,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_1234_1257_FWD": {
+   "contig": "dsx_W1",
+   "start": 1234,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W1_1235_1258_FWD": {
+   "contig": "dsx_W1",
+   "start": 1235,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,1,17"
+  },
+  "dsx_W1_1238_1261_FWD": {
+   "contig": "dsx_W1",
+   "start": 1238,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_1239_1262_RVS": {
+   "contig": "dsx_W1",
+   "start": 1239,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,1,4"
+  },
+  "dsx_W1_1239_1262_FWD": {
+   "contig": "dsx_W1",
+   "start": 1239,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_1240_1263_RVS": {
+   "contig": "dsx_W1",
+   "start": 1240,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 2,
+   "flashfry_mm_0_4": "1,0,0,0,1"
+  },
+  "dsx_W1_1244_1267_FWD": {
+   "contig": "dsx_W1",
+   "start": 1244,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "3": 9
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,2,23"
+  },
+  "dsx_W1_1253_1276_RVS": {
+   "contig": "dsx_W1",
+   "start": 1253,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,3,22"
+  },
+  "dsx_W1_1259_1282_FWD": {
+   "contig": "dsx_W1",
+   "start": 1259,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "3": 10
+   },
+   "flashfry_otcount": 27,
+   "flashfry_mm_0_4": "1,0,0,2,24"
+  },
+  "dsx_W1_1265_1288_FWD": {
+   "contig": "dsx_W1",
+   "start": 1265,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "3": 12
+   },
+   "flashfry_otcount": 21,
+   "flashfry_mm_0_4": "1,0,0,1,19"
+  },
+  "dsx_W1_1269_1292_RVS": {
+   "contig": "dsx_W1",
+   "start": 1269,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,1,4"
+  },
+  "dsx_W1_1278_1301_FWD": {
+   "contig": "dsx_W1",
+   "start": 1278,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 25,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 22
+   },
+   "flashfry_otcount": 28,
+   "flashfry_mm_0_4": "1,0,1,3,23"
+  },
+  "dsx_W1_1286_1309_FWD": {
+   "contig": "dsx_W1",
+   "start": 1286,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 19,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 17
+   },
+   "flashfry_otcount": 30,
+   "flashfry_mm_0_4": "1,0,0,3,26"
+  },
+  "dsx_W1_1287_1310_FWD": {
+   "contig": "dsx_W1",
+   "start": 1287,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 19,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 17
+   },
+   "flashfry_otcount": 48,
+   "flashfry_mm_0_4": "1,0,0,0,47"
+  },
+  "dsx_W1_1288_1311_RVS": {
+   "contig": "dsx_W1",
+   "start": 1288,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 22,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 20
+   },
+   "flashfry_otcount": 43,
+   "flashfry_mm_0_4": "1,0,0,3,39"
+  },
+  "dsx_W1_1289_1312_RVS": {
+   "contig": "dsx_W1",
+   "start": 1289,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 9
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,2,11"
+  },
+  "dsx_W1_1290_1313_RVS": {
+   "contig": "dsx_W1",
+   "start": 1290,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 10
+   },
+   "flashfry_otcount": 33,
+   "flashfry_mm_0_4": "1,0,0,1,31"
+  },
+  "dsx_W1_1297_1320_RVS": {
+   "contig": "dsx_W1",
+   "start": 1297,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 4
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,0,15"
+  },
+  "dsx_W1_1310_1333_RVS": {
+   "contig": "dsx_W1",
+   "start": 1310,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "3": 13
+   },
+   "flashfry_otcount": 58,
+   "flashfry_mm_0_4": "1,0,0,1,56"
+  },
+  "dsx_W1_1314_1337_RVS": {
+   "contig": "dsx_W1",
+   "start": 1314,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "3": 12
+   },
+   "flashfry_otcount": 50,
+   "flashfry_mm_0_4": "1,0,0,5,44"
+  },
+  "dsx_W1_1317_1340_FWD": {
+   "contig": "dsx_W1",
+   "start": 1317,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "3": 12
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_1317_1340_RVS": {
+   "contig": "dsx_W1",
+   "start": 1317,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_1318_1341_RVS": {
+   "contig": "dsx_W1",
+   "start": 1318,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 23,
+   "flashfry_mm_0_4": "1,0,0,0,22"
+  },
+  "dsx_W1_1323_1346_RVS": {
+   "contig": "dsx_W1",
+   "start": 1323,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 11
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,1,1,17"
+  },
+  "dsx_W1_1324_1347_RVS": {
+   "contig": "dsx_W1",
+   "start": 1324,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 7
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_1325_1348_RVS": {
+   "contig": "dsx_W1",
+   "start": 1325,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 11
+   },
+   "flashfry_otcount": 25,
+   "flashfry_mm_0_4": "1,0,0,1,23"
+  },
+  "dsx_W1_1326_1349_RVS": {
+   "contig": "dsx_W1",
+   "start": 1326,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 9
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,0,9"
+  },
+  "dsx_W1_1331_1354_RVS": {
+   "contig": "dsx_W1",
+   "start": 1331,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 5
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_1334_1357_RVS": {
+   "contig": "dsx_W1",
+   "start": 1334,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_1365_1388_FWD": {
+   "contig": "dsx_W1",
+   "start": 1365,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 15,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 12
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,0,16"
+  },
+  "dsx_W1_1366_1389_RVS": {
+   "contig": "dsx_W1",
+   "start": 1366,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 10
+   },
+   "flashfry_otcount": 20,
+   "flashfry_mm_0_4": "1,0,0,2,17"
+  },
+  "dsx_W1_1373_1396_RVS": {
+   "contig": "dsx_W1",
+   "start": 1373,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 29,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 25
+   },
+   "flashfry_otcount": 59,
+   "flashfry_mm_0_4": "1,0,0,4,54"
+  },
+  "dsx_W1_1374_1397_RVS": {
+   "contig": "dsx_W1",
+   "start": 1374,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 86,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 9,
+    "3": 76
+   },
+   "flashfry_otcount": 128,
+   "flashfry_mm_0_4": "1,0,3,10,114"
+  },
+  "dsx_W1_1384_1407_RVS": {
+   "contig": "dsx_W1",
+   "start": 1384,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1650,
+   "ot_mm_hist": {
+    "1": 21,
+    "2": 191,
+    "3": 1438
+   },
+   "flashfry_otcount": 410,
+   "flashfry_mm_0_4": "1,0,6,72,331"
+  },
+  "dsx_W1_1387_1410_FWD": {
+   "contig": "dsx_W1",
+   "start": 1387,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1650,
+   "ot_mm_hist": {
+    "1": 21,
+    "2": 191,
+    "3": 1438
+   },
+   "flashfry_otcount": 669,
+   "flashfry_mm_0_4": "1,3,11,120,534"
+  },
+  "dsx_W1_1398_1421_FWD": {
+   "contig": "dsx_W1",
+   "start": 1398,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 23,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 21
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W1_1406_1429_FWD": {
+   "contig": "dsx_W1",
+   "start": 1406,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 33,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 31
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W1_1412_1435_FWD": {
+   "contig": "dsx_W1",
+   "start": 1412,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 10,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 9
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W1_1413_1436_FWD": {
+   "contig": "dsx_W1",
+   "start": 1413,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 29,
+   "flashfry_mm_0_4": "1,0,0,1,27"
+  },
+  "dsx_W1_1425_1448_FWD": {
+   "contig": "dsx_W1",
+   "start": 1425,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,1,10"
+  },
+  "dsx_W1_1430_1453_FWD": {
+   "contig": "dsx_W1",
+   "start": 1430,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 8
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W1_1431_1454_FWD": {
+   "contig": "dsx_W1",
+   "start": 1431,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 15
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,2,10"
+  },
+  "dsx_W1_1432_1455_FWD": {
+   "contig": "dsx_W1",
+   "start": 1432,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 12
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,0,14"
+  },
+  "dsx_W1_1436_1459_RVS": {
+   "contig": "dsx_W1",
+   "start": 1436,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,1,3"
+  },
+  "dsx_W1_1437_1460_RVS": {
+   "contig": "dsx_W1",
+   "start": 1437,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 4
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_1440_1463_FWD": {
+   "contig": "dsx_W1",
+   "start": 1440,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 4
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_1445_1468_FWD": {
+   "contig": "dsx_W1",
+   "start": 1445,
+   "orientation": "FWD",
+   "self_hits_mm0": 3,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,0,14"
+  },
+  "dsx_W1_1448_1471_RVS": {
+   "contig": "dsx_W1",
+   "start": 1448,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W1_1449_1472_RVS": {
+   "contig": "dsx_W1",
+   "start": 1449,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_1455_1478_FWD": {
+   "contig": "dsx_W1",
+   "start": 1455,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W1_1460_1483_FWD": {
+   "contig": "dsx_W1",
+   "start": 1460,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,0,17"
+  },
+  "dsx_W1_1461_1484_FWD": {
+   "contig": "dsx_W1",
+   "start": 1461,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "3": 8
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,2,11"
+  },
+  "dsx_W1_1463_1486_RVS": {
+   "contig": "dsx_W1",
+   "start": 1463,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 18
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,0,16"
+  },
+  "dsx_W1_1479_1502_RVS": {
+   "contig": "dsx_W1",
+   "start": 1479,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 13
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W1_1479_1502_FWD": {
+   "contig": "dsx_W1",
+   "start": 1479,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 27,
+   "flashfry_mm_0_4": "1,0,0,1,25"
+  },
+  "dsx_W1_1485_1508_RVS": {
+   "contig": "dsx_W1",
+   "start": 1485,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 10
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,1,9"
+  },
+  "dsx_W1_1494_1517_FWD": {
+   "contig": "dsx_W1",
+   "start": 1494,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "3": 9
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,2,14"
+  },
+  "dsx_W1_1497_1520_FWD": {
+   "contig": "dsx_W1",
+   "start": 1497,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_1503_1526_RVS": {
+   "contig": "dsx_W1",
+   "start": 1503,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "3": 12
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,3,13"
+  },
+  "dsx_W1_1503_1526_FWD": {
+   "contig": "dsx_W1",
+   "start": 1503,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "1": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,1,13"
+  },
+  "dsx_W1_1508_1531_FWD": {
+   "contig": "dsx_W1",
+   "start": 1508,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 16
+   },
+   "flashfry_otcount": 35,
+   "flashfry_mm_0_4": "1,0,0,4,30"
+  },
+  "dsx_W1_1509_1532_FWD": {
+   "contig": "dsx_W1",
+   "start": 1509,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 16
+   },
+   "flashfry_otcount": 76,
+   "flashfry_mm_0_4": "1,0,0,4,71"
+  },
+  "dsx_W1_1509_1532_RVS": {
+   "contig": "dsx_W1",
+   "start": 1509,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 26,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 22
+   },
+   "flashfry_otcount": 25,
+   "flashfry_mm_0_4": "1,0,0,0,24"
+  },
+  "dsx_W1_1535_1558_RVS": {
+   "contig": "dsx_W1",
+   "start": 1535,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 24,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 20
+   },
+   "flashfry_otcount": 30,
+   "flashfry_mm_0_4": "1,0,0,3,26"
+  },
+  "dsx_W1_1550_1573_RVS": {
+   "contig": "dsx_W1",
+   "start": 1550,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 85,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 9,
+    "3": 75
+   },
+   "flashfry_otcount": 84,
+   "flashfry_mm_0_4": "1,0,0,7,76"
+  },
+  "dsx_W1_1553_1576_FWD": {
+   "contig": "dsx_W1",
+   "start": 1553,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 85,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 9,
+    "3": 75
+   },
+   "flashfry_otcount": 69,
+   "flashfry_mm_0_4": "1,0,1,7,60"
+  },
+  "dsx_W1_1562_1585_RVS": {
+   "contig": "dsx_W1",
+   "start": 1562,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "3": 13
+   },
+   "flashfry_otcount": 44,
+   "flashfry_mm_0_4": "1,0,0,4,39"
+  },
+  "dsx_W1_1564_1587_FWD": {
+   "contig": "dsx_W1",
+   "start": 1564,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 25,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 22
+   },
+   "flashfry_otcount": 33,
+   "flashfry_mm_0_4": "1,0,0,3,29"
+  },
+  "dsx_W1_1565_1588_RVS": {
+   "contig": "dsx_W1",
+   "start": 1565,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 7
+   },
+   "flashfry_otcount": 23,
+   "flashfry_mm_0_4": "1,0,0,2,20"
+  },
+  "dsx_W1_1572_1595_RVS": {
+   "contig": "dsx_W1",
+   "start": 1572,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 11
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,1,1,15"
+  },
+  "dsx_W1_1596_1619_FWD": {
+   "contig": "dsx_W1",
+   "start": 1596,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 7
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,2,13"
+  },
+  "dsx_W1_1604_1627_RVS": {
+   "contig": "dsx_W1",
+   "start": 1604,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W1_1622_1645_FWD": {
+   "contig": "dsx_W1",
+   "start": 1622,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 28,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 3,
+    "3": 24
+   },
+   "flashfry_otcount": 43,
+   "flashfry_mm_0_4": "1,0,0,2,40"
+  },
+  "dsx_W1_1623_1646_FWD": {
+   "contig": "dsx_W1",
+   "start": 1623,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 54,
+   "ot_mm_hist": {
+    "2": 9,
+    "3": 45
+   },
+   "flashfry_otcount": 31,
+   "flashfry_mm_0_4": "1,0,1,1,28"
+  },
+  "dsx_W1_1624_1647_FWD": {
+   "contig": "dsx_W1",
+   "start": 1624,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 44,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 40
+   },
+   "flashfry_otcount": 27,
+   "flashfry_mm_0_4": "1,0,0,3,23"
+  },
+  "dsx_W1_1625_1648_FWD": {
+   "contig": "dsx_W1",
+   "start": 1625,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 39,
+   "ot_mm_hist": {
+    "2": 6,
+    "3": 33
+   },
+   "flashfry_otcount": 54,
+   "flashfry_mm_0_4": "1,0,0,3,50"
+  },
+  "dsx_W1_1633_1656_FWD": {
+   "contig": "dsx_W1",
+   "start": 1633,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 24,
+   "ot_mm_hist": {
+    "3": 24
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,0,1,13"
+  },
+  "dsx_W1_1634_1657_FWD": {
+   "contig": "dsx_W1",
+   "start": 1634,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "3": 16
+   },
+   "flashfry_otcount": 21,
+   "flashfry_mm_0_4": "1,0,0,2,18"
+  },
+  "dsx_W1_1635_1658_FWD": {
+   "contig": "dsx_W1",
+   "start": 1635,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 2
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,1,2,7"
+  },
+  "dsx_W1_1636_1659_RVS": {
+   "contig": "dsx_W1",
+   "start": 1636,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,2,10"
+  },
+  "dsx_W1_1638_1661_FWD": {
+   "contig": "dsx_W1",
+   "start": 1638,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,1,24"
+  },
+  "dsx_W1_1661_1684_FWD": {
+   "contig": "dsx_W1",
+   "start": 1661,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3139,
+   "ot_mm_hist": {
+    "1": 24,
+    "2": 361,
+    "3": 2754
+   },
+   "flashfry_otcount": 1077,
+   "flashfry_mm_0_4": "1,2,21,152,901"
+  },
+  "dsx_W1_1684_1707_FWD": {
+   "contig": "dsx_W1",
+   "start": 1684,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 33,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 30
+   },
+   "flashfry_otcount": 39,
+   "flashfry_mm_0_4": "1,0,1,3,34"
+  },
+  "dsx_W1_1722_1745_FWD": {
+   "contig": "dsx_W1",
+   "start": 1722,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,2,1"
+  },
+  "dsx_W1_1726_1749_FWD": {
+   "contig": "dsx_W1",
+   "start": 1726,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,1,8"
+  },
+  "dsx_W1_1734_1757_FWD": {
+   "contig": "dsx_W1",
+   "start": 1734,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,0,4"
+  },
+  "dsx_W1_1735_1758_RVS": {
+   "contig": "dsx_W1",
+   "start": 1735,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_1736_1759_RVS": {
+   "contig": "dsx_W1",
+   "start": 1736,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 43,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 42
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,1,0,15"
+  },
+  "dsx_W1_1737_1760_FWD": {
+   "contig": "dsx_W1",
+   "start": 1737,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 6
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,3,13"
+  },
+  "dsx_W1_1758_1781_FWD": {
+   "contig": "dsx_W1",
+   "start": 1758,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "2": 3
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,0,8"
+  },
+  "dsx_W1_1763_1786_RVS": {
+   "contig": "dsx_W1",
+   "start": 1763,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_1781_1804_RVS": {
+   "contig": "dsx_W1",
+   "start": 1781,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,0,17"
+  },
+  "dsx_W1_1789_1812_RVS": {
+   "contig": "dsx_W1",
+   "start": 1789,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 11,
+   "ot_mm_hist": {
+    "3": 11
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,0,13"
+  },
+  "dsx_W1_1794_1817_RVS": {
+   "contig": "dsx_W1",
+   "start": 1794,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 26,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 3,
+    "3": 22
+   },
+   "flashfry_otcount": 28,
+   "flashfry_mm_0_4": "1,0,0,1,26"
+  },
+  "dsx_W1_1803_1826_FWD": {
+   "contig": "dsx_W1",
+   "start": 1803,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 22,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 20
+   },
+   "flashfry_otcount": 22,
+   "flashfry_mm_0_4": "1,0,0,2,19"
+  },
+  "dsx_W1_1808_1831_FWD": {
+   "contig": "dsx_W1",
+   "start": 1808,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 15
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,1,3,6"
+  },
+  "dsx_W1_1815_1838_FWD": {
+   "contig": "dsx_W1",
+   "start": 1815,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 19,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 16
+   },
+   "flashfry_otcount": 26,
+   "flashfry_mm_0_4": "1,0,0,2,23"
+  },
+  "dsx_W1_1844_1867_FWD": {
+   "contig": "dsx_W1",
+   "start": 1844,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_1855_1878_RVS": {
+   "contig": "dsx_W1",
+   "start": 1855,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W1_1862_1885_FWD": {
+   "contig": "dsx_W1",
+   "start": 1862,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 7,
+   "ot_mm_hist": {
+    "3": 7
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W1_1922_1945_FWD": {
+   "contig": "dsx_W1",
+   "start": 1922,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 23,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 2,
+    "3": 20
+   },
+   "flashfry_otcount": 23,
+   "flashfry_mm_0_4": "1,0,0,2,20"
+  },
+  "dsx_W1_1923_1946_FWD": {
+   "contig": "dsx_W1",
+   "start": 1923,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 3,
+    "3": 16
+   },
+   "flashfry_otcount": 14,
+   "flashfry_mm_0_4": "1,0,0,1,12"
+  },
+  "dsx_W1_1924_1947_RVS": {
+   "contig": "dsx_W1",
+   "start": 1924,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 8
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,1,15"
+  },
+  "dsx_W1_1925_1948_RVS": {
+   "contig": "dsx_W1",
+   "start": 1925,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 9,
+   "ot_mm_hist": {
+    "3": 9
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,1,15"
+  },
+  "dsx_W1_1931_1954_FWD": {
+   "contig": "dsx_W1",
+   "start": 1931,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W1_1933_1956_RVS": {
+   "contig": "dsx_W1",
+   "start": 1933,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,1,3"
+  },
+  "dsx_W1_1934_1957_RVS": {
+   "contig": "dsx_W1",
+   "start": 1934,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,1,5"
+  },
+  "dsx_W1_1935_1958_RVS": {
+   "contig": "dsx_W1",
+   "start": 1935,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 4
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,2,8"
+  },
+  "dsx_W1_1938_1961_RVS": {
+   "contig": "dsx_W1",
+   "start": 1938,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "3": 6
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W1_1939_1962_RVS": {
+   "contig": "dsx_W1",
+   "start": 1939,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W1_1940_1963_RVS": {
+   "contig": "dsx_W1",
+   "start": 1940,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 5
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W1_1941_1964_RVS": {
+   "contig": "dsx_W1",
+   "start": 1941,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 11
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_1946_1969_FWD": {
+   "contig": "dsx_W1",
+   "start": 1946,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 27,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 24
+   },
+   "flashfry_otcount": 55,
+   "flashfry_mm_0_4": "1,0,0,1,53"
+  },
+  "dsx_W1_1960_1983_RVS": {
+   "contig": "dsx_W1",
+   "start": 1960,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 45,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 42
+   },
+   "flashfry_otcount": 19,
+   "flashfry_mm_0_4": "1,0,0,3,15"
+  },
+  "dsx_W1_1965_1988_FWD": {
+   "contig": "dsx_W1",
+   "start": 1965,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 12,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 9
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W1_2088_2111_FWD": {
+   "contig": "dsx_W1",
+   "start": 2088,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 18,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 17
+   },
+   "flashfry_otcount": 31,
+   "flashfry_mm_0_4": "1,0,0,3,27"
+  },
+  "dsx_W1_2094_2117_FWD": {
+   "contig": "dsx_W1",
+   "start": 2094,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 14,
+   "ot_mm_hist": {
+    "3": 14
+   },
+   "flashfry_otcount": 28,
+   "flashfry_mm_0_4": "1,0,0,1,26"
+  },
+  "dsx_W1_2101_2124_FWD": {
+   "contig": "dsx_W1",
+   "start": 2101,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 8,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 7
+   },
+   "flashfry_otcount": 8,
+   "flashfry_mm_0_4": "1,0,0,0,7"
+  },
+  "dsx_W1_2104_2127_RVS": {
+   "contig": "dsx_W1",
+   "start": 2104,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 6,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 4
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,0,16"
+  },
+  "dsx_W1_2111_2134_FWD": {
+   "contig": "dsx_W1",
+   "start": 2111,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 17
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  },
+  "dsx_W1_2117_2140_FWD": {
+   "contig": "dsx_W1",
+   "start": 2117,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 24,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 22
+   },
+   "flashfry_otcount": 38,
+   "flashfry_mm_0_4": "1,0,0,3,34"
+  },
+  "dsx_W1_2126_2149_FWD": {
+   "contig": "dsx_W1",
+   "start": 2126,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 16,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 14
+   },
+   "flashfry_otcount": 13,
+   "flashfry_mm_0_4": "1,0,0,1,11"
+  },
+  "dsx_W1_2133_2156_FWD": {
+   "contig": "dsx_W1",
+   "start": 2133,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 19,
+   "ot_mm_hist": {
+    "2": 4,
+    "3": 15
+   },
+   "flashfry_otcount": 15,
+   "flashfry_mm_0_4": "1,0,1,1,12"
+  },
+  "dsx_W1_2134_2157_FWD": {
+   "contig": "dsx_W1",
+   "start": 2134,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 15,
+   "ot_mm_hist": {
+    "2": 3,
+    "3": 12
+   },
+   "flashfry_otcount": 23,
+   "flashfry_mm_0_4": "1,0,0,1,21"
+  },
+  "dsx_W1_2151_2174_FWD": {
+   "contig": "dsx_W1",
+   "start": 2151,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 0,
+   "ot_mm_hist": {},
+   "flashfry_otcount": 12,
+   "flashfry_mm_0_4": "1,0,0,0,11"
+  },
+  "dsx_W1_2152_2175_FWD": {
+   "contig": "dsx_W1",
+   "start": 2152,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W1_2162_2185_RVS": {
+   "contig": "dsx_W1",
+   "start": 2162,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 3,
+   "flashfry_mm_0_4": "1,0,0,0,2"
+  },
+  "dsx_W1_2163_2186_RVS": {
+   "contig": "dsx_W1",
+   "start": 2163,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,1,3"
+  },
+  "dsx_W1_2173_2196_FWD": {
+   "contig": "dsx_W1",
+   "start": 2173,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 2,
+   "ot_mm_hist": {
+    "3": 2
+   },
+   "flashfry_otcount": 6,
+   "flashfry_mm_0_4": "1,0,0,0,5"
+  },
+  "dsx_W1_2176_2199_FWD": {
+   "contig": "dsx_W1",
+   "start": 2176,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "3": 3
+   },
+   "flashfry_otcount": 5,
+   "flashfry_mm_0_4": "1,0,0,0,4"
+  },
+  "dsx_W1_2178_2201_RVS": {
+   "contig": "dsx_W1",
+   "start": 2178,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,2,4"
+  },
+  "dsx_W1_2181_2204_FWD": {
+   "contig": "dsx_W1",
+   "start": 2181,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "3": 5
+   },
+   "flashfry_otcount": 11,
+   "flashfry_mm_0_4": "1,0,0,0,10"
+  },
+  "dsx_W1_2188_2211_RVS": {
+   "contig": "dsx_W1",
+   "start": 2188,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 3,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 2
+   },
+   "flashfry_otcount": 9,
+   "flashfry_mm_0_4": "1,0,0,1,7"
+  },
+  "dsx_W1_2188_2211_FWD": {
+   "contig": "dsx_W1",
+   "start": 2188,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 4,
+   "ot_mm_hist": {
+    "3": 4
+   },
+   "flashfry_otcount": 7,
+   "flashfry_mm_0_4": "1,0,0,0,6"
+  },
+  "dsx_W1_2189_2212_RVS": {
+   "contig": "dsx_W1",
+   "start": 2189,
+   "orientation": "RVS",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 5,
+   "ot_mm_hist": {
+    "2": 2,
+    "3": 3
+   },
+   "flashfry_otcount": 17,
+   "flashfry_mm_0_4": "1,0,0,1,15"
+  },
+  "dsx_W1_2210_2233_FWD": {
+   "contig": "dsx_W1",
+   "start": 2210,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 38,
+   "ot_mm_hist": {
+    "1": 2,
+    "2": 7,
+    "3": 29
+   },
+   "flashfry_otcount": 16,
+   "flashfry_mm_0_4": "1,0,0,1,14"
+  },
+  "dsx_W1_2239_2262_FWD": {
+   "contig": "dsx_W1",
+   "start": 2239,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 19
+   },
+   "flashfry_otcount": 42,
+   "flashfry_mm_0_4": "1,0,0,3,38"
+  },
+  "dsx_W1_2245_2268_FWD": {
+   "contig": "dsx_W1",
+   "start": 2245,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 1,
+   "ot_mm_hist": {
+    "3": 1
+   },
+   "flashfry_otcount": 2,
+   "flashfry_mm_0_4": "1,0,0,0,1"
+  },
+  "dsx_W1_2256_2279_FWD": {
+   "contig": "dsx_W1",
+   "start": 2256,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 0,
+   "ot_mm_hist": {},
+   "flashfry_otcount": 4,
+   "flashfry_mm_0_4": "1,0,0,0,3"
+  },
+  "dsx_W1_2260_2283_FWD": {
+   "contig": "dsx_W1",
+   "start": 2260,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 20,
+   "ot_mm_hist": {
+    "2": 1,
+    "3": 19
+   },
+   "flashfry_otcount": 10,
+   "flashfry_mm_0_4": "1,0,0,1,8"
+  },
+  "dsx_W1_2264_2287_FWD": {
+   "contig": "dsx_W1",
+   "start": 2264,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 31,
+   "ot_mm_hist": {
+    "1": 1,
+    "2": 3,
+    "3": 27
+   },
+   "flashfry_otcount": 37,
+   "flashfry_mm_0_4": "1,0,1,4,31"
+  },
+  "dsx_W1_2272_2295_FWD": {
+   "contig": "dsx_W1",
+   "start": 2272,
+   "orientation": "FWD",
+   "self_hits_mm0": 1,
+   "offtargets_le3mm_pam_agnostic": 13,
+   "ot_mm_hist": {
+    "3": 13
+   },
+   "flashfry_otcount": 18,
+   "flashfry_mm_0_4": "1,0,0,1,16"
+  }
+ }
+}
