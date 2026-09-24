@@ -1,0 +1,486 @@
+{
+  "engine": "bcftools 1.21 (htslib full VCF parse) vs pysam.TabixFile (raw text slice)",
+  "region": "2R:48711450-48714700",
+  "targets": {
+    "dsx-v3-1_proto": [
+      48711501,
+      48711520
+    ],
+    "dsx-v3-1_PAM": [
+      48711498,
+      48711500
+    ],
+    "dsx-v3-2_proto": [
+      48712765,
+      48712784
+    ],
+    "dsx-v3-2_PAM": [
+      48712762,
+      48712764
+    ],
+    "kyrou_proto": [
+      48714640,
+      48714659
+    ],
+    "kyrou_PAM": [
+      48714637,
+      48714639
+    ]
+  },
+  "seed": 42,
+  "n_compared": 700,
+  "n_errors": 0,
+  "n_target_rows_concordant": 677,
+  "n_rowcount_comparable": 453,
+  "n_scan_vintage_new": 453,
+  "n_scan_vintage_legacy": 247,
+  "n_new_schema_target_concordant": 453,
+  "new_schema_target_concordance": 1.0,
+  "n_legacy_discordant": 23,
+  "n_legacy_discordant_explained_by_legacy_filter": 23,
+  "n_window_rowcount_concordant": 0,
+  "n_window_rowcount_offby1": 453,
+  "target_row_concordance": 0.967143,
+  "window_rowcount_concordance": 0.0,
+  "window_rowcount_offby1_fraction": 1.0,
+  "discordant_samples": [
+    {
+      "sample": "AB0107-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48712765,
+          "A",
+          "C,T,G",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0349-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48712765,
+          "A",
+          "C,T,G",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0262-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711510,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711511,
+          "T",
+          "A,C,G",
+          "1/1"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0303-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711516,
+          "A",
+          "C,T,G",
+          "0/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0154-Cx",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48712765,
+          "A",
+          "C,T,G",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0216-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "0/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0156-Cx",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "2/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0108-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711501,
+          "A",
+          "C,T,G",
+          "0/1"
+        ],
+        [
+          48711516,
+          "A",
+          "C,T,G",
+          "0/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0304-CW",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "0/1"
+        ],
+        [
+          48711511,
+          "T",
+          "A,C,G",
+          "0/1"
+        ],
+        [
+          48711516,
+          "A",
+          "C,T,G",
+          "0/3"
+        ],
+        [
+          48712765,
+          "A",
+          "C,T,G",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0213-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711510,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711511,
+          "T",
+          "A,C,G",
+          "1/1"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0216-CW",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711511,
+          "T",
+          "A,C,G",
+          "1/1"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0107-Cx",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48712765,
+          "A",
+          "C,T,G",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0310-CW",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711498,
+          "C",
+          "A,T,G",
+          "0/1"
+        ],
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711511,
+          "T",
+          "A,C,G",
+          "1/1"
+        ],
+        [
+          48711516,
+          "A",
+          "C,T,G",
+          "3/3"
+        ],
+        [
+          48712765,
+          "A",
+          "C,T,G",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0305-CW",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48712765,
+          "A",
+          "C,T,G",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0182-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "0/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AA0109-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711510,
+          "C",
+          "A,T,G",
+          "0/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0141-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "2/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0132-CW",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711510,
+          "C",
+          "A,T,G",
+          "0/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0247-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711510,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711511,
+          "T",
+          "A,C,G",
+          "1/1"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0117-Cx",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711499,
+          "C",
+          "A,T,G",
+          "0/1"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0114-Cx",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711509,
+          "G",
+          "A,C,T",
+          "0/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0184-C",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "0/2"
+        ],
+        [
+          48711510,
+          "C",
+          "A,T,G",
+          "0/2"
+        ]
+      ]
+    },
+    {
+      "sample": "AB0121-Cx",
+      "only_pysam": [],
+      "only_bcftools": [
+        [
+          48711500,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711507,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711510,
+          "C",
+          "A,T,G",
+          "2/2"
+        ],
+        [
+          48711511,
+          "T",
+          "A,C,G",
+          "1/1"
+        ]
+      ]
+    }
+  ]
+}
