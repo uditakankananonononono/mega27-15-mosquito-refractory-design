@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mosqdesign"
+version = "1.0.0"
+description = "Resistance-aware CRISPR drive target design for the Anopheles dsx locus"
+requires-python = ">=3.9"
+dependencies = ["numpy", "torch", "matplotlib"]
+
+[project.scripts]
+mosqdesign = "mosqdesign.cli:main"
+
+[tool.setuptools]
+packages = ["mosqdesign"]
