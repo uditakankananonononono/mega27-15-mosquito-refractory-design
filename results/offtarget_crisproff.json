@@ -1,0 +1,181 @@
+{
+ "tool": "CRISPRoff/CRISPRspec pipeline",
+ "tool_version": "1.1.2",
+ "source": "github.com/RTH-tools/crisproff",
+ "citation": "Alkan et al. 2018, Genome Biol 19:177",
+ "validation": "repo test.sh reproduces test_data.example.out diff-clean with RNAfold shim over ViennaRNA 2.7.2 python bindings",
+ "inputs": "CRISPOR AgamP4 off-target sets per lead (results/offtarget_crispor.json lineage)",
+ "leads": {
+  "dsx-v3-1": {
+   "on_target_23mer": "TGGGCAGTATGCGTTAGGGTAGG",
+   "n_offtargets_input": 6,
+   "mm_hist_input": {
+    "3": 2,
+    "4": 4
+   },
+   "crisprspec_specificity_score": 11.947200264509865,
+   "mm_counts": "1,0,0,2,4,0,0",
+   "per_offtarget_crisproff": [
+    {
+     "seq": "CGGACAGTTTGCGTTTGGGTTGG",
+     "crisproff_score": 6.0699486416388275
+    },
+    {
+     "seq": "GTGGCAATATGCGTTACGGTCGG",
+     "crisproff_score": 9.583810192419357
+    },
+    {
+     "seq": "TGGGCAGTCTTCGTTATGGTTGG",
+     "crisproff_score": 5.953659838827409
+    },
+    {
+     "seq": "TGGGCATTAGGCGTTAGATTTGG",
+     "crisproff_score": 1.3330677649806582
+    },
+    {
+     "seq": "TGGGCGGCATGCGGTAGGGCAGG",
+     "crisproff_score": 12.69588861308926
+    },
+    {
+     "seq": "TGGGTAGTAAGCGGTAGGGTGGG",
+     "crisproff_score": 10.004670605395813
+    },
+    {
+     "seq": "TGGGCAGTATGCGTTAGGGTAGG",
+     "crisproff_score": 29.660764098172706
+    }
+   ]
+  },
+  "dsx-v3-2": {
+   "on_target_23mer": "CATTAAGACCTACGAAGCGCTGG",
+   "n_offtargets_input": 6,
+   "mm_hist_input": {
+    "1": 1,
+    "4": 5
+   },
+   "crisprspec_specificity_score": 3.715780932467599,
+   "mm_counts": "1,1,0,0,5,0,0",
+   "per_offtarget_crisproff": [
+    {
+     "seq": "AATTAAGATCTTCGAAACGCGGG",
+     "crisproff_score": 2.0900092547610356
+    },
+    {
+     "seq": "CATAAAGACTGACGAAGCGGTGG",
+     "crisproff_score": -1.2180901021608541
+    },
+    {
+     "seq": "CATTAACACCCTCGAAGCGAGGG",
+     "crisproff_score": 2.608001198977849
+    },
+    {
+     "seq": "CATTAAGACCTACGAAGCGTTGG",
+     "crisproff_score": 18.094661147576748
+    },
+    {
+     "seq": "CATTGAGACATACGAATCCCAGG",
+     "crisproff_score": -6.779929306359886
+    },
+    {
+     "seq": "CATTGAGGCGTACGAAGCGTTGG",
+     "crisproff_score": -6.542287888852012
+    },
+    {
+     "seq": "CATTAAGACCTACGAAGCGCTGG",
+     "crisproff_score": 23.367271470758745
+    }
+   ]
+  },
+  "dsx-v3-3": {
+   "on_target_23mer": "GAAGCGAGCCCAATGGCTGTTGG",
+   "n_offtargets_input": 8,
+   "mm_hist_input": {
+    "3": 2,
+    "4": 6
+   },
+   "crisprspec_specificity_score": 11.661093897338834,
+   "mm_counts": "1,0,0,2,6,0,0",
+   "per_offtarget_crisproff": [
+    {
+     "seq": "AAAGGGAGCCGAATGGCTGATGG",
+     "crisproff_score": -2.3753580511032943
+    },
+    {
+     "seq": "GAAGCAAGTCCAATGCCTGTTGG",
+     "crisproff_score": 6.549572216211157
+    },
+    {
+     "seq": "GAAGCGAGCGCAACGGCGGACGG",
+     "crisproff_score": -0.9548187943443729
+    },
+    {
+     "seq": "GAAGCGCGCTCAATGGCGGCTGG",
+     "crisproff_score": -0.9647650182963012
+    },
+    {
+     "seq": "GAAGCGGGCGGAATGGATGTGGG",
+     "crisproff_score": -10.814408721361719
+    },
+    {
+     "seq": "GAAGCGTGACCACTGGCTGCAGG",
+     "crisproff_score": 2.0706485617344725
+    },
+    {
+     "seq": "GAAGCGTGACCCTTGGCTGTCGG",
+     "crisproff_score": 0.15781346651090544
+    },
+    {
+     "seq": "GATGCGATGCCAATGGCTGTAGG",
+     "crisproff_score": 3.6134460660407015
+    },
+    {
+     "seq": "GAAGCGAGCCCAATGGCTGTTGG",
+     "crisproff_score": 23.10246194102716
+    }
+   ]
+  },
+  "kyrou": {
+   "on_target_23mer": "GTTTAACACAGGTCAAGCGGTGG",
+   "n_offtargets_input": 7,
+   "mm_hist_input": {
+    "4": 7
+   },
+   "crisprspec_specificity_score": 14.571988371261263,
+   "mm_counts": "1,0,0,0,7,0,0",
+   "per_offtarget_crisproff": [
+    {
+     "seq": "ATTTGACACCTGTCAAGCGGTGG",
+     "crisproff_score": -0.13861336474620956
+    },
+    {
+     "seq": "CTTTAACACATGTCGAGCGCCGG",
+     "crisproff_score": -4.516760484534533
+    },
+    {
+     "seq": "GCTTATCACAGGTTAAGCGCCGG",
+     "crisproff_score": 0.9745590537368081
+    },
+    {
+     "seq": "GGTTAAGAGCGGTCAAGCGGGGG",
+     "crisproff_score": -5.975427116849303
+    },
+    {
+     "seq": "GTCTACCACAGGACAGGCGGAGG",
+     "crisproff_score": 1.2447011796691072
+    },
+    {
+     "seq": "GTTTAACATAGGGCAAGGGAAGG",
+     "crisproff_score": -8.906944542559792
+    },
+    {
+     "seq": "GTTTATCACAGTGCAAGGGGAGG",
+     "crisproff_score": -9.528994660707543
+    },
+    {
+     "seq": "GTTTAACACAGGTCAAGCGGTGG",
+     "crisproff_score": 22.26777370253934
+    }
+   ]
+  }
+ }
+}
