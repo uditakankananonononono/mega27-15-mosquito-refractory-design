@@ -1,0 +1,50 @@
+{
+  "tool": "ViennaRNA",
+  "tool_version": "2.7.2",
+  "method": "RNA.fold MFE (DNA alphabet spacer treated as RNA)",
+  "null": {
+    "source": "500 random 20-mers from NC_064601.1 (2R)",
+    "n": 500,
+    "mean_mfe_kcal_mol": -1.104,
+    "sd_kcal_mol": 1.703
+  },
+  "records": [
+    {
+      "name": "v3-1",
+      "spacer": "TGGGCAGTATGCGTTAGGGT",
+      "efficacy": 0.9248,
+      "mfe_structure": "...(((...)))........",
+      "mfe_kcal_mol": -1.2000000476837158,
+      "null_z": -0.056,
+      "structured_flag": false
+    },
+    {
+      "name": "v3-2",
+      "spacer": "CATTAAGACCTACGAAGCGC",
+      "efficacy": 0.9004,
+      "mfe_structure": "....................",
+      "mfe_kcal_mol": 0.0,
+      "null_z": 0.648,
+      "structured_flag": false
+    },
+    {
+      "name": "v3-3",
+      "spacer": "GAAGCGAGCCCAATGGCTGT",
+      "efficacy": 0.9367,
+      "mfe_structure": "......((((....))))..",
+      "mfe_kcal_mol": -4.699999809265137,
+      "null_z": -2.111,
+      "structured_flag": true
+    },
+    {
+      "name": "kyrou2018-control",
+      "spacer": "GTTTAACACAGGTCAAGCGG",
+      "efficacy": null,
+      "mfe_structure": "((((.((....)).))))..",
+      "mfe_kcal_mol": -1.7999999523162842,
+      "null_z": -0.409,
+      "structured_flag": false
+    }
+  ],
+  "verdict": "at least one lead spacer is unusually structured"
+}
