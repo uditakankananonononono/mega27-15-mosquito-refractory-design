@@ -1,0 +1,31 @@
+{
+ "tool": "minimap2 2.28-r1209 (preset asm5, -c), static binary from GitHub release",
+ "query": "data/agamp4/AgamP4_2R_dsx_region.fasta (AgamP4 2R:48,700,000-48,790,000, 90,001 bp)",
+ "target": "AgamP5 NC_064601.1 (2RL, 119,885,574 bp)",
+ "result": "10 collinear plus-strand blocks spanning NC_064601.1:47,607,355-47,697,745; full region recovered, no inversions",
+ "window_mapping": [
+  {
+   "guide": "dsx-v3-1",
+   "agamp4_pam_start_1based": 48711498,
+   "minimap2_agamp5_1based": 47619047,
+   "aligner_free_agamp5": 47619040,
+   "delta_bp": 7
+  },
+  {
+   "guide": "dsx-v3-2",
+   "agamp4_pam_start_1based": 48712762,
+   "minimap2_agamp5_1based": 47620311,
+   "aligner_free_agamp5": 47620304,
+   "delta_bp": 7
+  },
+  {
+   "guide": "kyrou",
+   "agamp4_pam_start_1based": 48714637,
+   "minimap2_agamp5_1based": 47622186,
+   "aligner_free_agamp5": 47622174,
+   "delta_bp": 12
+  }
+ ],
+ "reading": "An aligner with gap placement (minimap2 asm5 chain) independently places all three guide windows on the same AgamP5 chromosome-2 strand within 7-12 bp of the aligner-free exact-substring coordinates. The uniform positive deltas are gap-placement effects of the chained alignment (largest at the kyrou window, consistent with the indel-rich RB-exon region of Appendix I). Cross-assembly concordance is confirmed at block resolution; the exact-substring coordinates remain the base-precise claim.",
+ "paf": "10 blocks; runtime 3.4 s; peak RSS 0.64 GB"
+}

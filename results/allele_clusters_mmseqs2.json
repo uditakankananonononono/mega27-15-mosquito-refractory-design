@@ -1,0 +1,54 @@
+{
+ "tool": "MMseqs2 (release 057db43, static AVX2 build) cluster, --min-seq-id 0.87 -c 0.9 --cov-mode 1 -k 6",
+ "input": "43 distinct 23-mer protospacer+PAM allele units from results/ag1000g/near_cognate.json (population near-cognate inventory)",
+ "n_sequences": 43,
+ "n_clusters": 27,
+ "multi_member_clusters": [
+  {
+   "representative": "n=1 dsx-v3-1|pam_disrupted|pos48711498|ac2",
+   "members": [
+    "n=1 dsx-v3-1|pam_disrupted|pos48711498|ac427",
+    "n=1 dsx-v3-1|pam_disrupted|pos48711499|ac1",
+    "n=1 dsx-v3-1|pam_n_variant|pos48711500|ac4772"
+   ]
+  },
+  {
+   "representative": "n=1 dsx-v3-1|seed_mismatch|pos48711501|ac168",
+   "members": [
+    "n=1 dsx-v3-1|seed_mismatch|pos48711502|ac9",
+    "n=1 dsx-v3-1|distal_mismatch|pos48711519|ac2",
+    "n=1 dsx-v3-1|distal_mismatch|pos48711519|ac5"
+   ]
+  },
+  {
+   "representative": "n=1 dsx-v3-2|distal_mismatch|pos48712781|ac2",
+   "members": [
+    "n=1 dsx-v3-2|distal_mismatch|pos48712781|ac1",
+    "n=1 dsx-v3-2|distal_mismatch|pos48712784|ac12",
+    "n=1 dsx-v3-2|distal_mismatch|pos48712784|ac8"
+   ]
+  },
+  {
+   "representative": "n=1 dsx-v3-1|distal_mismatch|pos48711515|ac1",
+   "members": [
+    "n=1 dsx-v3-1|wild_type|pos48711516|ac2644",
+    "n=1 dsx-v3-1|distal_mismatch|pos48711517|ac7",
+    "n=1 dsx-v3-1|distal_mismatch|pos48711517|ac1",
+    "n=1 dsx-v3-1|distal_mismatch|pos48711518|ac11"
+   ]
+  },
+  {
+   "representative": "n=1 dsx-v3-2|pam_disrupted|pos48712762|ac10",
+   "members": [
+    "n=1 dsx-v3-2|pam_disrupted|pos48712762|ac1",
+    "n=1 dsx-v3-2|wild_type|pos48712765|ac7640",
+    "n=1 dsx-v3-2|seed_mismatch|pos48712766|ac9"
+   ]
+  }
+ ],
+ "reading": [
+  "No allele sequence duplicates across guides: every multi-member cluster is intra-guide, so the three inventories are sequence-independent.",
+  "Multi-member clusters are exactly single variants at adjacent positions of the same 23-mer unit (>=20/23 identity by construction), quantifying how concentrated population variation is around the PAM/seed region.",
+  "dsx-v3-2's guide-matching restoration allele (AC 7,640) sits one cluster away from compromised neighbors (PAM-G disruption AC 11, seed AC 9): the functional and resistant haplotypes differ by 1-2 SNVs."
+ ]
+}
