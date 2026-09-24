@@ -1,0 +1,12 @@
+{
+  "dataset_train": "doench2016_fcres",
+  "n_train": 4248,
+  "n_test": 1062,
+  "cnn_test_spearman": 0.5556837617131398,
+  "ridge_test_spearman": 0.463186457081014,
+  "cnn_crossdataset_v1_spearman": 0.6092462069024008,
+  "ridge_crossdataset_v1_spearman": 0.4435725325390909,
+  "v1_n": 2144,
+  "epochs": 15,
+  "seed": 0
+}
