@@ -74,3 +74,46 @@ def homopolymer_run(seq: str) -> int:
         run = run + 1 if a == b else 1
         best = max(best, run)
     return best
+
+
+def build_kmer_index(seq: str, k: int = 5) -> dict[str, list[int]]:
+    """k-mer -> positions index for fast candidate lookup (pigeonhole method)."""
+    idx: dict[str, list[int]] = {}
+    s = seq.upper()
+    for i in range(len(s) - k + 1):
+        kmer = s[i:i + k]
+        if "N" not in kmer:
+            idx.setdefault(kmer, []).append(i)
+    return idx
+
+
+def count_offtargets_fast(site: GrnaSite, indexed_panels: list[tuple[str, str, dict]],
+                          max_mismatches: int = 3) -> int:
+    """Count <=max_mismatches near-matches using the pigeonhole principle:
+    split the 20-mer into 4 exact 5-mer blocks; any <=3-mismatch match shares
+    at least one exact block. `indexed_panels` are (name, seq, kmer_index).
+    """
+    proto = site.protospacer
+    L = len(proto)
+    bl = L // 4
+    rc_proto = reverse_complement(proto)
+    blocks = [proto[i * bl:(i + 1) * bl] for i in range(4)]
+    blocks += [rc_proto[i * bl:(i + 1) * bl] for i in range(4)]
+    hits = 0
+    for name, seq, index in indexed_panels:
+        s = seq.upper()
+        candidates: set[int] = set()
+        for b in blocks:
+            for c in index.get(b, []):
+                for off in range(0, L - bl + 1):
+                    start = c - off
+                    if 0 <= start <= len(s) - L:
+                        candidates.add(start)
+        for start in candidates:
+            if name == site.gene and abs(start - site.position) < L:
+                continue  # the site's own locus
+            w = s[start:start + L]
+            if (sum(1 for a, b in zip(w, proto) if a != b) <= max_mismatches
+                    or sum(1 for a, b in zip(w, rc_proto) if a != b) <= max_mismatches):
+                hits += 1
+    return hits

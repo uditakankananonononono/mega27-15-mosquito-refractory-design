@@ -50,3 +50,27 @@ def test_count_offtargets_excludes_self():
     panel = [("g1", "AAAA" + proto + "TGG" + "AAAA"),
              ("g2", "TTTT" + "ATGCCGTAACGTTAGCCTAA" + "TGG")]  # 1 mismatch in g2
     assert count_offtargets(site, panel, max_mismatches=1) == 1
+
+
+def test_build_kmer_index_and_fast_offtargets():
+    from mosqdesign.grna_scan import build_kmer_index, count_offtargets_fast
+    proto = "ATGCCGTAACGTTAGCCTGA"
+    panel_seq = "AAAA" + proto + "TGG" + "AAAA" + "ATGCCGTAACGTTAGCCTAA" + "GGG" + "TTTT"
+    index = build_kmer_index(panel_seq, 5)
+    assert index["ATGCC"] == [4, 31]
+    site = GrnaSite(panel_seq and "region", "+", 4, proto, "TGG", "N" * 30)
+    hits = count_offtargets_fast(site, [("region", panel_seq, index)], max_mismatches=1)
+    assert hits == 1  # the 1-mismatch copy at offset 31, self excluded
+
+
+def test_fast_matches_naive_on_random_panel():
+    import random
+    from mosqdesign.grna_scan import build_kmer_index, count_offtargets_fast
+    rng = random.Random(7)
+    panel = "".join(rng.choice("ACGT") for _ in range(3000))
+    proto = panel[100:120]
+    site = GrnaSite("region", "+", 100, proto, "TGG", "N" * 30)
+    index = build_kmer_index(panel, 5)
+    fast = count_offtargets_fast(site, [("region", panel, index)], max_mismatches=2)
+    naive = count_offtargets(site, [("region", panel)], max_mismatches=2)
+    assert fast == naive

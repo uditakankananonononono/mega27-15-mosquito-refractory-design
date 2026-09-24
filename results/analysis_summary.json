@@ -1,0 +1,231 @@
+{
+  "region": "NC_064601.1:47600000-47710000",
+  "region_len": 110001,
+  "n_ngg_sites_region": 10936,
+  "n_ngg_sites_gene_body_dedup": 9328,
+  "efficacy_stats_gene_body": {
+    "mean": 0.763316183259126,
+    "std": 0.17763750671696305,
+    "max": 1.3446964025497437,
+    "min": -0.04215904325246811
+  },
+  "kyrou_positive_control": {
+    "protospacer": "GTTTAACACAGGTCAAGCGG",
+    "pam": "TGG",
+    "present_in_gene_body_sites": true,
+    "ranked": {
+      "rank_in_top150": 94,
+      "efficacy": 1.137312412261963,
+      "offtargets": 0,
+      "score": 1.137312412261963,
+      "strand": "-",
+      "region_offset": 22174
+    }
+  },
+  "top10_designs": [
+    {
+      "protospacer": "ACGGACGGATACAGACTGGA",
+      "pam": "CGG",
+      "strand": "+",
+      "genomic_pos": 47619412,
+      "efficacy": 1.3446964025497437,
+      "offtargets": 0,
+      "score": 1.3446964025497437
+    },
+    {
+      "protospacer": "GCATACACTCCTAATTCGTA",
+      "pam": "TGG",
+      "strand": "-",
+      "genomic_pos": 47639962,
+      "efficacy": 1.3414607048034668,
+      "offtargets": 0,
+      "score": 1.3414607048034668
+    },
+    {
+      "protospacer": "GGAAACAAGCGGAAGGAAGG",
+      "pam": "AGG",
+      "strand": "+",
+      "genomic_pos": 47675319,
+      "efficacy": 1.3264118432998657,
+      "offtargets": 0,
+      "score": 1.3264118432998657
+    },
+    {
+      "protospacer": "GAGGACACACACGTGTGAAG",
+      "pam": "GGG",
+      "strand": "-",
+      "genomic_pos": 47699770,
+      "efficacy": 1.3222360610961914,
+      "offtargets": 0,
+      "score": 1.3222360610961914
+    },
+    {
+      "protospacer": "TTGGCTTACCGATGCATCAT",
+      "pam": "CGG",
+      "strand": "-",
+      "genomic_pos": 47679311,
+      "efficacy": 1.309739589691162,
+      "offtargets": 0,
+      "score": 1.309739589691162
+    },
+    {
+      "protospacer": "GATCCAAGCTGCAGTCCAAG",
+      "pam": "GGG",
+      "strand": "+",
+      "genomic_pos": 47698282,
+      "efficacy": 1.3019413948059082,
+      "offtargets": 0,
+      "score": 1.3019413948059082
+    },
+    {
+      "protospacer": "CGAGGACACACACGTGTGAA",
+      "pam": "GGG",
+      "strand": "-",
+      "genomic_pos": 47699771,
+      "efficacy": 1.2975808382034302,
+      "offtargets": 0,
+      "score": 1.2975808382034302
+    },
+    {
+      "protospacer": "TTGTAGAGTGGAGTGGAAAG",
+      "pam": "TGG",
+      "strand": "+",
+      "genomic_pos": 47620515,
+      "efficacy": 1.2967067956924438,
+      "offtargets": 0,
+      "score": 1.2967067956924438
+    },
+    {
+      "protospacer": "TCAGGACGCGCGATGGACGG",
+      "pam": "TGG",
+      "strand": "+",
+      "genomic_pos": 47684461,
+      "efficacy": 1.2944612503051758,
+      "offtargets": 0,
+      "score": 1.2944612503051758
+    },
+    {
+      "protospacer": "GAATACATACCAATCGTTCA",
+      "pam": "AGG",
+      "strand": "+",
+      "genomic_pos": 47690537,
+      "efficacy": 1.2942107915878296,
+      "offtargets": 0,
+      "score": 1.2942107915878296
+    }
+  ],
+  "drive_grid": [
+    {
+      "h": 0.8,
+      "e": 0.001,
+      "peak_drive_freq": 0.7744132252750484,
+      "final_resistance_freq": 0.9622537132019634,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.8,
+      "e": 0.01,
+      "peak_drive_freq": 0.7369051465951815,
+      "final_resistance_freq": 0.9640942021810782,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.8,
+      "e": 0.1,
+      "peak_drive_freq": 0.6541424415084857,
+      "final_resistance_freq": 0.9663711240361054,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.8,
+      "e": 0.5,
+      "peak_drive_freq": 0.5380478788132204,
+      "final_resistance_freq": 0.9703579922425278,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.9,
+      "e": 0.001,
+      "peak_drive_freq": 0.8664880454501087,
+      "final_resistance_freq": 0.9723837974543501,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.9,
+      "e": 0.01,
+      "peak_drive_freq": 0.8300004029582015,
+      "final_resistance_freq": 0.9729257803549639,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.9,
+      "e": 0.1,
+      "peak_drive_freq": 0.7519036483729581,
+      "final_resistance_freq": 0.9733489633157436,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.9,
+      "e": 0.5,
+      "peak_drive_freq": 0.6477065698407574,
+      "final_resistance_freq": 0.9742950731943364,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.95,
+      "e": 0.001,
+      "peak_drive_freq": 0.9150297869238495,
+      "final_resistance_freq": 0.9758553421777012,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.95,
+      "e": 0.01,
+      "peak_drive_freq": 0.8836285652426786,
+      "final_resistance_freq": 0.9760403366225174,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.95,
+      "e": 0.1,
+      "peak_drive_freq": 0.8198675704987931,
+      "final_resistance_freq": 0.9760054618279759,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.95,
+      "e": 0.5,
+      "peak_drive_freq": 0.7262703482397114,
+      "final_resistance_freq": 0.976092883182614,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.99,
+      "e": 0.001,
+      "peak_drive_freq": 0.9601915567479655,
+      "final_resistance_freq": 0.9780867363264448,
+      "gen_reaches_95pct_drive": 12
+    },
+    {
+      "h": 0.99,
+      "e": 0.01,
+      "peak_drive_freq": 0.9365073182110341,
+      "final_resistance_freq": 0.9781230428240123,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.99,
+      "e": 0.1,
+      "peak_drive_freq": 0.8894783340210222,
+      "final_resistance_freq": 0.9779842991165674,
+      "gen_reaches_95pct_drive": null
+    },
+    {
+      "h": 0.99,
+      "e": 0.5,
+      "peak_drive_freq": 0.850941597083564,
+      "final_resistance_freq": 0.9777530787663323,
+      "gen_reaches_95pct_drive": null
+    }
+  ]
+}
