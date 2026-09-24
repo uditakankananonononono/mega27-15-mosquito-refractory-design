@@ -1,0 +1,123 @@
+{
+ "tool": "UCSC BLAT v39x1 (Kent 2002, Genome Res 12:656-664), -t=dnax -q=prot",
+ "query": "Drosophila melanogaster Dsx, UniProt P23023 (549 aa)",
+ "target": "AgamP5 chromosome 2 (NC_064601.1, 118,196,952 bp)",
+ "dsx_locus": "NC_064601.1:47,610,877-47,700,920 (minus strand)",
+ "parsing_caveat": "PSL tStart/tEnd are reverse-complement coordinates on +- rows; block tStarts are plus-strand. Locus tests use block coordinates.",
+ "runs": [
+  {
+   "config": "default",
+   "parameters": "defaults",
+   "n_hits": 31,
+   "hits_with_block_in_dsx_locus": 1,
+   "best_locus_hit": {
+    "score": 66,
+    "strand": "++",
+    "tStart_reported": 47619289,
+    "tEnd_reported": 48867723,
+    "blocks": [
+     [
+      47619289,
+      47619313
+     ],
+     [
+      47765956,
+      47765974
+     ],
+     [
+      47928755,
+      47928782
+     ],
+     [
+      48058442,
+      48058469
+     ],
+     [
+      48409217,
+      48409247
+     ],
+     [
+      48588424,
+      48588451
+     ],
+     [
+      48822077,
+      48822092
+     ],
+     [
+      48852775,
+      48852814
+     ],
+     [
+      48867702,
+      48867723
+     ]
+    ],
+    "block_in_locus": true
+   },
+   "locus_hit_rank_by_score": 14,
+   "top_score_overall": 102,
+   "n_hits_outscoring_best_locus_hit": 13
+  },
+  {
+   "config": "loose",
+   "parameters": "-minScore=10 -minIdentity=20",
+   "n_hits": 32,
+   "hits_with_block_in_dsx_locus": 1,
+   "best_locus_hit": {
+    "score": 66,
+    "strand": "++",
+    "tStart_reported": 47619289,
+    "tEnd_reported": 48867723,
+    "blocks": [
+     [
+      47619289,
+      47619313
+     ],
+     [
+      47765956,
+      47765974
+     ],
+     [
+      47928755,
+      47928782
+     ],
+     [
+      48058442,
+      48058469
+     ],
+     [
+      48409217,
+      48409247
+     ],
+     [
+      48588424,
+      48588451
+     ],
+     [
+      48822077,
+      48822092
+     ],
+     [
+      48852775,
+      48852814
+     ],
+     [
+      48867702,
+      48867723
+     ]
+    ],
+    "block_in_locus": true
+   },
+   "locus_hit_rank_by_score": 14,
+   "top_score_overall": 102,
+   "n_hits_outscoring_best_locus_hit": 13
+  }
+ ],
+ "findings": [
+  "default settings: 31 hits chromosome-wide; exactly one places a single 8-aa block (24 bp, score 66) inside the dsx locus as part of a fragmented 9-block chain whose remaining blocks sit in intergenic DNA to 48.87 Mb. 13 spurious hits outscore it (top 102) - the placement is not identifiable de novo.",
+  "loose (-minScore=10 -minIdentity=20): identical picture (32 hits; the same single locus block, score 66, outscored by 13 spurious hits) - loosening thresholds adds only sub-threshold noise, no additional gene structure.",
+  "Two +- rows deceptively report tStart/tEnd inside the dsx and dmd-4 regions; block-level coordinates place both at 70.5 Mb and 114-116 Mb. Documented as a PSL parsing artifact.",
+  "Sensitivity ordering for this 70%-identity cross-species placement: BLAT (default miss; loose single-block, outranked by spurious hits) < miniprot (-M2: full 8-CDS structure, results/miniprot_census.json) << HMMER profile search (family census, results/hmmer_dsx_ortholog.json). Honest negative/partial result, preserved."
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "tool": "DIAMOND 2.2.8 (buchfink/diamond; Buchfink, Reuter, Drosten 2021 Nat Methods)",
+ "engine_contrast": "k-mer seed + ungapped extension (DIAMOND) vs profile HMM (HMMER 3.4)",
+ "query": "Drosophila melanogaster Dsx, UniProt P23023 (DSX_DROME)",
+ "database": "AgamP5 = GCF_943734735.2 RefSeq proteome (30,505 proteins)",
+ "parameters": "blastp --very-sensitive --max-target-seqs 25, default e-value threshold",
+ "total_hits": 12,
+ "hits": [
+  {
+   "target": "XP_061505151.1",
+   "gene": "LOC1270904",
+   "pident": 70.3,
+   "aln_len": 111,
+   "evalue": 6.1e-35,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505152.1",
+   "gene": "LOC1270904",
+   "pident": 70.3,
+   "aln_len": 111,
+   "evalue": 6.1e-35,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505153.1",
+   "gene": "LOC1270904",
+   "pident": 70.3,
+   "aln_len": 111,
+   "evalue": 6.1e-35,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505146.1",
+   "gene": "LOC1270904",
+   "pident": 71.3,
+   "aln_len": 108,
+   "evalue": 1.32e-34,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505147.1",
+   "gene": "LOC1270904",
+   "pident": 71.3,
+   "aln_len": 108,
+   "evalue": 1.32e-34,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505148.1",
+   "gene": "LOC1270904",
+   "pident": 71.3,
+   "aln_len": 108,
+   "evalue": 1.32e-34,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505149.1",
+   "gene": "LOC1270904",
+   "pident": 71.3,
+   "aln_len": 108,
+   "evalue": 1.32e-34,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505150.1",
+   "gene": "LOC1270904",
+   "pident": 71.3,
+   "aln_len": 108,
+   "evalue": 1.32e-34,
+   "bitscore": 139.0
+  },
+  {
+   "target": "XP_061505155.1",
+   "gene": "LOC1270904",
+   "pident": 70.5,
+   "aln_len": 105,
+   "evalue": 1.33e-32,
+   "bitscore": 132.0
+  },
+  {
+   "target": "XP_061504876.1",
+   "gene": "LOC1271814",
+   "pident": 69.6,
+   "aln_len": 56,
+   "evalue": 2.99e-17,
+   "bitscore": 84.3
+  },
+  {
+   "target": "XP_310668.5",
+   "gene": "LOC1271814",
+   "pident": 69.6,
+   "aln_len": 56,
+   "evalue": 5.26e-17,
+   "bitscore": 84.3
+  },
+  {
+   "target": "XP_061501728.1",
+   "gene": "LOC1281789",
+   "pident": 51.6,
+   "aln_len": 62,
+   "evalue": 5.67e-13,
+   "bitscore": 70.5
+  }
+ ],
+ "census": {
+  "dsx_isoforms_hit": 9,
+  "dsx_isoforms_expected": 9,
+  "dsx_accessions_hit": [
+   "XP_061505146.1",
+   "XP_061505147.1",
+   "XP_061505148.1",
+   "XP_061505149.1",
+   "XP_061505150.1",
+   "XP_061505151.1",
+   "XP_061505152.1",
+   "XP_061505153.1",
+   "XP_061505155.1"
+  ],
+  "dsx_accessions_missing": [],
+  "dmrta2_hits": [
+   {
+    "target": "XP_061504876.1",
+    "evalue": 2.99e-17
+   },
+   {
+    "target": "XP_310668.5",
+    "evalue": 5.26e-17
+   }
+  ],
+  "dmd4_hits": [
+   {
+    "target": "XP_061501728.1",
+    "evalue": 5.67e-13
+   }
+  ],
+  "background_hits": 0,
+  "genes_with_DM_domain_homology": 3
+ },
+ "neighbour_gene_control": "XP_061505154.1 (LOC1272222, adjacent accession block) not hit - accession-block adjacency does not cause false dsx calls",
+ "concordance_with_hmmer": "DIAMOND recovers exactly the 9 LOC1270904 isoforms and both paralogs of the HMMER census (results/hmmer_dsx_ortholog.json); 3/3 DM-domain genes reproduced by an independent engine. DIAMOND reports zero background hits at its default threshold (HMMER at E<1e-3 reported 13 background hits, worst 9.2e-05); the family/background separation is therefore even cleaner at protein-BLAST sensitivity.",
+ "findings": [
+  "Independent-engine confirmation of the 3-gene DM-domain census: dsx (9/9 isoforms), DmrtA2, dmd-4.",
+  "Zero background at default threshold - the census is not an artifact of HMMER E-value calibration.",
+  "Best paralog (DmrtA2, E=3.0e-17) trails the dsx self-hit (E=6.1e-35) by ~18 orders of magnitude, consistent with HMMER's 30-order separation at profile level."
+ ]
+}
