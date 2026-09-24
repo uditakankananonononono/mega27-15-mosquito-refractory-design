@@ -907,3 +907,50 @@ Three coordinate systems appear in this paper and its result files:
 
 Notation: L = 20 (protospacer length); G = genome size in bases; mm_i = count of genomic sites at exactly i mismatches; e = resistance-generation rate per cut; h = homing rate; c_hom = homing conversion fraction; d = distance to the nearest splice junction; v3 = composite score of Section 2.10; CFD = cutting frequency determination score (J20).
 
+
+# Appendix P. External tools and resources
+
+Counting rule. A tool is counted only if it was actually used in the work reported here, with its role named. Tools that are planned but not yet run are listed separately at the end and are not counted. This table is the honest inventory; it is not padded to reach any target.
+
+| # | tool / resource | type | what it was used for |
+|---|---|---|---|
+| 1 | NCBI E-utilities (efetch, esearch, esummary, elink) | web API | archived the dsx locus FASTA (NC_064601.1:47,600,000-47,710,000), the RefSeq gene table, the NCBI Gene 1270904 record, and the nine dsx transcript sequences (Appendix A) |
+| 2 | NCBI RefSeq assembly AgamP5 (NC_064601.1 and three further molecules) | database | reference genome for target scanning, genome-wide off-target enumeration, and the Kyrou audit (2.9, 3.8, 3.9, 3.10) |
+| 3 | Ensembl Metazoa FTP (AgamP4.63 GFF3; AgamP4 dna_sm FASTA; VectorBase genebuild) | database | independent annotation that resolves the Kyrou annotation discrepancy (Appendix I) and the reference for the population windows (4.7) |
+| 4 | MalariaGEN Ag1000G phase 3, Sanger VCF mirror | database | per-sample variant calls at the candidate windows across the wild population (4.7) |
+| 5 | Europe PMC API | web API | full text of Kyrou et al. 2018 (PMC6871539), source of the positive-control gRNA sequence |
+| 6 | Microsoft Research Azimuth data mirror | dataset repository | Doench 2016 FC+RES (5,310 guides) training data and the untouched Doench V1 (2,144 guides) external check (2.3) |
+| 7 | WHO World Malaria Report 2024 | report | 2023 burden figures framing the problem (263M cases, 597,000 deaths; 1.1) |
+| 8 | Cas-OFFinder (Bae, Park, Kim 2014) | published tool | head-to-head enumeration benchmark; an honest loss, preserved (Appendix M) |
+| 9 | Rule Set 2 / Azimuth (Doench et al. 2016) | published model | efficacy-model protocol comparison; we do not claim to beat it (Appendix N) |
+| 10 | Kyrou et al. 2018 dsx drive reagent | published reagent | positive control, constraint target, and genome-wide audit subject (3.1, 3.10) |
+| 11 | NumPy | package | k-mer index, off-target counting, Wright-Fisher simulation, numerics throughout |
+| 12 | PyTorch | package | CNN efficacy model: architecture, training, inference (2.3) |
+| 13 | matplotlib | package | figures 1-10 |
+| 14 | reportlab | package | Times-font PDF rendering of this paper |
+| 15 | pysam / htslib (tabix) | package | indexed remote queries of the Ag1000G per-sample VCFs (4.7) |
+| 16 | pytest | package | the 44-test hermetic verification suite (Appendix C) |
+| 17 | git / GitHub | platform | versioned public archive of code, data, and results |
+
+Total in actual use: 17. Planned but not counted (integration only where each does real verification work): ViennaRNA RNAfold (guide secondary-structure check on the named candidates), Primer3 (validation-amplicon primer design for the staged plan of 4.6), Biopython (independent re-derivation of the verified window bases), CRISPOR, CHOPCHOP, CRISPRoff, DeepCRISPR, and TIDE (independent specificity and efficacy cross-checks of the named candidates), mmseqs2 and minimap2 (near-cognate clustering and re-alignment checks), NCBI BLAST (orthogonal off-target confirmation), UniProt (dsx isoform evidence). Each enters the table above only after it has run on this project's data.
+
+# Appendix Q. Dataset manifest (accession-level counting)
+
+Counting rule (program-wide, applied verbatim). Count distinct accession-level datasets actually used in the work. A single study's condition matrix counts as one dataset with N conditions. Per-sample Ag1000G phase-3 files count individually; chromosome slices of the same sample do not multiply the count; an assembly and its annotation each count. No padding: where the count is dominated by one class, that is stated.
+
+| # | dataset | accession / identifier | role |
+|---|---|---|---|
+| 1 | Ag1000G phase 3 per-sample VCFs (4,692 files, one per wild-caught sample; manifest archived at data/ag1000g/ag3_phase3_sample_manifest.txt) | per-sample accessions AA0001-C ... (Sanger mirror) | population allele frequencies at the six target windows (4.7); per-sample completion and failure accounting reported there |
+| 2 | AgamP5 reference assembly | NC_064601.1, OX030909.1, OX030908.1, OX030910.2 (four molecules, one assembly) | design reference and genome-wide enumeration substrate |
+| 3 | AgamP5 RefSeq dsx gene table (nine transcript variants) | NCBI Gene 1270904 locus record | exon-union constraint annotation (2.6) |
+| 4 | NCBI Gene 1270904 esummary record | Gene 1270904 | locus identity and alias resolution (AGAP004050/DSX) |
+| 5 | dsx transcript sequence set | RefSeq transcript accessions (archived: data/dsx_transcripts.fasta) | splice-junction geometry for the constraint bonus (2.6.1) |
+| 6 | AgamP4 reference assembly | GCA_000005575.1 | cross-assembly verification of the Kyrou site and AF windows |
+| 7 | AgamP4.63 annotation (VectorBase genebuild, Ensembl Metazoa distribution) | AGAP004050 | junction-spanning resolution of the Kyrou guide (Appendix I) |
+| 8 | Doench 2016 FC+RES efficacy measurements | Azimuth mirror, 5,310 guides with conditions | CNN and ridge training (one dataset, many conditions) |
+| 9 | Doench V1 efficacy measurements | Azimuth mirror, 2,144 guides | untouched external evaluation set |
+| 10 | Kyrou 2018 dsx gRNA reagent record | PMC6871539 | positive control and audit subject |
+| 11 | WHO World Malaria Report 2024 | WMR 2024 | burden figures (1.1) |
+| 12 | Cas-OFFinder published benchmark measurements | Bae, Park, Kim 2014 (PMC4016707) | enumeration benchmark reference (Appendix M) |
+
+Total: 4,703 accession-level datasets, of which 4,692 are per-sample Ag1000G phase-3 VCFs and 11 are distinct non-population resources. The honest composition note: the count is dominated by per-sample population variation files, counted individually under the program rule; the non-population core is 11 datasets. Expanding the non-population core is meaningful only where a new accession does real verification work, and each such addition will be reported with its role.
