@@ -16,7 +16,7 @@ window site:
     protospacer seed (<=7 nt from PAM) vs distal protospacer;
   * per-sample, per-guide compromise status (intact / het / hom) defined as:
     an allele is compromised if it disrupts the PAM GG dinucleotide or
-    creates any mismatch vs the guide within the seed.
+    creates any mismatch vs the guide anywhere in the 20-nt protospacer.
 
 Outputs:
   results/ag1000g/allele_freq.json  - full per-site and per-sample records
@@ -254,7 +254,7 @@ def render_md(res, summary):
         "(lower bound on compromised alleles).",
         "",
         "Per-guide compromise status (allele compromised = PAM GG disrupted "
-        "or any mismatch vs guide within the 8-nt PAM-proximal seed):",
+        "or any mismatch vs guide within the 20-nt protospacer):",
         "",
         "| guide | intact | het | hom-compromised | carrier fraction | "
         "compromised AF |",

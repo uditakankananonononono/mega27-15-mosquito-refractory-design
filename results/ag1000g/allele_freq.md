@@ -4,7 +4,7 @@ Fetch-error rows excluded: 0 (listed in JSON).
 
 Unphased genotypes: het-at-two-sites is called het (lower bound on compromised alleles).
 
-Per-guide compromise status (allele compromised = PAM GG disrupted or any mismatch vs guide within the 8-nt PAM-proximal seed):
+Per-guide compromise status (allele compromised = PAM GG disrupted or any mismatch vs guide within the 20-nt protospacer):
 
 | guide | intact | het | hom-compromised | carrier fraction | compromised AF |
 |---|---|---|---|---|---|
