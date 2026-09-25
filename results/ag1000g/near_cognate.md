@@ -1,4 +1,4 @@
-## Near-cognate allele enumeration at dsx guide windows (n = 4693 samples)
+## Near-cognate allele enumeration at dsx guide windows (n = 4106 samples)
 
 Single-variant alleles confirmed by VCF allele counts; multi-variant haplotypes enumerated only when phase is certain (homozygous-ALT at every carried variant). Het-multisite samples are reported as ambiguous, never phased by assumption.
 

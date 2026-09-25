@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render paper/paper.md to a Times-formatted PDF with reportlab (Times-Roman base fonts).
+"""Render paper/paper.md with the embedded Times New Roman font from the user-owned font package.
 
 The container's pdflatex is too minimal (missing geometry.sty etc.), so this script
 renders directly. Figures from figures/ are appended as a captioned section.
@@ -7,6 +7,8 @@ renders directly. Figures from figures/ are appended as a captioned section.
 import os
 import re
 
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle
@@ -14,16 +16,24 @@ from reportlab.lib.units import inch
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
                                 TableStyle, Image, PageBreak)
 
+FONTDIR = os.environ.get("MEGA27_TNR_DIR")
+if not FONTDIR:
+    raise RuntimeError("Set MEGA27_TNR_DIR to the folder containing user-owned Times New Roman TTFs")
+for _name, _file in [("TNR", "Times.TTF"), ("TNR-Bold", "Timesbd.TTF"),
+                     ("TNR-Italic", "Timesi.TTF"), ("TNR-BoldItalic", "Timesbi.TTF")]:
+    pdfmetrics.registerFont(TTFont(_name, os.path.join(FONTDIR, _file)))
+pdfmetrics.registerFontFamily("TNR", normal="TNR", bold="TNR-Bold",
+                              italic="TNR-Italic", boldItalic="TNR-BoldItalic")
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 STYLES = {
-    "title": ParagraphStyle("title", fontName="Times-Bold", fontSize=17, leading=22, spaceAfter=6),
-    "author": ParagraphStyle("author", fontName="Times-Roman", fontSize=12, leading=15, spaceAfter=2),
-    "h1": ParagraphStyle("h1", fontName="Times-Bold", fontSize=14, leading=18, spaceBefore=14, spaceAfter=6),
-    "h2": ParagraphStyle("h2", fontName="Times-Bold", fontSize=12, leading=15, spaceBefore=10, spaceAfter=4),
-    "body": ParagraphStyle("body", fontName="Times-Roman", fontSize=11.5, leading=16, spaceAfter=7, alignment=4),
-    "caption": ParagraphStyle("caption", fontName="Times-Italic", fontSize=10, leading=13, spaceBefore=4, spaceAfter=14),
-    "cell": ParagraphStyle("cell", fontName="Times-Roman", fontSize=8.5, leading=11),
-    "cellb": ParagraphStyle("cellb", fontName="Times-Bold", fontSize=8.5, leading=11),
+    "title": ParagraphStyle("title", fontName="TNR-Bold", fontSize=17, leading=22, spaceAfter=6),
+    "author": ParagraphStyle("author", fontName="TNR", fontSize=12, leading=15, spaceAfter=2),
+    "h1": ParagraphStyle("h1", fontName="TNR-Bold", fontSize=14, leading=18, spaceBefore=14, spaceAfter=6),
+    "h2": ParagraphStyle("h2", fontName="TNR-Bold", fontSize=12, leading=15, spaceBefore=10, spaceAfter=4),
+    "body": ParagraphStyle("body", fontName="TNR", fontSize=11.5, leading=16, spaceAfter=7, alignment=4),
+    "caption": ParagraphStyle("caption", fontName="TNR-Italic", fontSize=10, leading=13, spaceBefore=4, spaceAfter=14),
+    "cell": ParagraphStyle("cell", fontName="TNR", fontSize=8.5, leading=11),
+    "cellb": ParagraphStyle("cellb", fontName="TNR-Bold", fontSize=8.5, leading=11),
 }
 
 FIGURES = [

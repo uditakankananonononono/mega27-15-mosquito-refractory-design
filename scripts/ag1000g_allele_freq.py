@@ -132,14 +132,22 @@ def compute(records, min_gq=20, min_dp=5):
     in the same guide window is called het (max over positions), a lower
     bound on the true compromised-allele count.
     """
+    # Failed remote reads are not homozygous-reference observations. Keep them in
+    # the fetch audit, but exclude from every allele denominator and status.
+    failed = [r for r in records if "error" in r]
+    records = [r for r in records if "error" not in r]
     n_samples = len(records)
     # site -> stats
     sites = collections.defaultdict(lambda: {
         "alt_ac": collections.Counter(), "ref_from_calls": 0,
         "n_called": 0, "n_lowqual": 0, "ref": None,
     })
-    # sample -> guide -> compromised allele count (0,1,2)
-    sample_status = {r["sample"]: {g: 0 for g in GUIDES} for r in records}
+    # Track each guide position against the AgamP4 reference background.
+    # An absent all-sites-VCF row means hom-ref, which is NOT necessarily
+    # intact against a guide designed on another assembly. None = uncalled.
+    per_site = {r["sample"]: {g: {p: (2 if allele_disrupts(meta["ref_plus"], meta) else 0)
+                      for p, meta in position_map(g).items() if meta["role"] != "PAM-N"}
+                      for g in GUIDES} for r in records}
     pos2guide = {}
     for gname in GUIDES:
         for pos, meta in position_map(gname).items():
@@ -147,15 +155,22 @@ def compute(records, min_gq=20, min_dp=5):
 
     for rec in records:
         sid = rec["sample"]
-        for hit in rec.get("target_hits", []):
+        # Two checked-in scan vintages: current rows store target_hits; the
+        # legacy quality-filtered rows store all non-reference calls in hits.
+        # Normalize to the target-window positions, never treat legacy calls
+        # as absent or as a second sample.
+        for hit in rec.get("target_hits", rec.get("hits", [])):
             pos = hit["pos"]
             if pos not in pos2guide:
                 continue
             st = sites[pos]
             gq, dp = hit.get("gq", 0), hit.get("dp", 0)
             gt = parse_gt(hit["gt"], hit["alt"])
-            if gt is None or gq < min_gq or dp < min_dp:
+            if gt is None or gq is None or dp is None or gq < min_gq or dp < min_dp:
                 st["n_lowqual"] += 1
+                gname, meta = pos2guide[pos]
+                if meta["role"] != "PAM-N":
+                    per_site[sid][gname][pos] = None
                 continue
             alts = hit["alt"].split(",")
             st["n_called"] += 1
@@ -172,8 +187,13 @@ def compute(records, min_gq=20, min_dp=5):
                 base = hit["ref"] if a == 0 else alts[a - 1]
                 if allele_disrupts(base, meta):
                     comp += 1
-            sample_status[sid][gname] = max(sample_status[sid][gname], comp)
+            if meta["role"] != "PAM-N":
+                per_site[sid][gname][pos] = comp
 
+    sample_status = {sid: {g: (2 if 2 in positions.values() else (None if any(v is None for v in positions.values())
+                          else max(positions.values(), default=0)))
+                          for g, positions in guides.items()}
+                     for sid, guides in per_site.items()}
     # finalize per-site AF
     out_sites = {}
     for pos, st in sorted(sites.items()):
@@ -191,8 +211,9 @@ def compute(records, min_gq=20, min_dp=5):
             "guide_plus": meta["guide_plus"],
         }
         out_sites[pos] = entry
-    return {"n_samples": n_samples, "sites": out_sites,
-            "sample_status": sample_status}
+    return {"n_samples": n_samples, "n_fetch_errors": len(failed),
+            "error_sample_ids": [r["sample"] for r in failed],
+            "sites": out_sites, "sample_status": sample_status}
 
 
 def allele_disrupts(base, meta):
@@ -206,18 +227,17 @@ def allele_disrupts(base, meta):
 
 def guide_summary(res):
     """Per-guide headline numbers: carrier/compromise frequencies."""
-    n = res["n_samples"]
     out = {}
     for g in GUIDES:
-        counts = collections.Counter(res["sample_status"][s][g]
-                                     for s in res["sample_status"])
-        compromised_alleles = sum(res["sample_status"][s][g]
-                                  for s in res["sample_status"])
+        called = [s[g] for s in res["sample_status"].values() if s[g] is not None]
+        n = len(called)
+        counts = collections.Counter(called)
+        compromised_alleles = sum(called)
         out[g] = {
             "hom_compromised": counts[2], "het": counts[1],
-            "intact": counts[0],
-            "carrier_fraction": (counts[1] + counts[2]) / n,
-            "compromised_allele_fraction": compromised_alleles / (2 * n),
+            "intact": counts[0], "n_callable": n,
+            "carrier_fraction": (counts[1] + counts[2]) / n if n else None,
+            "compromised_allele_fraction": compromised_alleles / (2 * n) if n else None,
         }
     return out
 
@@ -227,6 +247,8 @@ def render_md(res, summary):
     lines = [
         f"## Ag1000G on-target polymorphism at dsx guide targets "
         f"(n = {n} samples)",
+        "",
+        f"Fetch-error rows excluded: {res['n_fetch_errors']} (listed in JSON).",
         "",
         "Unphased genotypes: het-at-two-sites is called het "
         "(lower bound on compromised alleles).",
@@ -259,19 +281,26 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", default="results/ag1000g/on_target.jsonl")
     ap.add_argument("--outdir", default="results/ag1000g")
+    ap.add_argument("--schema", choices=["modern", "all"], default="modern",
+                    help="modern: 4,106 complete unfiltered rows; all: include 575 legacy prefiltered rows as sensitivity")
     ap.add_argument("--min-gq", type=int, default=20)
     ap.add_argument("--min-dp", type=int, default=5)
     args = ap.parse_args()
     records = load_records(args.input)
+    if args.schema == "modern":
+        records = [r for r in records if r.get("n_rows") == 3250]
     res = compute(records, args.min_gq, args.min_dp)
     summary = guide_summary(res)
     os.makedirs(args.outdir, exist_ok=True)
-    with open(os.path.join(args.outdir, "allele_freq.json"), "w") as fh:
+    basename = "allele_freq" if args.schema == "modern" else "allele_freq_all_vintages"
+    with open(os.path.join(args.outdir, basename + ".json"), "w") as fh:
         json.dump({"n_samples": res["n_samples"],
+                   "n_fetch_errors": res["n_fetch_errors"],
+                   "error_sample_ids": res["error_sample_ids"],
                    "sites": {str(k): v for k, v in res["sites"].items()},
                    "guide_summary": summary,
                    "sample_status": res["sample_status"]}, fh, indent=1)
-    with open(os.path.join(args.outdir, "allele_freq.md"), "w") as fh:
+    with open(os.path.join(args.outdir, basename + ".md"), "w") as fh:
         fh.write(render_md(res, summary))
     print(f"n_samples={res['n_samples']} variant_sites={len(res['sites'])}")
     for g, s in summary.items():

@@ -1,7 +1,20 @@
 {
- "n_samples": 4106,
- "n_fetch_errors": 0,
- "error_sample_ids": [],
+ "n_samples": 4681,
+ "n_fetch_errors": 12,
+ "error_sample_ids": [
+  "AC0018-C",
+  "AC0388-C",
+  "AK0277-CW",
+  "AK0278-C",
+  "AP0034-C",
+  "AR0086-C",
+  "AR0094-C",
+  "AV0212-CW",
+  "AV0213-C",
+  "AZ0188-C",
+  "AZ0189-C",
+  "BL0221-C"
+ ],
  "sites": {
   "48711498": {
    "pos": 48711498,
@@ -9,16 +22,16 @@
    "role": "PAM-G",
    "ref": "C",
    "alt_ac": {
-    "T": 427,
-    "A": 2
+    "T": 428,
+    "A": 5
    },
    "alt_af": {
-    "A": 0.0002442598925256473,
-    "T": 0.052149487054225695
+    "A": 0.0005354465624330692,
+    "T": 0.04583422574427072
    },
-   "ref_ac": 7759,
-   "an": 8188,
-   "n_called": 382,
+   "ref_ac": 8905,
+   "an": 9338,
+   "n_called": 386,
    "n_lowqual": 12,
    "dist_from_pam": null,
    "guide_plus": null
@@ -32,10 +45,10 @@
     "G": 1
    },
    "alt_af": {
-    "G": 0.0001218026796589525
+    "G": 0.00010683760683760684
    },
-   "ref_ac": 8209,
-   "an": 8210,
+   "ref_ac": 9359,
+   "an": 9360,
    "n_called": 1,
    "n_lowqual": 1,
    "dist_from_pam": null,
@@ -47,14 +60,14 @@
    "role": "PAM-N",
    "ref": "C",
    "alt_ac": {
-    "T": 4772
+    "T": 5463
    },
    "alt_af": {
-    "T": 0.6048162230671736
+    "T": 0.6043141592920354
    },
-   "ref_ac": 3118,
-   "an": 7890,
-   "n_called": 3101,
+   "ref_ac": 3577,
+   "an": 9040,
+   "n_called": 3559,
    "n_lowqual": 161,
    "dist_from_pam": null,
    "guide_plus": null
@@ -65,14 +78,14 @@
    "role": "seed",
    "ref": "A",
    "alt_ac": {
-    "T": 168
+    "T": 197
    },
    "alt_af": {
-    "T": 0.020492803122712858
+    "T": 0.02107402652973898
    },
-   "ref_ac": 8030,
-   "an": 8198,
-   "n_called": 161,
+   "ref_ac": 9151,
+   "an": 9348,
+   "n_called": 190,
    "n_lowqual": 7,
    "dist_from_pam": 0,
    "guide_plus": "A"
@@ -83,14 +96,14 @@
    "role": "seed",
    "ref": "C",
    "alt_ac": {
-    "G": 9
+    "G": 13
    },
    "alt_af": {
-    "G": 0.001095957135898685
+    "G": 0.0013885921811578722
    },
-   "ref_ac": 8203,
-   "an": 8212,
-   "n_called": 9,
+   "ref_ac": 9349,
+   "an": 9362,
+   "n_called": 13,
    "n_lowqual": 0,
    "dist_from_pam": 1,
    "guide_plus": "C"
@@ -102,8 +115,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8208,
-   "an": 8208,
+   "ref_ac": 9358,
+   "an": 9358,
    "n_called": 0,
    "n_lowqual": 2,
    "dist_from_pam": 2,
@@ -118,10 +131,10 @@
     "G": 1
    },
    "alt_af": {
-    "G": 0.0001218026796589525
+    "G": 0.00010683760683760684
    },
-   "ref_ac": 8209,
-   "an": 8210,
+   "ref_ac": 9359,
+   "an": 9360,
    "n_called": 1,
    "n_lowqual": 1,
    "dist_from_pam": 3,
@@ -134,8 +147,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8206,
-   "an": 8206,
+   "ref_ac": 9356,
+   "an": 9356,
    "n_called": 0,
    "n_lowqual": 3,
    "dist_from_pam": 4,
@@ -147,16 +160,16 @@
    "role": "seed",
    "ref": "A",
    "alt_ac": {
-    "C": 138,
-    "G": 10
+    "G": 11,
+    "C": 141
    },
    "alt_af": {
-    "C": 0.01683337399365699,
-    "G": 0.0012198097096852891
+    "C": 0.015083440308087292,
+    "G": 0.0011767222935387248
    },
-   "ref_ac": 8050,
-   "an": 8198,
-   "n_called": 144,
+   "ref_ac": 9196,
+   "an": 9348,
+   "n_called": 148,
    "n_lowqual": 7,
    "dist_from_pam": 5,
    "guide_plus": "A"
@@ -167,16 +180,16 @@
    "role": "seed",
    "ref": "C",
    "alt_ac": {
-    "T": 1585,
-    "A": 627
+    "T": 1865,
+    "A": 725
    },
    "alt_af": {
-    "A": 0.07847309136420526,
-    "T": 0.1983729662077597
+    "A": 0.07932166301969365,
+    "T": 0.20404814004376368
    },
-   "ref_ac": 5778,
-   "an": 7990,
-   "n_called": 1775,
+   "ref_ac": 6550,
+   "an": 9140,
+   "n_called": 2082,
    "n_lowqual": 111,
    "dist_from_pam": 6,
    "guide_plus": "A"
@@ -190,10 +203,10 @@
     "T": 23
    },
    "alt_af": {
-    "T": 0.0028021442495126704
+    "T": 0.0024577901260953196
    },
-   "ref_ac": 8185,
-   "an": 8208,
+   "ref_ac": 9335,
+   "an": 9358,
    "n_called": 12,
    "n_lowqual": 2,
    "dist_from_pam": 7,
@@ -206,8 +219,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8208,
-   "an": 8208,
+   "ref_ac": 9358,
+   "an": 9358,
    "n_called": 0,
    "n_lowqual": 2,
    "dist_from_pam": 8,
@@ -219,14 +232,16 @@
    "role": "proto",
    "ref": "C",
    "alt_ac": {
-    "T": 1578
+    "T": 1853,
+    "G": 1
    },
    "alt_af": {
-    "T": 0.19666001994017945
+    "G": 0.00010900370612600828,
+    "T": 0.20198386745149335
    },
-   "ref_ac": 6446,
-   "an": 8024,
-   "n_called": 1296,
+   "ref_ac": 7320,
+   "an": 9174,
+   "n_called": 1522,
    "n_lowqual": 94,
    "dist_from_pam": 9,
    "guide_plus": "C"
@@ -237,16 +252,16 @@
    "role": "proto",
    "ref": "T",
    "alt_ac": {
-    "A": 4236,
+    "A": 4804,
     "G": 2
    },
    "alt_af": {
-    "A": 0.5347134561979299,
-    "G": 0.00025246149962130775
+    "A": 0.5295414462081128,
+    "G": 0.0002204585537918871
    },
-   "ref_ac": 3684,
-   "an": 7922,
-   "n_called": 2967,
+   "ref_ac": 4266,
+   "an": 9072,
+   "n_called": 3386,
    "n_lowqual": 145,
    "dist_from_pam": 10,
    "guide_plus": "A"
@@ -257,14 +272,14 @@
    "role": "proto",
    "ref": "T",
    "alt_ac": {
-    "A": 2
+    "A": 4
    },
    "alt_af": {
-    "A": 0.00024354603019970775
+    "A": 0.0004272591326639607
    },
-   "ref_ac": 8210,
-   "an": 8212,
-   "n_called": 2,
+   "ref_ac": 9358,
+   "an": 9362,
+   "n_called": 4,
    "n_lowqual": 0,
    "dist_from_pam": 11,
    "guide_plus": "T"
@@ -275,16 +290,16 @@
    "role": "proto",
    "ref": "C",
    "alt_ac": {
-    "A": 15,
-    "T": 12
+    "A": 17,
+    "T": 15
    },
    "alt_af": {
-    "A": 0.0018288222384784199,
-    "T": 0.001463057790782736
+    "A": 0.0018177929854576562,
+    "T": 0.00160393498716852
    },
-   "ref_ac": 8175,
-   "an": 8202,
-   "n_called": 27,
+   "ref_ac": 9320,
+   "an": 9352,
+   "n_called": 32,
    "n_lowqual": 5,
    "dist_from_pam": 13,
    "guide_plus": "C"
@@ -298,10 +313,10 @@
     "C": 1
    },
    "alt_af": {
-    "C": 0.00012177301509985388
+    "C": 0.00010681478316599017
    },
-   "ref_ac": 8211,
-   "an": 8212,
+   "ref_ac": 9361,
+   "an": 9362,
    "n_called": 1,
    "n_lowqual": 0,
    "dist_from_pam": 14,
@@ -313,14 +328,14 @@
    "role": "proto",
    "ref": "A",
    "alt_ac": {
-    "G": 2644
+    "G": 2931
    },
    "alt_af": {
-    "G": 0.32771442736737727
+    "G": 0.3179648513777392
    },
-   "ref_ac": 5424,
-   "an": 8068,
-   "n_called": 1957,
+   "ref_ac": 6287,
+   "an": 9218,
+   "n_called": 2187,
    "n_lowqual": 72,
    "dist_from_pam": 15,
    "guide_plus": "G"
@@ -331,16 +346,16 @@
    "role": "proto",
    "ref": "C",
    "alt_ac": {
-    "G": 7,
-    "T": 1
+    "T": 2,
+    "G": 7
    },
    "alt_af": {
-    "G": 0.0008524111056989771,
-    "T": 0.00012177301509985388
+    "G": 0.0007477034821619312,
+    "T": 0.00021362956633198035
    },
-   "ref_ac": 8204,
-   "an": 8212,
-   "n_called": 8,
+   "ref_ac": 9353,
+   "an": 9362,
+   "n_called": 9,
    "n_lowqual": 0,
    "dist_from_pam": 16,
    "guide_plus": "C"
@@ -351,14 +366,14 @@
    "role": "proto",
    "ref": "C",
    "alt_ac": {
-    "T": 11
+    "T": 12
    },
    "alt_af": {
-    "T": 0.0013398294762484776
+    "T": 0.001282051282051282
    },
-   "ref_ac": 8199,
-   "an": 8210,
-   "n_called": 11,
+   "ref_ac": 9348,
+   "an": 9360,
+   "n_called": 12,
    "n_lowqual": 1,
    "dist_from_pam": 17,
    "guide_plus": "C"
@@ -373,11 +388,11 @@
     "T": 5
    },
    "alt_af": {
-    "A": 0.00024366471734892786,
-    "T": 0.0006091617933723197
+    "A": 0.00021372088053002778,
+    "T": 0.0005343022013250694
    },
-   "ref_ac": 8201,
-   "an": 8208,
+   "ref_ac": 9351,
+   "an": 9358,
    "n_called": 7,
    "n_lowqual": 2,
    "dist_from_pam": 18,
@@ -393,11 +408,11 @@
     "T": 1
    },
    "alt_af": {
-    "G": 0.001218026796589525,
-    "T": 0.0001218026796589525
+    "G": 0.0010683760683760685,
+    "T": 0.00010683760683760684
    },
-   "ref_ac": 8199,
-   "an": 8210,
+   "ref_ac": 9349,
+   "an": 9360,
    "n_called": 11,
    "n_lowqual": 1,
    "dist_from_pam": null,
@@ -410,8 +425,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8208,
-   "an": 8208,
+   "ref_ac": 9358,
+   "an": 9358,
    "n_called": 0,
    "n_lowqual": 2,
    "dist_from_pam": null,
@@ -423,14 +438,14 @@
    "role": "seed",
    "ref": "A",
    "alt_ac": {
-    "G": 7640
+    "G": 8751
    },
    "alt_af": {
-    "G": 0.9644029285533956
+    "G": 0.9646164021164021
    },
-   "ref_ac": 282,
-   "an": 7922,
-   "n_called": 3839,
+   "ref_ac": 321,
+   "an": 9072,
+   "n_called": 4396,
    "n_lowqual": 145,
    "dist_from_pam": 0,
    "guide_plus": "G"
@@ -441,14 +456,16 @@
    "role": "seed",
    "ref": "C",
    "alt_ac": {
-    "T": 9
+    "G": 1,
+    "T": 10
    },
    "alt_af": {
-    "T": 0.0010962241169305725
+    "G": 0.00010683760683760684,
+    "T": 0.0010683760683760685
    },
-   "ref_ac": 8201,
-   "an": 8210,
-   "n_called": 8,
+   "ref_ac": 9349,
+   "an": 9360,
+   "n_called": 10,
    "n_lowqual": 1,
    "dist_from_pam": 1,
    "guide_plus": "C"
@@ -462,10 +479,10 @@
     "C": 172
    },
    "alt_af": {
-    "C": 0.021052631578947368
+    "C": 0.018454935622317595
    },
-   "ref_ac": 7998,
-   "an": 8170,
+   "ref_ac": 9148,
+   "an": 9320,
    "n_called": 92,
    "n_lowqual": 21,
    "dist_from_pam": 4,
@@ -478,8 +495,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8208,
-   "an": 8208,
+   "ref_ac": 9358,
+   "an": 9358,
    "n_called": 0,
    "n_lowqual": 2,
    "dist_from_pam": 5,
@@ -494,10 +511,10 @@
     "T": 3
    },
    "alt_af": {
-    "T": 0.0003654080389768575
+    "T": 0.0003205128205128205
    },
-   "ref_ac": 8207,
-   "an": 8210,
+   "ref_ac": 9357,
+   "an": 9360,
    "n_called": 3,
    "n_lowqual": 1,
    "dist_from_pam": 6,
@@ -512,10 +529,10 @@
     "A": 7
    },
    "alt_af": {
-    "A": 0.0008524111056989771
+    "A": 0.0007477034821619312
    },
-   "ref_ac": 8205,
-   "an": 8212,
+   "ref_ac": 9355,
+   "an": 9362,
    "n_called": 7,
    "n_lowqual": 0,
    "dist_from_pam": 7,
@@ -530,10 +547,10 @@
     "A": 2
    },
    "alt_af": {
-    "A": 0.000243605359317905
+    "A": 0.00021367521367521368
    },
-   "ref_ac": 8208,
-   "an": 8210,
+   "ref_ac": 9358,
+   "an": 9360,
    "n_called": 2,
    "n_lowqual": 1,
    "dist_from_pam": 8,
@@ -546,8 +563,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 9,
@@ -564,12 +581,12 @@
     "A": 4
    },
    "alt_af": {
-    "A": 0.0004904364884747426,
-    "C": 0.020843550760176556,
-    "T": 0.0004904364884747426
+    "A": 0.0004298302170642596,
+    "C": 0.018267784225231034,
+    "T": 0.0004298302170642596
    },
-   "ref_ac": 7978,
-   "an": 8156,
+   "ref_ac": 9128,
+   "an": 9306,
    "n_called": 93,
    "n_lowqual": 28,
    "dist_from_pam": 10,
@@ -582,8 +599,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 11,
@@ -596,8 +613,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8206,
-   "an": 8206,
+   "ref_ac": 9356,
+   "an": 9356,
    "n_called": 0,
    "n_lowqual": 3,
    "dist_from_pam": 13,
@@ -613,11 +630,11 @@
     "C": 2
    },
    "alt_af": {
-    "C": 0.00024832381425378696,
-    "T": 0.00012416190712689348
+    "C": 0.000217296827466319,
+    "T": 0.0001086484137331595
    },
-   "ref_ac": 8051,
-   "an": 8054,
+   "ref_ac": 9201,
+   "an": 9204,
    "n_called": 2,
    "n_lowqual": 79,
    "dist_from_pam": 16,
@@ -630,8 +647,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 17,
@@ -644,8 +661,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8202,
-   "an": 8202,
+   "ref_ac": 9352,
+   "an": 9352,
    "n_called": 0,
    "n_lowqual": 5,
    "dist_from_pam": 18,
@@ -657,16 +674,16 @@
    "role": "proto",
    "ref": "G",
    "alt_ac": {
-    "C": 8,
-    "A": 12
+    "A": 13,
+    "C": 8
    },
    "alt_af": {
-    "A": 0.0014825796886582653,
-    "C": 0.0009883864591055103
+    "A": 0.0014063176114236262,
+    "C": 0.0008654262224145391
    },
-   "ref_ac": 8074,
-   "an": 8094,
-   "n_called": 20,
+   "ref_ac": 9223,
+   "an": 9244,
+   "n_called": 21,
    "n_lowqual": 59,
    "dist_from_pam": 19,
    "guide_plus": "G"
@@ -678,8 +695,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": null,
@@ -692,8 +709,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8208,
-   "an": 8208,
+   "ref_ac": 9358,
+   "an": 9358,
    "n_called": 0,
    "n_lowqual": 2,
    "dist_from_pam": null,
@@ -706,8 +723,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 0,
@@ -719,14 +736,14 @@
    "role": "seed",
    "ref": "C",
    "alt_ac": {
-    "T": 98
+    "T": 99
    },
    "alt_af": {
-    "T": 0.011948305291392344
+    "T": 0.010585970915312232
    },
-   "ref_ac": 8104,
-   "an": 8202,
-   "n_called": 88,
+   "ref_ac": 9253,
+   "an": 9352,
+   "n_called": 89,
    "n_lowqual": 5,
    "dist_from_pam": 1,
    "guide_plus": "C"
@@ -740,10 +757,10 @@
     "C": 2
    },
    "alt_af": {
-    "C": 0.000243605359317905
+    "C": 0.00021367521367521368
    },
-   "ref_ac": 8208,
-   "an": 8210,
+   "ref_ac": 9358,
+   "an": 9360,
    "n_called": 1,
    "n_lowqual": 1,
    "dist_from_pam": 4,
@@ -756,8 +773,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 6,
@@ -770,8 +787,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 8,
@@ -784,8 +801,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 9,
@@ -798,8 +815,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 10,
@@ -809,12 +826,16 @@
    "pos": 48714652,
    "guide": "kyrou",
    "role": "proto",
-   "ref": null,
-   "alt_ac": {},
-   "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
-   "n_called": 0,
+   "ref": "T",
+   "alt_ac": {
+    "C": 1
+   },
+   "alt_af": {
+    "C": 0.00010683760683760684
+   },
+   "ref_ac": 9359,
+   "an": 9360,
+   "n_called": 1,
    "n_lowqual": 1,
    "dist_from_pam": 12,
    "guide_plus": "T"
@@ -826,8 +847,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 14,
@@ -840,8 +861,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8208,
-   "an": 8208,
+   "ref_ac": 9358,
+   "an": 9358,
    "n_called": 0,
    "n_lowqual": 2,
    "dist_from_pam": 15,
@@ -856,10 +877,10 @@
     "G": 194
    },
    "alt_af": {
-    "G": 0.02373959862946647
+    "G": 0.020810984767217336
    },
-   "ref_ac": 7978,
-   "an": 8172,
+   "ref_ac": 9128,
+   "an": 9322,
    "n_called": 99,
    "n_lowqual": 20,
    "dist_from_pam": 16,
@@ -872,8 +893,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 17,
@@ -886,8 +907,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8210,
-   "an": 8210,
+   "ref_ac": 9360,
+   "an": 9360,
    "n_called": 0,
    "n_lowqual": 1,
    "dist_from_pam": 18,
@@ -900,8 +921,8 @@
    "ref": null,
    "alt_ac": {},
    "alt_af": {},
-   "ref_ac": 8208,
-   "an": 8208,
+   "ref_ac": 9358,
+   "an": 9358,
    "n_called": 0,
    "n_lowqual": 2,
    "dist_from_pam": 19,
@@ -910,28 +931,28 @@
  },
  "guide_summary": {
   "dsx-v3-1": {
-   "hom_compromised": 3502,
-   "het": 515,
-   "intact": 53,
-   "n_callable": 4070,
-   "carrier_fraction": 0.986977886977887,
-   "compromised_allele_fraction": 0.9237100737100737
+   "hom_compromised": 3987,
+   "het": 598,
+   "intact": 60,
+   "n_callable": 4645,
+   "carrier_fraction": 0.9870828848223897,
+   "compromised_allele_fraction": 0.9227125941872981
   },
   "dsx-v3-2": {
-   "hom_compromised": 213,
-   "het": 91,
-   "intact": 3635,
-   "n_callable": 3939,
-   "carrier_fraction": 0.07717694846407717,
-   "compromised_allele_fraction": 0.06562579334856562
+   "hom_compromised": 231,
+   "het": 97,
+   "intact": 4186,
+   "n_callable": 4514,
+   "carrier_fraction": 0.07266282676118742,
+   "compromised_allele_fraction": 0.06191847585290208
   },
   "kyrou": {
    "hom_compromised": 105,
-   "het": 82,
-   "intact": 3884,
-   "n_callable": 4071,
-   "carrier_fraction": 0.04593465978874969,
-   "compromised_allele_fraction": 0.035863424220093344
+   "het": 84,
+   "intact": 4457,
+   "n_callable": 4646,
+   "carrier_fraction": 0.04068015497201894,
+   "compromised_allele_fraction": 0.03164012053379251
   }
  },
  "sample_status": {
@@ -991,6 +1012,2881 @@
    "kyrou": 0
   },
   "AA0050-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0051-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0052-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0053-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0054-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0055-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0056-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0057-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0058-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0059-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0060-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0061-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0062-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0063-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0064-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0065-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0066-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0067-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0068-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0069-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0070-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0071-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0072-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0073-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0074-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0075-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0076-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0077-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0078-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0079-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0080-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0081-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0082-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0083-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0084-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0085-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0086-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0087-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0088-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0089-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 1,
+   "kyrou": 0
+  },
+  "AA0090-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0091-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0092-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0093-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0094-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0095-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0096-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0097-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0098-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0099-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0100-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0101-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0102-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0103-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 1,
+   "kyrou": 0
+  },
+  "AA0104-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 1,
+   "kyrou": 0
+  },
+  "AA0105-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0106-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0107-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0108-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0109-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0110-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0111-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0112-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0113-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0114-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0115-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0116-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0117-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0118-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0119-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0120-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0122-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0123-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0124-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0125-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0126-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0127-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0128-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0129-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0130-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0131-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0132-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0133-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0134-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0135-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0136-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0137-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0138-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0139-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0140-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AA0141-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0085-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0085-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0086-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0086-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0087-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0087-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0088-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 1,
+   "kyrou": 0
+  },
+  "AB0089-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0089-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0090-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0090-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0091-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0091-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0092-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0092-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0093-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0094-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0094-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0095-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0095-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0096-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0097-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0097-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0098-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0098-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0099-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0099-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0100-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0100-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0101-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0102-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0103-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0104-C": {
+   "dsx-v3-1": 0,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0104-Cx": {
+   "dsx-v3-1": 0,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0105-C": {
+   "dsx-v3-1": 0,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0105-Cx": {
+   "dsx-v3-1": 0,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0106-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0106-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0107-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0107-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0108-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0108-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0109-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0110-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0110-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0111-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0111-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0112-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0112-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0113-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0114-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0114-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0115-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0116-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0116-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0117-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0117-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0118-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0118-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0119-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0119-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0120-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0121-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0121-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0122-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0122-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0123-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0123-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0124-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0124-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0125-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0126-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0126-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0127-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0127-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0128-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0128-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0129-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0129-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0130-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0130-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0131-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0131-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0132-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0132-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0133-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0133-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0134-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0134-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0135-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0135-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0136-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0136-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0137-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0137-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0138-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0138-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0139-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0139-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0140-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0141-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0141-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0142-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0142-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0143-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0143-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0144-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0144-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0145-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0145-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0146-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0146-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0147-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0148-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0148-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0149-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0150-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0150-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0151-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0151-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0152-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 1
+  },
+  "AB0153-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0154-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0154-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0155-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0155-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0156-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0156-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0157-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0157-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0158-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0158-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0159-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0159-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0160-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0160-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0161-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0162-C": {
+   "dsx-v3-1": 0,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0163-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0164-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0164-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0165-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0166-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0166-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0167-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0168-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0169-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0169-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0170-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0170-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0171-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0171-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0172-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0172-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0173-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0173-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0174-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0174-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0175-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0175-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0176-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0176-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0177-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0177-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0178-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0178-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0179-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0179-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0180-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0180-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0181-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0182-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0182-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0183-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0184-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0185-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0185-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0186-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0187-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0187-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0188-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0188-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0189-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0190-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0191-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0191-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0192-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0192-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0193-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0193-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0194-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0194-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0195-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0195-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0196-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0196-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0197-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0197-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0198-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0199-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0199-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0200-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0200-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0201-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0201-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0202-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0202-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0203-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0203-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0204-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0205-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0206-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0206-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0207-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0208-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0209-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0209-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0210-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0210-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0211-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0212-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0212-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0213-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0213-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0214-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0214-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0215-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0216-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0216-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0217-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0217-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0218-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0219-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0219-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0220-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0220-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0221-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0222-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0222-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0223-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0223-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0224-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0225-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 1
+  },
+  "AB0226-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0227-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0227-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0228-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0228-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0229-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0229-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0230-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0230-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0231-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0232-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0232-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0233-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0233-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0234-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0235-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0235-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0236-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0236-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0237-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0238-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0239-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0239-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0240-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0240-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0241-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0241-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0242-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0243-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0244-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0245-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0246-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0247-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0248-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0249-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0249-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0250-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0250-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0251-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0251-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0252-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0253-C": {
+   "dsx-v3-1": 0,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0255-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0256-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0256-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0257-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0257-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0258-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0258-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0259-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0259-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0260-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0261-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0261-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0262-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0262-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0263-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0263-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0264-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0264-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0265-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0266-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0266-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0267-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0268-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0269-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0269-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0270-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0271-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0271-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0272-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0272-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0273-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0273-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0274-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0275-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0276-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0277-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0278-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0279-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0279-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0280-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0280-Cx": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0281-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0281-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0282-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0282-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0283-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0284-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0293-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0294-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0295-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0296-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0297-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0298-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0299-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0300-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0301-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0302-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0303-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0304-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0305-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0308-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0309-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0310-CW": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0311-CW": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0312-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0313-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0314-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0315-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0316-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0317-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0318-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0319-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0320-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0321-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0322-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0323-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0324-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0325-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0326-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0327-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0328-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0329-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0330-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0331-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0332-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0333-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0334-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0337-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0338-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0339-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0340-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0341-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0348-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0349-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 2,
+   "kyrou": 0
+  },
+  "AB0351-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0352-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0354-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0355-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0356-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0357-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0358-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0359-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0360-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0361-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0362-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0363-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0364-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0365-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0366-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0367-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0368-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0369-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0370-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0371-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0372-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0373-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0374-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0375-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0378-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0379-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0381-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0386-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0388-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0389-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0396-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0397-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0398-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0399-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0400-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0403-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0404-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0405-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0408-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0409-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0410-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0411-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0413-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0432-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0433-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0435-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0436-C": {
+   "dsx-v3-1": 0,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0439-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0440-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0457-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 1,
+   "kyrou": 0
+  },
+  "AB0458-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0459-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0460-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0462-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0463-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0465-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0466-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0467-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0468-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0469-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0470-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0471-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0472-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0473-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0474-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0477-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0502-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0503-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0504-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0505-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0508-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0509-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0510-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0517-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0523-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0524-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0525-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0526-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0527-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0528-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0529-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0530-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0531-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0532-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0533-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0536-C": {
+   "dsx-v3-1": 1,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0537-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AB0538-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0007-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0007-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0008-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0009-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0009-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0010-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0011-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 1,
+   "kyrou": 0
+  },
+  "AC0012-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0012-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0013-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0013-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0014-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0015-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0015-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0016-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0017-C": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0017-Cx": {
+   "dsx-v3-1": 2,
+   "dsx-v3-2": 0,
+   "kyrou": 0
+  },
+  "AC0018-Cx": {
    "dsx-v3-1": 2,
    "dsx-v3-2": 0,
    "kyrou": 0

@@ -84,9 +84,10 @@ def enumerate_alleles(records, min_gq=20, min_dp=5):
     per_sample = {g: collections.defaultdict(list) for g in GUIDES}
     n_lowqual = 0
 
+    records = [r for r in records if "error" not in r]
     for rec in records:
         sid = rec["sample"]
-        for hit in rec.get("target_hits", []):
+        for hit in rec.get("target_hits", rec.get("hits", [])):
             pos = hit["pos"]
             if pos not in pos2guide:
                 continue
@@ -278,10 +279,13 @@ def render_md(res, summary):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", default="results/ag1000g/on_target.jsonl")
+    ap.add_argument("--schema", choices=["modern", "all"], default="modern")
     ap.add_argument("--out-json", default="results/ag1000g/near_cognate.json")
     ap.add_argument("--out-md", default="results/ag1000g/near_cognate.md")
     args = ap.parse_args()
     records = load_records(args.input)
+    if args.schema == "modern":
+        records = [r for r in records if r.get("n_rows") == 3250]
     res = enumerate_alleles(records)
     summary = summarize(res)
     with open(args.out_json, "w") as fh:

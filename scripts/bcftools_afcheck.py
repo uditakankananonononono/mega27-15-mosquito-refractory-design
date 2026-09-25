@@ -50,7 +50,7 @@ def select_subsample(path=SCAN_IN, n_carrier=N_CARRIER, n_zero=N_ZERO, seed=SEED
         r = json.loads(line)
         if "error" in r:
             continue
-        th = [h for h in r.get("target_hits", []) if h.get("targets")]
+        th = [h for h in r.get("target_hits", r.get("hits", [])) if h.get("targets")]
         (carriers if th else zeros).append(r["sample"])
     rng = random.Random(seed)
     rng.shuffle(carriers); rng.shuffle(zeros)

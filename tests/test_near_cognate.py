@@ -124,3 +124,14 @@ def test_summary_counts():
     s = summarize(res)
     assert s["kyrou"]["by_class_counts"].get("pam_n_variant") == 1
     assert s["kyrou"]["by_class_chromosomes"].get("pam_n_variant") == 1
+
+
+def test_legacy_hits_scored_and_fetch_errors_excluded():
+    pos = 48714642
+    m = meta_at(pos)
+    alt = other_base(m["ref_plus"], m["guide_plus"])
+    res = enumerate_alleles([{"sample": "S1", "hits":
+                            [hit(pos, m["ref_plus"], alt, "0/1")]},
+                            {"sample": "S2", "error": "timeout"}])
+    assert res["n_samples"] == 1
+    assert res["guides"]["kyrou"]["single_variant_alleles"][0]["ac"] == 1

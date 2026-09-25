@@ -1,57 +1,57 @@
 {
   "summary": {
     "dsx-v3-1": {
-      "n_single_variant_alleles": 25,
+      "n_single_variant_alleles": 26,
       "by_class_counts": {
         "pam_disrupted": 3,
         "pam_n_variant": 1,
         "seed_mismatch": 7,
         "wild_type": 3,
-        "distal_mismatch": 11
+        "distal_mismatch": 12
       },
       "by_class_chromosomes": {
-        "pam_disrupted": 430,
-        "pam_n_variant": 4772,
-        "seed_mismatch": 1934,
-        "wild_type": 7507,
-        "distal_mismatch": 1636
+        "pam_disrupted": 434,
+        "pam_n_variant": 5463,
+        "seed_mismatch": 2251,
+        "wild_type": 8460,
+        "distal_mismatch": 1921
       },
-      "n_multi_variant_phase_certain": 786,
-      "n_ambiguous_multisite_samples": 2274
+      "n_multi_variant_phase_certain": 872,
+      "n_ambiguous_multisite_samples": 2633
     },
     "dsx-v3-2": {
-      "n_single_variant_alleles": 15,
+      "n_single_variant_alleles": 16,
       "by_class_counts": {
         "pam_disrupted": 2,
         "wild_type": 1,
-        "seed_mismatch": 4,
+        "seed_mismatch": 5,
         "distal_mismatch": 8
       },
       "by_class_chromosomes": {
         "pam_disrupted": 11,
-        "wild_type": 7640,
-        "seed_mismatch": 191,
-        "distal_mismatch": 203
+        "wild_type": 8751,
+        "seed_mismatch": 193,
+        "distal_mismatch": 204
       },
       "n_multi_variant_phase_certain": 85,
-      "n_ambiguous_multisite_samples": 62
+      "n_ambiguous_multisite_samples": 65
     },
     "kyrou": {
-      "n_single_variant_alleles": 3,
+      "n_single_variant_alleles": 4,
       "by_class_counts": {
         "seed_mismatch": 2,
-        "distal_mismatch": 1
+        "distal_mismatch": 2
       },
       "by_class_chromosomes": {
-        "seed_mismatch": 100,
-        "distal_mismatch": 194
+        "seed_mismatch": 101,
+        "distal_mismatch": 195
       },
       "n_multi_variant_phase_certain": 1,
       "n_ambiguous_multisite_samples": 0
     }
   },
   "detail": {
-    "n_samples": 4106,
+    "n_samples": 4681,
     "n_lowqual_calls": 1021,
     "guides": {
       "dsx-v3-1": {
@@ -61,7 +61,7 @@
             "pos": 48711498,
             "ref_plus": "C",
             "alt_plus": "A",
-            "ac": 2,
+            "ac": 5,
             "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
             "pam_allele_minus": "GGT",
             "n_mismatch_vs_guide": 1,
@@ -74,7 +74,7 @@
             "pos": 48711498,
             "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 427,
+            "ac": 428,
             "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
             "pam_allele_minus": "GGA",
             "n_mismatch_vs_guide": 1,
@@ -100,7 +100,7 @@
             "pos": 48711500,
             "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 4772,
+            "ac": 5463,
             "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
             "pam_allele_minus": "AGG",
             "n_mismatch_vs_guide": 0,
@@ -113,7 +113,7 @@
             "pos": 48711501,
             "ref_plus": "A",
             "alt_plus": "T",
-            "ac": 168,
+            "ac": 197,
             "proto_allele_minus": "TGGGTAGTAAGCGGTAGGGA",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -128,7 +128,7 @@
             "pos": 48711502,
             "ref_plus": "C",
             "alt_plus": "G",
-            "ac": 9,
+            "ac": 13,
             "proto_allele_minus": "TGGGTAGTAAGCGGTAGGCT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -158,7 +158,7 @@
             "pos": 48711506,
             "ref_plus": "A",
             "alt_plus": "C",
-            "ac": 138,
+            "ac": 141,
             "proto_allele_minus": "TGGGTAGTAAGCGGGAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -173,7 +173,7 @@
             "pos": 48711506,
             "ref_plus": "A",
             "alt_plus": "G",
-            "ac": 10,
+            "ac": 11,
             "proto_allele_minus": "TGGGTAGTAAGCGGCAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -188,7 +188,7 @@
             "pos": 48711507,
             "ref_plus": "C",
             "alt_plus": "A",
-            "ac": 627,
+            "ac": 725,
             "proto_allele_minus": "TGGGTAGTAAGCGTTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 0,
@@ -201,7 +201,7 @@
             "pos": 48711507,
             "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 1585,
+            "ac": 1865,
             "proto_allele_minus": "TGGGTAGTAAGCGATAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -230,8 +230,23 @@
             "kind": "single_variant",
             "pos": 48711510,
             "ref_plus": "C",
+            "alt_plus": "G",
+            "ac": 1,
+            "proto_allele_minus": "TGGGTAGTAACCGGTAGGGT",
+            "pam_allele_minus": "GGG",
+            "n_mismatch_vs_guide": 1,
+            "mismatch_guide_indices": [
+              11
+            ],
+            "seed_mismatches": 0,
+            "class": "distal_mismatch"
+          },
+          {
+            "kind": "single_variant",
+            "pos": 48711510,
+            "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 1578,
+            "ac": 1853,
             "proto_allele_minus": "TGGGTAGTAAACGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -246,7 +261,7 @@
             "pos": 48711511,
             "ref_plus": "T",
             "alt_plus": "A",
-            "ac": 4236,
+            "ac": 4804,
             "proto_allele_minus": "TGGGTAGTATGCGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 0,
@@ -274,7 +289,7 @@
             "pos": 48711512,
             "ref_plus": "T",
             "alt_plus": "A",
-            "ac": 2,
+            "ac": 4,
             "proto_allele_minus": "TGGGTAGTTAGCGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -289,7 +304,7 @@
             "pos": 48711514,
             "ref_plus": "C",
             "alt_plus": "A",
-            "ac": 15,
+            "ac": 17,
             "proto_allele_minus": "TGGGTATTAAGCGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -304,7 +319,7 @@
             "pos": 48711514,
             "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 12,
+            "ac": 15,
             "proto_allele_minus": "TGGGTAATAAGCGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -334,7 +349,7 @@
             "pos": 48711516,
             "ref_plus": "A",
             "alt_plus": "G",
-            "ac": 2644,
+            "ac": 2931,
             "proto_allele_minus": "TGGGCAGTAAGCGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 0,
@@ -362,7 +377,7 @@
             "pos": 48711517,
             "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 1,
+            "ac": 2,
             "proto_allele_minus": "TGGATAGTAAGCGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -377,7 +392,7 @@
             "pos": 48711518,
             "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 11,
+            "ac": 12,
             "proto_allele_minus": "TGAGTAGTAAGCGGTAGGGT",
             "pam_allele_minus": "GGG",
             "n_mismatch_vs_guide": 1,
@@ -458,6 +473,1582 @@
             ],
             "seed_mismatches": 1,
             "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0055-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0063-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0076-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0079-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0087-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0097-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0113-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0126-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AA0141-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0090-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0090-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0091-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0095-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0095-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0104-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0104-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0105-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0105-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0117-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0117-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0139-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0139-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0162-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0180-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0180-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0188-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0188-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0191-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0191-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0200-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0200-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0204-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0214-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507
+            ],
+            "proto_allele_minus": "TGGGTAGTAAGCGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 1,
+            "mismatch_guide_indices": [
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0215-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0223-C",
+            "ac": 2,
+            "variant_positions": [
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "GGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0223-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0227-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0227-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0228-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0228-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0230-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0237-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0248-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0253-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0262-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0263-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0263-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0266-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0266-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0276-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0296-CW",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTAAGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0298-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0321-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0326-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0328-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0333-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0334-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0338-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0351-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0360-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0362-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0365-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0371-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0396-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0399-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0408-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0409-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0413-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0436-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGTTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0457-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0459-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0502-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0503-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0525-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711507,
+              48711510,
+              48711511
+            ],
+            "proto_allele_minus": "TGGGTAGTATACGATAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 2,
+            "mismatch_guide_indices": [
+              11,
+              14
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0531-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AB0538-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0007-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0007-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0010-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0011-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0015-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0015-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0016-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0017-C",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0017-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
+          },
+          {
+            "kind": "multi_variant_phase_certain",
+            "sample": "AC0018-Cx",
+            "ac": 2,
+            "variant_positions": [
+              48711500,
+              48711511,
+              48711516
+            ],
+            "proto_allele_minus": "TGGGCAGTATGCGGTAGGGT",
+            "pam_allele_minus": "AGG",
+            "n_mismatch_vs_guide": 0,
+            "mismatch_guide_indices": [],
+            "seed_mismatches": 0,
+            "class": "pam_n_variant"
           },
           {
             "kind": "multi_variant_phase_certain",
@@ -13972,7 +15563,7 @@
             "class": "seed_mismatch"
           }
         ],
-        "n_ambiguous_multisite_samples": 2274
+        "n_ambiguous_multisite_samples": 2633
       },
       "dsx-v3-2": {
         "single_variant_alleles": [
@@ -14007,7 +15598,7 @@
             "pos": 48712765,
             "ref_plus": "A",
             "alt_plus": "G",
-            "ac": 7640,
+            "ac": 8751,
             "proto_allele_minus": "CATTAAGACCTACGAAGCGC",
             "pam_allele_minus": "TGG",
             "n_mismatch_vs_guide": 0,
@@ -14019,8 +15610,23 @@
             "kind": "single_variant",
             "pos": 48712766,
             "ref_plus": "C",
+            "alt_plus": "G",
+            "ac": 1,
+            "proto_allele_minus": "CATTAAGACCTACGAAGCCT",
+            "pam_allele_minus": "TGG",
+            "n_mismatch_vs_guide": 1,
+            "mismatch_guide_indices": [
+              19
+            ],
+            "seed_mismatches": 1,
+            "class": "seed_mismatch"
+          },
+          {
+            "kind": "single_variant",
+            "pos": 48712766,
+            "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 9,
+            "ac": 10,
             "proto_allele_minus": "CATTAAGACCTACGAAGCAT",
             "pam_allele_minus": "TGG",
             "n_mismatch_vs_guide": 1,
@@ -14170,7 +15776,7 @@
             "pos": 48712784,
             "ref_plus": "G",
             "alt_plus": "A",
-            "ac": 12,
+            "ac": 13,
             "proto_allele_minus": "TATTAAGACCTACGAAGCGT",
             "pam_allele_minus": "TGG",
             "n_mismatch_vs_guide": 1,
@@ -15794,7 +17400,7 @@
             "class": "seed_mismatch"
           }
         ],
-        "n_ambiguous_multisite_samples": 62
+        "n_ambiguous_multisite_samples": 65
       },
       "kyrou": {
         "single_variant_alleles": [
@@ -15803,7 +17409,7 @@
             "pos": 48714641,
             "ref_plus": "C",
             "alt_plus": "T",
-            "ac": 98,
+            "ac": 99,
             "proto_allele_minus": "GTTTAACACAGGTCAAGCAG",
             "pam_allele_minus": "TGG",
             "n_mismatch_vs_guide": 1,
@@ -15827,6 +17433,21 @@
             ],
             "seed_mismatches": 1,
             "class": "seed_mismatch"
+          },
+          {
+            "kind": "single_variant",
+            "pos": 48714652,
+            "ref_plus": "T",
+            "alt_plus": "C",
+            "ac": 1,
+            "proto_allele_minus": "GTTTAACGCAGGTCAAGCGG",
+            "pam_allele_minus": "TGG",
+            "n_mismatch_vs_guide": 1,
+            "mismatch_guide_indices": [
+              8
+            ],
+            "seed_mismatches": 0,
+            "class": "distal_mismatch"
           },
           {
             "kind": "single_variant",
