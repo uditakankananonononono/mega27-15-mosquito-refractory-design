@@ -1,0 +1,31 @@
+{
+  "source": "same archived sample JSONL, second interpretation using archived FASTA",
+  "not_independent_extraction_or_population": true,
+  "n_modern": 4106,
+  "guide_summary": {
+    "dsx-v3-1": {
+      "intact": 53,
+      "het": 515,
+      "hom_compromised": 3502,
+      "unknown": 36,
+      "n_callable": 4070,
+      "compromised_allele_fraction": 0.9237100737100737
+    },
+    "dsx-v3-2": {
+      "intact": 3635,
+      "het": 91,
+      "hom_compromised": 213,
+      "unknown": 167,
+      "n_callable": 3939,
+      "compromised_allele_fraction": 0.06562579334856562
+    },
+    "kyrou": {
+      "intact": 3884,
+      "het": 82,
+      "hom_compromised": 105,
+      "unknown": 35,
+      "n_callable": 4071,
+      "compromised_allele_fraction": 0.035863424220093344
+    }
+  }
+}

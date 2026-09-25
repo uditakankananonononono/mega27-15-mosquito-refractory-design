@@ -13,3 +13,5 @@ Unphased multisite het calls are a lower bound on allele compromise; low-quality
 | kyrou | 4071 | 0.035863 | 4646 | 0.031640 |
 
 The prior 40.1% / 3.0% / 3.1% headline and 11-12-generation sieve law are withdrawn. Corrected primary-input simulation starts v3-1 above 50% at generation zero; the two other target windows cross at generation twelve under the tested model endpoints. This is simulation, not observed drive behavior.
+
+An independent implementation (`scripts/independent_af_check.py`) re-scores the same 4,106 archived modern JSONL slices using AgamP4 FASTA bases and the saved reannotation guide coordinates, without importing the original scoring module. It agrees on each guide's intact/heterozygous/homozygous/unknown counts and allele fractions (`results/ag1000g/independent_af_check.json`). This is independent *code-path interpretation* of the same fetched genotype rows, not independent VCF extraction, a second population, or wet-lab validation.
